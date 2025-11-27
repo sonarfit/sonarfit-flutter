@@ -90,14 +90,12 @@ public class SonarFitFlutterPlugin: NSObject, FlutterPlugin {
                         if let workoutResult = workoutResult {
                             result(self.workoutResultToMap(workoutResult))
                         } else {
-                            // Workout cancelled
-                            result([
-                                "completed": false,
-                                "cancelled": true,
-                                "completionPercentage": 0.0,
-                                "totalRepsCompleted": 0,
-                                "sets": []
-                            ])
+                            // This should not happen - the SDK should always return a WorkoutResult
+                            result(FlutterError(
+                                code: "E_NO_RESULT",
+                                message: "Workout completed but no result was returned",
+                                details: nil
+                            ))
                         }
                     }
                 },
@@ -111,13 +109,11 @@ public class SonarFitFlutterPlugin: NSObject, FlutterPlugin {
                 onDismissRequest: {
                     // User pressed X button to dismiss before starting workout
                     rootViewController.dismiss(animated: true) {
-                        result([
-                            "completed": false,
-                            "cancelled": true,
-                            "completionPercentage": 0.0,
-                            "totalRepsCompleted": 0,
-                            "sets": []
-                        ])
+                        result(FlutterError(
+                            code: "E_CANCELLED",
+                            message: "Workout was cancelled by user",
+                            details: nil
+                        ))
                     }
                 }
             )
@@ -178,14 +174,26 @@ public class SonarFitFlutterPlugin: NSObject, FlutterPlugin {
     }
 
     private func workoutResultToMap(_ result: WorkoutResult) -> [String: Any] {
+        // Convert deviceType to Flutter-compatible format
+        let deviceTypeString: String
+        switch result.deviceType {
+        case .none:
+            deviceTypeString = "none"
+        case .watch:
+            deviceTypeString = "watch"
+        case .airpods:
+            deviceTypeString = "airpods"
+        @unknown default:
+            deviceTypeString = "none"
+        }
+
         return [
-            "completed": result.status == .completed,
-            "cancelled": false,
             "workoutType": result.workoutType.rawValue,
-            "deviceType": result.deviceType.rawValue,
+            "deviceType": deviceTypeString,
             "startTime": result.startTime.timeIntervalSince1970,
             "endTime": result.endTime.timeIntervalSince1970,
             "totalDuration": result.totalDuration,
+            "status": result.status == .completed ? "completed" : "stoppedEarly",
             "completionPercentage": result.completionPercentage,
             "targetSets": result.targetSets,
             "targetRepsPerSet": result.targetRepsPerSet,

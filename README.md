@@ -102,16 +102,17 @@ class WorkoutScreen extends StatelessWidget {
                   workoutType: WorkoutType.squat,
                   sets: 3,
                   reps: 10,
+                  deviceType: DeviceType.watch,
                   restTime: 60,
                 ),
               );
 
-              if (result.completed) {
+              if (result.status == WorkoutStatus.completed) {
                 print('Workout completed!');
                 print('Reps: ${result.totalRepsCompleted}/${result.totalTargetReps}');
-                print('Completion: ${(result.completionPercentage * 100).toStringAsFixed(0)}%');
-              } else if (result.cancelled) {
-                print('Workout cancelled');
+              } else {
+                print('Workout stopped early');
+                print('Reps: ${result.totalRepsCompleted}/${result.totalTargetReps}');
               }
             } on SonarFitException catch (e) {
               print('Error: ${e.message}');
@@ -155,17 +156,17 @@ final result = await SonarFit.presentWorkout(
     workoutType: WorkoutType.squat,
     sets: 3,
     reps: 10,
+    deviceType: DeviceType.watch,
     restTime: 60,
     countdownDuration: 3,
     autoReLift: true,
-    deviceType: DeviceType.none, // Auto-detect
   ),
 );
 ```
 
-**Returns:** `WorkoutResult` when workout completes or user dismisses.
+**Returns:** `WorkoutResult` when workout completes (either fully or stopped early).
 
-**Throws:** `SonarFitException` if workout fails to start.
+**Throws:** `SonarFitException` if workout fails to start, permission is denied, or user cancels before starting.
 
 ---
 
@@ -175,15 +176,15 @@ Configuration for a workout session.
 
 #### Properties
 
-| Property | Type | Required | Default | Description |
-|----------|------|----------|---------|-------------|
-| `workoutType` | `WorkoutType` | Yes | - | Type of exercise |
-| `sets` | `int` | Yes | - | Number of sets |
-| `reps` | `int` | Yes | - | Target reps per set |
-| `restTime` | `int` | No | `60` | Rest duration in seconds |
-| `countdownDuration` | `int` | No | `3` | Countdown before each set |
-| `autoReLift` | `bool` | No | `true` | Auto-detect reps |
-| `deviceType` | `DeviceType` | No | `none` | Motion tracking device |
+| Property | Type | Required | Description |
+|----------|------|----------|-------------|
+| `workoutType` | `WorkoutType` | Yes | Type of exercise |
+| `sets` | `int` | Yes | Number of sets |
+| `reps` | `int` | Yes | Target reps per set |
+| `deviceType` | `DeviceType` | Yes | Motion tracking device (`.watch` or `.airpods`) |
+| `restTime` | `int` | No | Rest duration in seconds |
+| `countdownDuration` | `int` | No | Countdown before each set |
+| `autoReLift` | `bool` | No | Auto-detect reps |
 
 #### Example
 
@@ -192,10 +193,10 @@ final config = WorkoutConfig(
   workoutType: WorkoutType.deadlift,
   sets: 5,
   reps: 5,
+  deviceType: DeviceType.watch,
   restTime: 90,
   countdownDuration: 5,
   autoReLift: true,
-  deviceType: DeviceType.watch,
 );
 ```
 
@@ -221,9 +222,23 @@ Motion tracking devices.
 
 ```dart
 enum DeviceType {
-  none,     // Auto-detect available device
   watch,    // Apple Watch
   airpods,  // AirPods Pro/Max with motion sensors
+}
+```
+
+**Note:** `DeviceType.none` exists for internal SDK use only. Clients must explicitly select either `.watch` or `.airpods`.
+
+---
+
+### WorkoutStatus
+
+Workout completion status.
+
+```dart
+enum WorkoutStatus {
+  completed,      // All target sets finished
+  stoppedEarly,   // User ended before completion
 }
 ```
 
@@ -237,30 +252,28 @@ Result of a completed workout.
 
 | Property | Type | Description |
 |----------|------|-------------|
-| `completed` | `bool` | Was the workout completed? |
-| `cancelled` | `bool` | Was the workout cancelled by user? |
-| `workoutType` | `WorkoutType?` | Exercise type |
-| `deviceType` | `DeviceType?` | Device used for tracking |
-| `startTime` | `DateTime?` | Workout start time |
-| `endTime` | `DateTime?` | Workout end time |
-| `totalDuration` | `double?` | Total duration in seconds |
+| `workoutType` | `WorkoutType` | Exercise type |
+| `deviceType` | `DeviceType` | Device used for tracking |
+| `startTime` | `DateTime` | Workout start time |
+| `endTime` | `DateTime` | Workout end time |
+| `totalDuration` | `double` | Total duration in seconds |
+| `status` | `WorkoutStatus` | Workout completion status |
 | `completionPercentage` | `double` | Completion percentage (0.0-1.0) |
-| `targetSets` | `int?` | Target number of sets |
-| `targetRepsPerSet` | `int?` | Target reps per set |
+| `targetSets` | `int` | Target number of sets |
+| `targetRepsPerSet` | `int` | Target reps per set |
 | `totalRepsCompleted` | `int` | Total reps completed |
-| `totalTargetReps` | `int?` | Total target reps |
+| `totalTargetReps` | `int` | Total target reps |
 | `sets` | `List<WorkoutSet>` | Per-set details |
 
 #### Example
 
 ```dart
-if (result.completed) {
-  print('Completed ${result.totalRepsCompleted}/${result.totalTargetReps} reps');
-  print('${(result.completionPercentage * 100).toStringAsFixed(0)}% complete');
+print('Completed ${result.totalRepsCompleted}/${result.totalTargetReps} reps');
+print('${(result.completionPercentage * 100).toStringAsFixed(0)}% complete');
+print('Status: ${result.status}');
 
-  for (var set in result.sets) {
-    print('Set ${set.setNumber}: ${set.repsCompleted} reps');
-  }
+for (var set in result.sets) {
+  print('Set ${set.setNumber}: ${set.repsCompleted} reps');
 }
 ```
 
@@ -286,6 +299,8 @@ Exception thrown by SDK operations.
 | `E_PERMISSION` | Motion permission denied |
 | `E_INVALID_CONFIG` | Invalid workout configuration |
 | `E_NO_ROOT_VC` | Cannot find root view controller |
+| `E_CANCELLED` | Workout was cancelled by user |
+| `E_NO_RESULT` | Workout completed but no result was returned |
 
 ---
 
@@ -315,6 +330,7 @@ class _WorkoutExampleScreenState extends State<WorkoutExampleScreen> {
           workoutType: WorkoutType.squat,
           sets: 3,
           reps: 10,
+          deviceType: DeviceType.watch,
           restTime: 60,
         ),
       );
@@ -324,9 +340,7 @@ class _WorkoutExampleScreenState extends State<WorkoutExampleScreen> {
         _isLoading = false;
       });
 
-      if (result.completed) {
-        _showCompletionDialog(result);
-      }
+      _showCompletionDialog(result);
     } on SonarFitException catch (e) {
       setState(() => _isLoading = false);
       _showErrorDialog(e);
@@ -334,10 +348,14 @@ class _WorkoutExampleScreenState extends State<WorkoutExampleScreen> {
   }
 
   void _showCompletionDialog(WorkoutResult result) {
+    final title = result.status == WorkoutStatus.completed
+        ? 'Workout Complete!'
+        : 'Workout Stopped';
+
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        title: Text('Workout Complete! 🎉'),
+        title: Text(title),
         content: Column(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -426,14 +444,13 @@ class WorkoutTypeSelector extends StatelessWidget {
           workoutType: type,
           sets: 3,
           reps: 10,
+          deviceType: DeviceType.watch,
         ),
       );
 
-      if (result.completed) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Workout completed! ${result.totalRepsCompleted} reps')),
-        );
-      }
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('${result.totalRepsCompleted} reps completed (${result.status.name})')),
+      );
     } on SonarFitException catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text('Error: ${e.message}')),

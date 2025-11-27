@@ -29,6 +29,22 @@ enum DeviceType {
   }
 }
 
+/// Workout completion status
+enum WorkoutStatus {
+  completed('completed'),       // All target sets finished
+  stoppedEarly('stoppedEarly'); // User ended before completion
+
+  const WorkoutStatus(this.value);
+  final String value;
+
+  static WorkoutStatus fromString(String value) {
+    return WorkoutStatus.values.firstWhere(
+      (e) => e.value == value.toLowerCase(),
+      orElse: () => WorkoutStatus.stoppedEarly,
+    );
+  }
+}
+
 /// Workout configuration
 class WorkoutConfig {
   final WorkoutType workoutType;
@@ -43,10 +59,10 @@ class WorkoutConfig {
     required this.workoutType,
     required this.sets,
     required this.reps,
+    required this.deviceType,
     this.restTime = 60,
     this.countdownDuration = 3,
     this.autoReLift = true,
-    this.deviceType = DeviceType.none,
   });
 
   Map<String, dynamic> toMap() {
@@ -89,92 +105,75 @@ class WorkoutSet {
 
 /// Workout completion result
 class WorkoutResult {
-  final bool completed;
-  final bool cancelled;
-  final WorkoutType? workoutType;
-  final DeviceType? deviceType;
-  final DateTime? startTime;
-  final DateTime? endTime;
-  final double? totalDuration;
+  final WorkoutType workoutType;
+  final DeviceType deviceType;
+  final DateTime startTime;
+  final DateTime endTime;
+  final double totalDuration;
+  final WorkoutStatus status;
   final double completionPercentage;
-  final int? targetSets;
-  final int? targetRepsPerSet;
-  final int totalRepsCompleted;
-  final int? totalTargetReps;
   final List<WorkoutSet> sets;
+  final int targetSets;
+  final int targetRepsPerSet;
+  final int totalRepsCompleted;
+  final int totalTargetReps;
 
   const WorkoutResult({
-    required this.completed,
-    this.cancelled = false,
-    this.workoutType,
-    this.deviceType,
-    this.startTime,
-    this.endTime,
-    this.totalDuration,
-    this.completionPercentage = 0.0,
-    this.targetSets,
-    this.targetRepsPerSet,
-    this.totalRepsCompleted = 0,
-    this.totalTargetReps,
-    this.sets = const [],
+    required this.workoutType,
+    required this.deviceType,
+    required this.startTime,
+    required this.endTime,
+    required this.totalDuration,
+    required this.status,
+    required this.completionPercentage,
+    required this.sets,
+    required this.targetSets,
+    required this.targetRepsPerSet,
+    required this.totalRepsCompleted,
+    required this.totalTargetReps,
   });
 
   factory WorkoutResult.fromMap(Map<dynamic, dynamic> map) {
     return WorkoutResult(
-      completed: map['completed'] as bool? ?? false,
-      cancelled: map['cancelled'] as bool? ?? false,
-      workoutType: map['workoutType'] != null
-          ? WorkoutType.fromString(map['workoutType'] as String)
-          : null,
-      deviceType: map['deviceType'] != null
-          ? DeviceType.fromString(map['deviceType'] as String)
-          : null,
-      startTime: map['startTime'] != null
-          ? DateTime.fromMillisecondsSinceEpoch(
-              ((map['startTime'] as num) * 1000).toInt())
-          : null,
-      endTime: map['endTime'] != null
-          ? DateTime.fromMillisecondsSinceEpoch(
-              ((map['endTime'] as num) * 1000).toInt())
-          : null,
-      totalDuration: map['totalDuration'] as double?,
-      completionPercentage: (map['completionPercentage'] as num?)?.toDouble() ?? 0.0,
-      targetSets: map['targetSets'] as int?,
-      targetRepsPerSet: map['targetRepsPerSet'] as int?,
-      totalRepsCompleted: map['totalRepsCompleted'] as int? ?? 0,
-      totalTargetReps: map['totalTargetReps'] as int?,
-      sets: (map['sets'] as List<dynamic>?)
-              ?.map((e) => WorkoutSet.fromMap(e as Map<dynamic, dynamic>))
-              .toList() ??
-          [],
+      workoutType: WorkoutType.fromString(map['workoutType'] as String),
+      deviceType: DeviceType.fromString(map['deviceType'] as String),
+      startTime: DateTime.fromMillisecondsSinceEpoch(
+          ((map['startTime'] as num) * 1000).toInt()),
+      endTime: DateTime.fromMillisecondsSinceEpoch(
+          ((map['endTime'] as num) * 1000).toInt()),
+      totalDuration: (map['totalDuration'] as num).toDouble(),
+      status: WorkoutStatus.fromString(map['status'] as String),
+      completionPercentage: (map['completionPercentage'] as num).toDouble(),
+      sets: (map['sets'] as List<dynamic>)
+          .map((e) => WorkoutSet.fromMap(e as Map<dynamic, dynamic>))
+          .toList(),
+      targetSets: map['targetSets'] as int,
+      targetRepsPerSet: map['targetRepsPerSet'] as int,
+      totalRepsCompleted: map['totalRepsCompleted'] as int,
+      totalTargetReps: map['totalTargetReps'] as int,
     );
   }
 
   Map<String, dynamic> toMap() {
     return {
-      'completed': completed,
-      'cancelled': cancelled,
-      if (workoutType != null) 'workoutType': workoutType!.value,
-      if (deviceType != null) 'deviceType': deviceType!.value,
-      if (startTime != null) 'startTime': startTime!.millisecondsSinceEpoch / 1000,
-      if (endTime != null) 'endTime': endTime!.millisecondsSinceEpoch / 1000,
-      if (totalDuration != null) 'totalDuration': totalDuration,
+      'workoutType': workoutType.value,
+      'deviceType': deviceType.value,
+      'startTime': startTime.millisecondsSinceEpoch / 1000,
+      'endTime': endTime.millisecondsSinceEpoch / 1000,
+      'totalDuration': totalDuration,
+      'status': status.value,
       'completionPercentage': completionPercentage,
-      if (targetSets != null) 'targetSets': targetSets,
-      if (targetRepsPerSet != null) 'targetRepsPerSet': targetRepsPerSet,
-      'totalRepsCompleted': totalRepsCompleted,
-      if (totalTargetReps != null) 'totalTargetReps': totalTargetReps,
       'sets': sets.map((s) => s.toMap()).toList(),
+      'targetSets': targetSets,
+      'targetRepsPerSet': targetRepsPerSet,
+      'totalRepsCompleted': totalRepsCompleted,
+      'totalTargetReps': totalTargetReps,
     };
   }
 
   @override
   String toString() {
-    if (cancelled) return 'WorkoutResult(cancelled)';
-    if (completed) {
-      return 'WorkoutResult(completed: $totalRepsCompleted/$totalTargetReps reps, ${(completionPercentage * 100).toStringAsFixed(0)}%)';
-    }
-    return 'WorkoutResult(incomplete)';
+    return 'WorkoutResult(status: $status, reps: $totalRepsCompleted/$totalTargetReps, ${(completionPercentage * 100).toStringAsFixed(0)}%)';
   }
 }
 
