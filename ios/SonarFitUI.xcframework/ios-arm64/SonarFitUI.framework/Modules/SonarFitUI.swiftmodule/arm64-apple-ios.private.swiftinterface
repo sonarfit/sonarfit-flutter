@@ -1,0 +1,93 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios17.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SonarFitUI
+// swift-module-flags-ignorable:  -interface-compiler-version 6.1.2
+import Combine
+import Foundation
+import SonarFitConnectivity
+import SonarFitCore
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+
+final public class WorkoutViewModel : Foundation.ObservableObject {
+  public init(config: SonarFitCore.WorkoutConfig, onCompletion: @escaping (SonarFitCore.WorkoutResult?) -> Swift.Void, onPermissionError: ((any Swift.Error) -> Swift.Void)? = nil, onDismissRequest: (() -> Swift.Void)? = nil)
+  final public func startWorkout()
+  final public func pauseWorkout()
+  final public func resumeWorkout()
+  final public func resetWorkoutState()
+  final public func skipRest()
+  final public func pauseRestTimer()
+  final public func resumeRestTimer()
+  final public func startNextSet()
+  final public func requestExit()
+  final public func confirmExit(save: Swift.Bool)
+  final public func cancelExit()
+  final public func updateSelectedDevice(_ deviceType: SonarFitCore.DeviceType)
+  final public func dismissWorkout()
+  final public func closeWorkout()
+  final public func selectWatchDevice()
+  final public func clearWatchAppError()
+  final public func selectAirPodsDevice()
+  final public func clearAirPodsError()
+  final public func isWatchAvailable() -> Swift.Bool
+  final public func checkForRestCompletion(at date: Foundation.Date = Date())
+  @objc deinit
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+}
+extension SonarFitUI.WorkoutViewModel : SonarFitCore.WorkoutEngineDelegate {
+  final public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didUpdateSession session: SonarFitCore.WorkoutSession)
+  final public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didCompleteRep rep: Swift.Int, inSet set: Swift.Int)
+  final public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didCompleteSet set: Swift.Int)
+  final public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didStartRest duration: Swift.Int)
+  final public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didUpdateRestTime remaining: Swift.Int)
+  final public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didEndRest isAutomatic: Swift.Bool)
+  final public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didCompleteWorkout result: SonarFitCore.WorkoutResult)
+  final public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didCancelWorkout result: SonarFitCore.WorkoutResult?)
+  final public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didEncounterMotionPermissionError error: any Swift.Error)
+  final public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didUpdateDeviceStatus status: Swift.String)
+  final public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, shouldLaunchWatchWithConfig config: SonarFitCore.WorkoutConfig)
+  final public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, shouldSendWorkoutToWatch config: SonarFitCore.WorkoutConfig)
+  final public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, shouldUpdateWatchWorkoutState session: SonarFitCore.WorkoutSession)
+  final public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, shouldUpdateWatchRestTimer remaining: Swift.Int, total: Swift.Int)
+  final public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, shouldEndWatchWorkout result: SonarFitCore.WorkoutResult?)
+  final public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, shouldSendWatchMessage message: Any)
+}
+@_Concurrency.MainActor @preconcurrency public struct WorkoutView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(config: SonarFitCore.WorkoutConfig, onCompletion: @escaping (SonarFitCore.WorkoutResult?) -> Swift.Void, onPermissionError: ((any Swift.Error) -> Swift.Void)? = nil, onDismissRequest: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s10SonarFitUI11WorkoutViewV4bodyQrvp", 0) __
+}
+
+
+@_Concurrency.MainActor @preconcurrency public struct RepBox : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(currentSetRepsCompleted: Swift.Int, totalReps: Swift.Int, isActive: Swift.Bool = false)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s10SonarFitUI6RepBoxV4bodyQrvp", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct SetBox : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(currentSetNumber: Swift.Int, totalSets: Swift.Int, isActive: Swift.Bool = false)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s10SonarFitUI6SetBoxV4bodyQrvp", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct TimerBox : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(remaining: Swift.Int, total: Swift.Int, isActive: Swift.Bool = false, showControls: Swift.Bool = false, isPaused: Swift.Bool = false, onPause: (() -> Swift.Void)? = nil, onResume: (() -> Swift.Void)? = nil, onSkip: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s10SonarFitUI8TimerBoxV4bodyQrvp", 0) __
+}
+
+extension SonarFitUI.WorkoutView : Swift.Sendable {}
+extension SonarFitUI.RepBox : Swift.Sendable {}
+extension SonarFitUI.SetBox : Swift.Sendable {}
+extension SonarFitUI.TimerBox : Swift.Sendable {}

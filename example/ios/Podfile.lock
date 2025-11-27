@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - sonarfit_flutter (1.0.0):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - sonarfit_flutter (from `.symlinks/plugins/sonarfit_flutter/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  sonarfit_flutter:
+    :path: ".symlinks/plugins/sonarfit_flutter/ios"
+
+SPEC CHECKSUMS:
+  Flutter: cabc95a1d2626b1b06e7179b784ebcf0c0cde467
+  sonarfit_flutter: 9e0a3891b73d454027d04b38deb1697b6f3fa7a2
+
+PODFILE CHECKSUM: 43b94b581e8c523a18f447081fdb5335a872f2e2
+
+COCOAPODS: 1.16.2

@@ -1,0 +1,563 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target x86_64-apple-watchos10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SonarFitCore
+// swift-module-flags-ignorable:  -interface-compiler-version 6.1.2
+import AVFoundation
+import Accelerate
+import Combine
+import CoreML
+import CoreMotion
+import Foundation
+import MediaPlayer
+import Swift
+import UIKit
+import WatchKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public struct RestTimerState : Swift.Codable {
+  public var startDate: Foundation.Date
+  public var duration: Foundation.TimeInterval
+  public var originalDuration: Foundation.TimeInterval
+  public var isPaused: Swift.Bool
+  public var pauseDate: Foundation.Date?
+  public var pausedRemainingTime: Foundation.TimeInterval?
+  public init(startDate: Foundation.Date, duration: Foundation.TimeInterval, originalDuration: Foundation.TimeInterval? = nil, isPaused: Swift.Bool = false, pauseDate: Foundation.Date? = nil, pausedRemainingTime: Foundation.TimeInterval? = nil)
+  public func remainingTime(at date: Foundation.Date = Date()) -> Foundation.TimeInterval
+  public func remainingSeconds(at date: Foundation.Date = Date()) -> Swift.Int
+  public func isCompleted(at date: Foundation.Date = Date()) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum WorkoutType : Swift.String, Swift.CaseIterable, Swift.Codable {
+  case squat
+  case deadlift
+  case benchpress
+  public var displayName: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [SonarFitCore.WorkoutType]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [SonarFitCore.WorkoutType] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum DeviceType : Swift.String, Swift.CaseIterable, Swift.Codable {
+  case none
+  case watch
+  case airpods
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [SonarFitCore.DeviceType]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [SonarFitCore.DeviceType] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum WorkoutState : Swift.Equatable {
+  case ready
+  case countdown(Swift.Int)
+  case active
+  case paused
+  case resting(remaining: Swift.Int, total: Swift.Int)
+  case readyToLift
+  case completed
+  case cancelled
+  public static func == (a: SonarFitCore.WorkoutState, b: SonarFitCore.WorkoutState) -> Swift.Bool
+}
+public struct WorkoutConfig : Swift.Codable {
+  public let workoutType: SonarFitCore.WorkoutType
+  public let sets: Swift.Int
+  public let reps: Swift.Int
+  public let restTime: Swift.Int
+  public let countdownDuration: Swift.Int
+  public let autoReLift: Swift.Bool
+  public let deviceType: SonarFitCore.DeviceType
+  public init(workoutType: SonarFitCore.WorkoutType, sets: Swift.Int, reps: Swift.Int, restTime: Swift.Int = 60, countdownDuration: Swift.Int = 3, autoReLift: Swift.Bool = true, deviceType: SonarFitCore.DeviceType = .none)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct WorkoutResult : Swift.Codable {
+  public let workoutType: SonarFitCore.WorkoutType
+  public let deviceType: SonarFitCore.DeviceType
+  public let startTime: Foundation.Date
+  public let endTime: Foundation.Date
+  public let totalDuration: Foundation.TimeInterval
+  public let status: SonarFitCore.WorkoutStatus
+  public let completionPercentage: Swift.Double
+  public let sets: [SonarFitCore.WorkoutSet]
+  public let targetSets: Swift.Int
+  public let targetRepsPerSet: Swift.Int
+  public let totalRepsCompleted: Swift.Int
+  public let totalTargetReps: Swift.Int
+  public init(workoutType: SonarFitCore.WorkoutType, deviceType: SonarFitCore.DeviceType, startTime: Foundation.Date, endTime: Foundation.Date, totalDuration: Foundation.TimeInterval, status: SonarFitCore.WorkoutStatus, completionPercentage: Swift.Double, sets: [SonarFitCore.WorkoutSet], targetSets: Swift.Int, targetRepsPerSet: Swift.Int, totalRepsCompleted: Swift.Int, totalTargetReps: Swift.Int)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct WorkoutSet : Swift.Codable {
+  public let setNumber: Swift.Int
+  public let repsCompleted: Swift.Int
+  public init(setNumber: Swift.Int, repsCompleted: Swift.Int)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum WorkoutStatus : Swift.Codable {
+  case completed
+  case stoppedEarly
+  public static func == (a: SonarFitCore.WorkoutStatus, b: SonarFitCore.WorkoutStatus) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension SonarFitCore.WorkoutResult {
+  public static func from(session: SonarFitCore.WorkoutSession, endTime: Foundation.Date = Date(), status: SonarFitCore.WorkoutStatus) -> SonarFitCore.WorkoutResult
+}
+public struct WorkoutSession {
+  public var config: SonarFitCore.WorkoutConfig
+  public let startTime: Foundation.Date
+  public var currentSetRepsCompleted: Swift.Int
+  public var completedReps: [Swift.Int]
+  public var state: SonarFitCore.WorkoutState
+  public var currentSetNumber: Swift.Int {
+    get
+  }
+  public init(config: SonarFitCore.WorkoutConfig)
+  public var progress: Swift.Double {
+    get
+  }
+  public var isActive: Swift.Bool {
+    get
+  }
+}
+public enum SonarFitLogLevel : Swift.Int, Swift.Comparable {
+  case none
+  case minimal
+  case standard
+  case verbose
+  case debug
+  public static func < (lhs: SonarFitCore.SonarFitLogLevel, rhs: SonarFitCore.SonarFitLogLevel) -> Swift.Bool
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class SonarFitLogger {
+  public static var logLevel: SonarFitCore.SonarFitLogLevel
+  @available(*, deprecated, message: "Use logLevel instead")
+  public static var isDebugEnabled: Swift.Bool {
+    get
+    set
+  }
+  public static func debug(_ message: Swift.String, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line)
+  public static func info(_ message: Swift.String, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line)
+  public static func warning(_ message: Swift.String, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line)
+  public static func error(_ message: Swift.String, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line)
+  public static func motion(_ message: Swift.String)
+  public static func connectivity(_ message: Swift.String)
+  @objc deinit
+}
+public typealias SFLog = SonarFitCore.SonarFitLogger
+final public class WorkoutEngine {
+  weak final public var delegate: (any SonarFitCore.WorkoutEngineDelegate)?
+  weak final public var deviceStatusDelegate: (any SonarFitCore.DeviceStatusDelegate)?
+  final public var session: SonarFitCore.WorkoutSession {
+    get
+  }
+  final public var motionProcessor: SonarFitCore.EnhancedMotionProcessor {
+    get
+  }
+  final public var restTimerState: SonarFitCore.RestTimerState? {
+    get
+  }
+  public init(config: SonarFitCore.WorkoutConfig)
+  final public func startWorkout()
+  final public func resetWorkoutState()
+  final public func pauseWorkout()
+  final public func resumeWorkout()
+  final public func skipRest(fromManualRep: Swift.Bool = false)
+  final public func aboutToReLift()
+  final public func updateSelectedDevice(_ deviceType: SonarFitCore.DeviceType)
+  final public func updateDevice(_ deviceType: SonarFitCore.DeviceType)
+  final public func startWatchWorkoutProcessing()
+  final public func handleWatchLiftingEvent()
+  final public func endWorkoutPrompt()
+  final public func endWorkoutPromptCancelled()
+  final public func finishWorkout(save: Swift.Bool = true)
+  final public func checkForRestCompletion(at date: Foundation.Date = Date())
+  final public func checkForCountdownCompletion(at date: Foundation.Date = Date())
+  final public func pauseRestTimer(at pauseDate: Foundation.Date = Date())
+  final public func resumeRestTimer(at resumeDate: Foundation.Date = Date())
+  final public func setRestDuration(_ seconds: Swift.Int)
+  final public func extendRestDuration(by seconds: Swift.Int)
+  final public func syncRestTimerFromWatch(startTimestamp: Foundation.TimeInterval, duration: Foundation.TimeInterval)
+  final public func handleManualIncrement()
+  final public func handleManualDecrement()
+  final public func startNextSet()
+  @objc deinit
+}
+extension SonarFitCore.WorkoutEngine : SonarFitCore.MotionProcessorDelegate {
+  final public func motionProcessor<T>(_ processor: T, didDetectRep confidence: Swift.Double)
+  final public func motionProcessor<T>(_ processor: T, didUpdateDeviceStatus status: Swift.String)
+  final public func motionProcessor<T>(_ processor: T, didEncounterPermissionError error: any Swift.Error)
+  final public func getCurrentSetNumber() -> Swift.Int
+  final public func getCurrentSetRepsCompleted() -> Swift.Int
+}
+@available(iOS 17.0, watchOS 10.0, macOS 10.15, *)
+public class SonarFitWorkout : Foundation.ObservableObject, SonarFitCore.WorkoutEngineDelegate {
+  @Combine.Published @_projectedValueProperty($state) public var state: SonarFitCore.WorkoutState {
+    get
+  }
+  public var $state: Combine.Published<SonarFitCore.WorkoutState>.Publisher {
+    get
+  }
+  @Combine.Published @_projectedValueProperty($currentSetNumber) public var currentSetNumber: Swift.Int {
+    get
+  }
+  public var $currentSetNumber: Combine.Published<Swift.Int>.Publisher {
+    get
+  }
+  @Combine.Published @_projectedValueProperty($currentSetRepsCompleted) public var currentSetRepsCompleted: Swift.Int {
+    get
+  }
+  public var $currentSetRepsCompleted: Combine.Published<Swift.Int>.Publisher {
+    get
+  }
+  @Combine.Published @_projectedValueProperty($restTimeRemaining) public var restTimeRemaining: Swift.Int? {
+    get
+  }
+  public var $restTimeRemaining: Combine.Published<Swift.Int?>.Publisher {
+    get
+  }
+  @Combine.Published @_projectedValueProperty($restTimeTotal) public var restTimeTotal: Swift.Int? {
+    get
+  }
+  public var $restTimeTotal: Combine.Published<Swift.Int?>.Publisher {
+    get
+  }
+  @Combine.Published @_projectedValueProperty($completedSets) public var completedSets: [SonarFitCore.WorkoutSet] {
+    get
+  }
+  public var $completedSets: Combine.Published<[SonarFitCore.WorkoutSet]>.Publisher {
+    get
+  }
+  @Combine.Published @_projectedValueProperty($result) public var result: SonarFitCore.WorkoutResult? {
+    get
+  }
+  public var $result: Combine.Published<SonarFitCore.WorkoutResult?>.Publisher {
+    get
+  }
+  @Combine.Published @_projectedValueProperty($deviceType) public var deviceType: SonarFitCore.DeviceType {
+    get
+  }
+  public var $deviceType: Combine.Published<SonarFitCore.DeviceType>.Publisher {
+    get
+  }
+  final public let config: SonarFitCore.WorkoutConfig
+  public init(config: SonarFitCore.WorkoutConfig, engine: SonarFitCore.WorkoutEngine)
+  public func start()
+  public func pause()
+  public func resume()
+  public func skipRest()
+  public func incrementRep()
+  public func decrementRep()
+  public func extendRest(by seconds: Swift.Int)
+  public func setRestDuration(_ seconds: Swift.Int)
+  public func updateDevice(_ deviceType: SonarFitCore.DeviceType)
+  @discardableResult
+  public func finish(save: Swift.Bool = true) -> SonarFitCore.WorkoutResult
+  public var isActive: Swift.Bool {
+    get
+  }
+  public var isResting: Swift.Bool {
+    get
+  }
+  public var isPaused: Swift.Bool {
+    get
+  }
+  public var isCompleted: Swift.Bool {
+    get
+  }
+  public var currentSetProgress: Swift.Double {
+    get
+  }
+  public var overallProgress: Swift.Double {
+    get
+  }
+  public var remainingSets: Swift.Int {
+    get
+  }
+  public var canStart: Swift.Bool {
+    get
+  }
+  public var startBlockedReason: Swift.String? {
+    get
+  }
+  public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didUpdateSession session: SonarFitCore.WorkoutSession)
+  public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didCompleteRep rep: Swift.Int, inSet set: Swift.Int)
+  public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didCompleteSet set: Swift.Int)
+  public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didStartRest duration: Swift.Int)
+  public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didUpdateRestTime remaining: Swift.Int)
+  public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didEndRest isAutomatic: Swift.Bool)
+  public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didCompleteWorkout result: SonarFitCore.WorkoutResult)
+  public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didCancelWorkout result: SonarFitCore.WorkoutResult?)
+  public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didEncounterMotionPermissionError error: any Swift.Error)
+  public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didUpdateDeviceStatus status: Swift.String)
+  public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, shouldSendWatchMessage message: Any)
+  public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, shouldEndWatchWorkout result: SonarFitCore.WorkoutResult?)
+  @available(iOS 17.0, watchOS 10.0, macOS 10.15, *)
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+final public class ThemeManager {
+  public init(theme: SonarFitCore.SonarFitTheme = .init())
+  final public func color(_ keyPath: Swift.KeyPath<SonarFitCore.SonarFitTheme.Colors, SonarFitCore.PlatformColor>) -> SonarFitCore.PlatformColor
+  final public func font(_ keyPath: Swift.KeyPath<SonarFitCore.SonarFitTheme.Typography, SonarFitCore.PlatformFont>) -> SonarFitCore.PlatformFont
+  final public var currentTheme: SonarFitCore.SonarFitTheme {
+    get
+  }
+  final public var actionStart: SonarFitCore.PlatformColor {
+    get
+  }
+  final public var actionPause: SonarFitCore.PlatformColor {
+    get
+  }
+  final public var actionSkip: SonarFitCore.PlatformColor {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class SonarFitAnalytics {
+  public static let shared: SonarFitCore.SonarFitAnalytics
+  public var isInitialized: Swift.Bool {
+    get
+  }
+  public func initialize(apiKey: Swift.String, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
+  @objc deinit
+}
+public enum SDKError : Foundation.LocalizedError {
+  case invalidAPIKey
+  case notInitialized
+  case quotaExceeded
+  public var errorDescription: Swift.String? {
+    get
+  }
+  public var localizedDescription: Swift.String {
+    get
+  }
+  public static func == (a: SonarFitCore.SDKError, b: SonarFitCore.SDKError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+final public class EnhancedMotionProcessor {
+  weak final public var delegate: (any SonarFitCore.MotionProcessorDelegate)?
+  final public var isProcessing: Swift.Bool {
+    get
+  }
+  final public var deviceStatus: Swift.String {
+    get
+  }
+  public init(workoutType: SonarFitCore.WorkoutType, deviceType: SonarFitCore.DeviceType)
+  final public func updateDevice(_ newDeviceType: SonarFitCore.DeviceType)
+  final public func startProcessing()
+  final public func stopProcessing()
+  final public func processMotionData(_ payload: SonarFitCore.MotionPayload)
+  @objc deinit
+}
+public struct MotionPayload : Swift.Codable {
+  public let timestamp: Foundation.Date
+  public let accelerationX: Swift.Double
+  public let accelerationY: Swift.Double
+  public let accelerationZ: Swift.Double
+  public let rotationX: Swift.Double
+  public let rotationY: Swift.Double
+  public let rotationZ: Swift.Double
+  public init(timestamp: Foundation.Date = Date(), accelerationX: Swift.Double, accelerationY: Swift.Double, accelerationZ: Swift.Double, rotationX: Swift.Double, rotationY: Swift.Double, rotationZ: Swift.Double)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers final public class SonarFitSDK {
+  public static var themeManager: SonarFitCore.ThemeManager
+  public static func initialize(apiKey: Swift.String, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
+  public static var logLevel: SonarFitCore.SonarFitLogLevel {
+    get
+    set
+  }
+  @available(*, deprecated, message: "Use logLevel instead for more granular control")
+  public static var enableDebugLogging: Swift.Bool {
+    get
+    set
+  }
+  public static let version: Swift.String
+  public static let buildNumber: Swift.String
+  public static var sdkInfo: Swift.String {
+    get
+  }
+  @objc deinit
+}
+extension SonarFitCore.SonarFitSDK {
+  public static func configure(logLevel: SonarFitCore.SonarFitLogLevel = .standard)
+  @available(*, deprecated, message: "Use configure(logLevel:) instead")
+  public static func configure(debugMode: Swift.Bool = false)
+  public static func configure(theme: SonarFitCore.SonarFitTheme, logLevel: SonarFitCore.SonarFitLogLevel = .standard)
+  @available(*, deprecated, message: "Use configure(theme:logLevel:) instead")
+  public static func configure(theme: SonarFitCore.SonarFitTheme, debugMode: Swift.Bool = false)
+  public static func updateTheme(_ theme: SonarFitCore.SonarFitTheme)
+}
+public struct SonarFitTheme : Swift.Sendable {
+  public var colors: SonarFitCore.SonarFitTheme.Colors
+  public var typography: SonarFitCore.SonarFitTheme.Typography?
+  public init(colors: SonarFitCore.SonarFitTheme.Colors = Colors(), typography: SonarFitCore.SonarFitTheme.Typography? = nil)
+}
+extension SonarFitCore.SonarFitTheme {
+  public struct Colors : Swift.Sendable {
+    public var background: SonarFitCore.PlatformColor
+    public var primary: SonarFitCore.PlatformColor
+    public var textOnBackground: SonarFitCore.PlatformColor
+    public var subtextOnBackground: SonarFitCore.PlatformColor
+    public var textOnPrimary: SonarFitCore.PlatformColor
+    public var timerWarning: SonarFitCore.PlatformColor
+    public init(background: SonarFitCore.PlatformColor? = nil, primary: SonarFitCore.PlatformColor? = nil, textOnBackground: SonarFitCore.PlatformColor? = nil, subtextOnBackground: SonarFitCore.PlatformColor? = nil, textOnPrimary: SonarFitCore.PlatformColor? = nil, timerWarning: SonarFitCore.PlatformColor? = nil)
+  }
+}
+extension SonarFitCore.SonarFitTheme {
+  public struct Typography : Swift.Sendable {
+    public var titleFont: SonarFitCore.PlatformFont
+    public var bodyFont: SonarFitCore.PlatformFont
+    public var captionFont: SonarFitCore.PlatformFont
+    public init(titleFont: SonarFitCore.PlatformFont? = nil, bodyFont: SonarFitCore.PlatformFont? = nil, captionFont: SonarFitCore.PlatformFont? = nil)
+  }
+}
+public struct CountdownState {
+  public let startDate: Foundation.Date
+  public let duration: Foundation.TimeInterval
+  public var isActive: Swift.Bool
+  public init(startDate: Foundation.Date, duration: Foundation.TimeInterval)
+  public func isCompleted(at date: Foundation.Date = Date()) -> Swift.Bool
+  public func remainingTime(at date: Foundation.Date = Date()) -> Foundation.TimeInterval
+  public func remainingSeconds(at date: Foundation.Date = Date()) -> Swift.Int
+}
+public protocol WorkoutEngineDelegate : AnyObject {
+  func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didUpdateSession session: SonarFitCore.WorkoutSession)
+  func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didCompleteRep rep: Swift.Int, inSet set: Swift.Int)
+  func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didCompleteSet set: Swift.Int)
+  func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didStartRest duration: Swift.Int)
+  func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didUpdateRestTime remaining: Swift.Int)
+  func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didEndRest isAutomatic: Swift.Bool)
+  func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didCompleteWorkout result: SonarFitCore.WorkoutResult)
+  func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didCancelWorkout result: SonarFitCore.WorkoutResult?)
+  func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didEncounterMotionPermissionError error: any Swift.Error)
+  func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didUpdateDeviceStatus status: Swift.String)
+}
+public protocol DeviceStatusDelegate : AnyObject {
+}
+public protocol MotionProcessorDelegate : AnyObject {
+  func motionProcessor<T>(_ processor: T, didDetectRep confidence: Swift.Double)
+  func motionProcessor<T>(_ processor: T, didUpdateDeviceStatus status: Swift.String)
+  func motionProcessor<T>(_ processor: T, didEncounterPermissionError error: any Swift.Error)
+  func getCurrentSetNumber() -> Swift.Int
+  func getCurrentSetRepsCompleted() -> Swift.Int
+}
+extension SonarFitCore.WorkoutEngineDelegate {
+  public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didUpdateSession session: SonarFitCore.WorkoutSession)
+  public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didCompleteRep rep: Swift.Int, inSet set: Swift.Int)
+  public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didCompleteSet set: Swift.Int)
+  public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didStartRest duration: Swift.Int)
+  public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didUpdateRestTime remaining: Swift.Int)
+  public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didEndRest isAutomatic: Swift.Bool)
+  public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didCompleteWorkout result: SonarFitCore.WorkoutResult)
+  public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didCancelWorkout result: SonarFitCore.WorkoutResult?)
+  public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didEncounterMotionPermissionError error: any Swift.Error)
+  public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didUpdateDeviceStatus status: Swift.String)
+}
+extension SonarFitCore.MotionProcessorDelegate {
+  public func motionProcessor<T>(_ processor: T, didDetectRep confidence: Swift.Double)
+  public func motionProcessor<T>(_ processor: T, didUpdateDeviceStatus status: Swift.String)
+  public func motionProcessor<T>(_ processor: T, didEncounterPermissionError error: any Swift.Error)
+  public func getCurrentSetNumber() -> Swift.Int
+  public func getCurrentSetRepsCompleted() -> Swift.Int
+}
+@_hasMissingDesignatedInitializers final public class HeadphoneMotionManager : Foundation.ObservableObject {
+  public static let shared: SonarFitCore.HeadphoneMotionManager
+  @Combine.Published @_projectedValueProperty($isHeadphoneConnected) final public var isHeadphoneConnected: Swift.Bool {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  final public var $isHeadphoneConnected: Combine.Published<Swift.Bool>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($isHeadphoneInEar) final public var isHeadphoneInEar: Swift.Bool {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  final public var $isHeadphoneInEar: Combine.Published<Swift.Bool>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @objc deinit
+  final public func checkHeadphoneStatus()
+  final public func getHeadphoneDeviceName() -> Swift.String?
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+}
+final public class MotionProcessor {
+  weak final public var delegate: (any SonarFitCore.MotionProcessorDelegate)?
+  final public var isProcessing: Swift.Bool {
+    get
+  }
+  final public var deviceStatus: Swift.String {
+    get
+  }
+  public init(workoutType: SonarFitCore.WorkoutType, deviceType: SonarFitCore.DeviceType? = nil)
+  final public func startProcessing()
+  final public func stopProcessing()
+  @objc deinit
+}
+public typealias PlatformColor = UIKit.UIColor
+public typealias PlatformFont = UIKit.UIFont
+public enum SonarFitDefaults {
+  public enum Colors {
+    public static let background: UIKit.UIColor
+    public static let primary: SonarFitCore.PlatformColor
+    public static let textOnBackground: UIKit.UIColor
+    public static let subtextOnBackground: UIKit.UIColor
+    public static let textOnPrimary: UIKit.UIColor
+    public static let timerWarning: SonarFitCore.PlatformColor
+  }
+  public enum Fonts {
+    public static let title: UIKit.UIFont
+    public static let body: UIKit.UIFont
+    public static let caption: UIKit.UIFont
+  }
+}
+extension SonarFitCore.WorkoutType : Swift.Equatable {}
+extension SonarFitCore.WorkoutType : Swift.Hashable {}
+extension SonarFitCore.WorkoutType : Swift.RawRepresentable {}
+extension SonarFitCore.DeviceType : Swift.Equatable {}
+extension SonarFitCore.DeviceType : Swift.Hashable {}
+extension SonarFitCore.DeviceType : Swift.RawRepresentable {}
+extension SonarFitCore.WorkoutStatus : Swift.Equatable {}
+extension SonarFitCore.WorkoutStatus : Swift.Hashable {}
+extension SonarFitCore.SonarFitLogLevel : Swift.Hashable {}
+extension SonarFitCore.SonarFitLogLevel : Swift.RawRepresentable {}
+extension SonarFitCore.SDKError : Swift.Equatable {}
+extension SonarFitCore.SDKError : Swift.Hashable {}

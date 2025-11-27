@@ -1,0 +1,60 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64_32-apple-watchos10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SonarFitKit
+// swift-module-flags-ignorable:  -interface-compiler-version 6.1.2
+import Foundation
+@_exported import SonarFitConnectivity
+@_exported import SonarFitCore
+@_exported import SonarFitWatchUI
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public struct SonarFitSDKVersion {
+  public static let current: Swift.String
+  public static let major: Swift.Int
+  public static let minor: Swift.Int
+  public static let patch: Swift.Int
+  public static var full: Swift.String {
+    get
+  }
+  public static var buildNumber: Swift.String {
+    get
+  }
+}
+public typealias SonarWorkoutType = SonarFitKit.WorkoutType
+public typealias SonarWorkoutConfig = SonarFitKit.WorkoutConfig
+public typealias SonarWorkoutResult = SonarFitKit.WorkoutResult
+public typealias SonarDeviceType = SonarFitKit.DeviceType
+public typealias SonarWorkoutState = SonarFitKit.WorkoutState
+public typealias WorkoutConfig = SonarFitCore.WorkoutConfig
+public typealias WorkoutResult = SonarFitCore.WorkoutResult
+public typealias WorkoutType = SonarFitCore.WorkoutType
+public typealias DeviceType = SonarFitCore.DeviceType
+public typealias WorkoutState = SonarFitCore.WorkoutState
+public typealias SDKError = SonarFitCore.SDKError
+public typealias SonarFitTheme = SonarFitCore.SonarFitTheme
+public typealias SonarFitDefaults = SonarFitCore.SonarFitDefaults
+public typealias PlatformColor = SonarFitCore.PlatformColor
+public typealias PlatformFont = SonarFitCore.PlatformFont
+public typealias SonarFitLogLevel = SonarFitCore.SonarFitLogLevel
+public typealias WorkoutSession = SonarFitCore.WorkoutSession
+public typealias WorkoutSet = SonarFitCore.WorkoutSet
+public typealias WorkoutEngine = SonarFitCore.WorkoutEngine
+public typealias WorkoutEngineDelegate = SonarFitCore.WorkoutEngineDelegate
+@available(iOS 17.0, watchOS 10.0, macOS 10.15, *)
+public typealias SonarFitWorkout = SonarFitCore.SonarFitWorkout
+extension SonarFitKit.SonarFit {
+  public static let version: Swift.String
+  public static let buildNumber: Swift.String
+}
+public typealias SonarFitSDK = SonarFitCore.SonarFitSDK
+@_hasMissingDesignatedInitializers @available(iOS 15.0, *)
+final public class SonarFit {
+  @available(iOS 17.0, watchOS 10.0, macOS 10.15, *)
+  @_Concurrency.MainActor public static func createWorkout(config: SonarFitKit.WorkoutConfig) -> SonarFitKit.SonarFitWorkout
+  public static func createEngine(config: SonarFitKit.WorkoutConfig, delegate: any SonarFitCore.WorkoutEngineDelegate) -> SonarFitKit.WorkoutEngine
+  @objc deinit
+}

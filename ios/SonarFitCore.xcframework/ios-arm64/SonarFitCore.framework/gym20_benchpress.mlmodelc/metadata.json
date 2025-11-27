@@ -1,0 +1,156 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "storagePrecision" : "Float32",
+    "outputSchema" : [
+      {
+        "isOptional" : "0",
+        "keyType" : "String",
+        "formattedType" : "Dictionary (String → Double)",
+        "type" : "Dictionary",
+        "name" : "labelProbability",
+        "shortDescription" : "Activity prediction probabilities"
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "String",
+        "type" : "String",
+        "name" : "label",
+        "shortDescription" : "Class label of top prediction"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Double",
+        "formattedType" : "MultiArray (Double 400)",
+        "shortDescription" : "LSTM state output",
+        "shape" : "[400]",
+        "name" : "stateOut",
+        "type" : "MultiArray"
+      }
+    ],
+    "modelParameters" : [
+
+    ],
+    "author" : "Adam Francis",
+    "specificationVersion" : 1,
+    "computePrecision" : "Float16",
+    "isUpdatable" : "0",
+    "stateSchema" : [
+
+    ],
+    "availability" : {
+      "macOS" : "10.13",
+      "tvOS" : "11.0",
+      "visionOS" : "1.0",
+      "watchOS" : "4.0",
+      "iOS" : "11.0",
+      "macCatalyst" : "11.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetworkClassifier"
+    },
+    "inputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Double",
+        "formattedType" : "MultiArray (Double 200)",
+        "shortDescription" : "accel_x window input",
+        "shape" : "[200]",
+        "name" : "accel_x",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Double",
+        "formattedType" : "MultiArray (Double 200)",
+        "shortDescription" : "accel_y window input",
+        "shape" : "[200]",
+        "name" : "accel_y",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Double",
+        "formattedType" : "MultiArray (Double 200)",
+        "shortDescription" : "accel_z window input",
+        "shape" : "[200]",
+        "name" : "accel_z",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Double",
+        "formattedType" : "MultiArray (Double 200)",
+        "shortDescription" : "rot_x window input",
+        "shape" : "[200]",
+        "name" : "rot_x",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Double",
+        "formattedType" : "MultiArray (Double 200)",
+        "shortDescription" : "rot_y window input",
+        "shape" : "[200]",
+        "name" : "rot_y",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Double",
+        "formattedType" : "MultiArray (Double 200)",
+        "shortDescription" : "rot_z window input",
+        "shape" : "[200]",
+        "name" : "rot_z",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Double",
+        "formattedType" : "MultiArray (Double 400)",
+        "shortDescription" : "LSTM state input",
+        "shape" : "[400]",
+        "name" : "stateIn",
+        "type" : "MultiArray"
+      }
+    ],
+    "classLabels" : [
+      "benchpress",
+      "nothing"
+    ],
+    "generatedClassName" : "gym20_benchpress",
+    "userDefinedMetadata" : {
+      "target" : "label",
+      "com.apple.coreml.model.preview.type" : "activityClassifier",
+      "com.apple.createml.version" : "14.5.0",
+      "max_iterations" : "100",
+      "session_id" : "session_id",
+      "com.apple.createml.app.tag" : "150.3",
+      "version" : "2",
+      "type" : "activity_classifier",
+      "features" : "accel_x,accel_y,accel_z,rot_x,rot_y,rot_z",
+      "prediction_window" : "200",
+      "com.apple.createml.app.version" : "6.1"
+    },
+    "neuralNetworkLayerTypeHistogram" : {
+      "Concat" : 2,
+      "BatchNorm" : 1,
+      "ActivationReLU" : 2,
+      "Softmax" : 1,
+      "UniDirectionalLSTM" : 1,
+      "Slice" : 2,
+      "InnerProduct" : 2,
+      "Convolution" : 1,
+      "Reshape" : 1
+    },
+    "method" : "predict"
+  }
+]

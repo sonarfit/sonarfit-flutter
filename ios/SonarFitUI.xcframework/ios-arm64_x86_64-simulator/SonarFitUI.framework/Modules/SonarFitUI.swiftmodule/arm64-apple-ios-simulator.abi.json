@@ -1,0 +1,2604 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "SonarFitUI",
+    "printedName": "SonarFitUI",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SonarFitUI"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "SonarFitUI"
+      },
+      {
+        "kind": "Import",
+        "name": "SonarFitCore",
+        "printedName": "SonarFitCore",
+        "declKind": "Import",
+        "moduleName": "SonarFitUI"
+      },
+      {
+        "kind": "Import",
+        "name": "SonarFitConnectivity",
+        "printedName": "SonarFitConnectivity",
+        "declKind": "Import",
+        "moduleName": "SonarFitUI"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SonarFitUI"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WorkoutViewModel",
+        "printedName": "WorkoutViewModel",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(config:onCompletion:onPermissionError:onDismissRequest:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WorkoutViewModel",
+                "printedName": "SonarFitUI.WorkoutViewModel",
+                "usr": "s:10SonarFitUI16WorkoutViewModelC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WorkoutConfig",
+                "printedName": "SonarFitCore.WorkoutConfig",
+                "usr": "s:12SonarFitCore13WorkoutConfigV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SonarFitCore.WorkoutResult?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "SonarFitCore.WorkoutResult?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WorkoutResult",
+                        "printedName": "SonarFitCore.WorkoutResult",
+                        "usr": "s:12SonarFitCore13WorkoutResultV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((any Swift.Error) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(any Swift.Error) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10SonarFitUI16WorkoutViewModelC6config12onCompletion0H15PermissionError0H14DismissRequestAC0aB4Core0D6ConfigV_yAH0D6ResultVSgcys0K0_pcSgyycSgtcfc",
+            "mangledName": "$s10SonarFitUI16WorkoutViewModelC6config12onCompletion0H15PermissionError0H14DismissRequestAC0aB4Core0D6ConfigV_yAH0D6ResultVSgcys0K0_pcSgyycSgtcfc",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "startWorkout",
+            "printedName": "startWorkout()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SonarFitUI16WorkoutViewModelC05startD0yyF",
+            "mangledName": "$s10SonarFitUI16WorkoutViewModelC05startD0yyF",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "pauseWorkout",
+            "printedName": "pauseWorkout()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SonarFitUI16WorkoutViewModelC05pauseD0yyF",
+            "mangledName": "$s10SonarFitUI16WorkoutViewModelC05pauseD0yyF",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "resumeWorkout",
+            "printedName": "resumeWorkout()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SonarFitUI16WorkoutViewModelC06resumeD0yyF",
+            "mangledName": "$s10SonarFitUI16WorkoutViewModelC06resumeD0yyF",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "resetWorkoutState",
+            "printedName": "resetWorkoutState()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SonarFitUI16WorkoutViewModelC05resetD5StateyyF",
+            "mangledName": "$s10SonarFitUI16WorkoutViewModelC05resetD5StateyyF",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "skipRest",
+            "printedName": "skipRest()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SonarFitUI16WorkoutViewModelC8skipRestyyF",
+            "mangledName": "$s10SonarFitUI16WorkoutViewModelC8skipRestyyF",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "pauseRestTimer",
+            "printedName": "pauseRestTimer()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SonarFitUI16WorkoutViewModelC14pauseRestTimeryyF",
+            "mangledName": "$s10SonarFitUI16WorkoutViewModelC14pauseRestTimeryyF",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "resumeRestTimer",
+            "printedName": "resumeRestTimer()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SonarFitUI16WorkoutViewModelC15resumeRestTimeryyF",
+            "mangledName": "$s10SonarFitUI16WorkoutViewModelC15resumeRestTimeryyF",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startNextSet",
+            "printedName": "startNextSet()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SonarFitUI16WorkoutViewModelC12startNextSetyyF",
+            "mangledName": "$s10SonarFitUI16WorkoutViewModelC12startNextSetyyF",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "requestExit",
+            "printedName": "requestExit()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SonarFitUI16WorkoutViewModelC11requestExityyF",
+            "mangledName": "$s10SonarFitUI16WorkoutViewModelC11requestExityyF",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "confirmExit",
+            "printedName": "confirmExit(save:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SonarFitUI16WorkoutViewModelC11confirmExit4saveySb_tF",
+            "mangledName": "$s10SonarFitUI16WorkoutViewModelC11confirmExit4saveySb_tF",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cancelExit",
+            "printedName": "cancelExit()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SonarFitUI16WorkoutViewModelC10cancelExityyF",
+            "mangledName": "$s10SonarFitUI16WorkoutViewModelC10cancelExityyF",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateSelectedDevice",
+            "printedName": "updateSelectedDevice(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceType",
+                "printedName": "SonarFitCore.DeviceType",
+                "usr": "s:12SonarFitCore10DeviceTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SonarFitUI16WorkoutViewModelC20updateSelectedDeviceyy0aB4Core0I4TypeOF",
+            "mangledName": "$s10SonarFitUI16WorkoutViewModelC20updateSelectedDeviceyy0aB4Core0I4TypeOF",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "dismissWorkout",
+            "printedName": "dismissWorkout()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SonarFitUI16WorkoutViewModelC07dismissD0yyF",
+            "mangledName": "$s10SonarFitUI16WorkoutViewModelC07dismissD0yyF",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "closeWorkout",
+            "printedName": "closeWorkout()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SonarFitUI16WorkoutViewModelC05closeD0yyF",
+            "mangledName": "$s10SonarFitUI16WorkoutViewModelC05closeD0yyF",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "selectWatchDevice",
+            "printedName": "selectWatchDevice()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SonarFitUI16WorkoutViewModelC17selectWatchDeviceyyF",
+            "mangledName": "$s10SonarFitUI16WorkoutViewModelC17selectWatchDeviceyyF",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearWatchAppError",
+            "printedName": "clearWatchAppError()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SonarFitUI16WorkoutViewModelC18clearWatchAppErroryyF",
+            "mangledName": "$s10SonarFitUI16WorkoutViewModelC18clearWatchAppErroryyF",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "selectAirPodsDevice",
+            "printedName": "selectAirPodsDevice()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SonarFitUI16WorkoutViewModelC19selectAirPodsDeviceyyF",
+            "mangledName": "$s10SonarFitUI16WorkoutViewModelC19selectAirPodsDeviceyyF",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearAirPodsError",
+            "printedName": "clearAirPodsError()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SonarFitUI16WorkoutViewModelC17clearAirPodsErroryyF",
+            "mangledName": "$s10SonarFitUI16WorkoutViewModelC17clearAirPodsErroryyF",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isWatchAvailable",
+            "printedName": "isWatchAvailable()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SonarFitUI16WorkoutViewModelC16isWatchAvailableSbyF",
+            "mangledName": "$s10SonarFitUI16WorkoutViewModelC16isWatchAvailableSbyF",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkForRestCompletion",
+            "printedName": "checkForRestCompletion(at:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "hasDefaultArg": true,
+                "usr": "s:10Foundation4DateV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SonarFitUI16WorkoutViewModelC22checkForRestCompletion2aty10Foundation4DateV_tF",
+            "mangledName": "$s10SonarFitUI16WorkoutViewModelC22checkForRestCompletion2aty10Foundation4DateV_tF",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "workoutEngine",
+            "printedName": "workoutEngine(_:didUpdateSession:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WorkoutEngine",
+                "printedName": "SonarFitCore.WorkoutEngine",
+                "usr": "s:12SonarFitCore13WorkoutEngineC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WorkoutSession",
+                "printedName": "SonarFitCore.WorkoutSession",
+                "usr": "s:12SonarFitCore14WorkoutSessionV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SonarFitUI16WorkoutViewModelC13workoutEngine_16didUpdateSessiony0aB4Core0dH0C_AF0dK0VtF",
+            "mangledName": "$s10SonarFitUI16WorkoutViewModelC13workoutEngine_16didUpdateSessiony0aB4Core0dH0C_AF0dK0VtF",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "workoutEngine",
+            "printedName": "workoutEngine(_:didCompleteRep:inSet:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WorkoutEngine",
+                "printedName": "SonarFitCore.WorkoutEngine",
+                "usr": "s:12SonarFitCore13WorkoutEngineC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SonarFitUI16WorkoutViewModelC13workoutEngine_14didCompleteRep5inSety0aB4Core0dH0C_S2itF",
+            "mangledName": "$s10SonarFitUI16WorkoutViewModelC13workoutEngine_14didCompleteRep5inSety0aB4Core0dH0C_S2itF",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "workoutEngine",
+            "printedName": "workoutEngine(_:didCompleteSet:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WorkoutEngine",
+                "printedName": "SonarFitCore.WorkoutEngine",
+                "usr": "s:12SonarFitCore13WorkoutEngineC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SonarFitUI16WorkoutViewModelC13workoutEngine_14didCompleteSety0aB4Core0dH0C_SitF",
+            "mangledName": "$s10SonarFitUI16WorkoutViewModelC13workoutEngine_14didCompleteSety0aB4Core0dH0C_SitF",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "workoutEngine",
+            "printedName": "workoutEngine(_:didStartRest:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WorkoutEngine",
+                "printedName": "SonarFitCore.WorkoutEngine",
+                "usr": "s:12SonarFitCore13WorkoutEngineC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SonarFitUI16WorkoutViewModelC13workoutEngine_12didStartResty0aB4Core0dH0C_SitF",
+            "mangledName": "$s10SonarFitUI16WorkoutViewModelC13workoutEngine_12didStartResty0aB4Core0dH0C_SitF",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "workoutEngine",
+            "printedName": "workoutEngine(_:didUpdateRestTime:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WorkoutEngine",
+                "printedName": "SonarFitCore.WorkoutEngine",
+                "usr": "s:12SonarFitCore13WorkoutEngineC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SonarFitUI16WorkoutViewModelC13workoutEngine_17didUpdateRestTimey0aB4Core0dH0C_SitF",
+            "mangledName": "$s10SonarFitUI16WorkoutViewModelC13workoutEngine_17didUpdateRestTimey0aB4Core0dH0C_SitF",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "workoutEngine",
+            "printedName": "workoutEngine(_:didEndRest:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WorkoutEngine",
+                "printedName": "SonarFitCore.WorkoutEngine",
+                "usr": "s:12SonarFitCore13WorkoutEngineC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SonarFitUI16WorkoutViewModelC13workoutEngine_10didEndResty0aB4Core0dH0C_SbtF",
+            "mangledName": "$s10SonarFitUI16WorkoutViewModelC13workoutEngine_10didEndResty0aB4Core0dH0C_SbtF",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "workoutEngine",
+            "printedName": "workoutEngine(_:didCompleteWorkout:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WorkoutEngine",
+                "printedName": "SonarFitCore.WorkoutEngine",
+                "usr": "s:12SonarFitCore13WorkoutEngineC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WorkoutResult",
+                "printedName": "SonarFitCore.WorkoutResult",
+                "usr": "s:12SonarFitCore13WorkoutResultV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SonarFitUI16WorkoutViewModelC13workoutEngine_011didCompleteD0y0aB4Core0dH0C_AF0D6ResultVtF",
+            "mangledName": "$s10SonarFitUI16WorkoutViewModelC13workoutEngine_011didCompleteD0y0aB4Core0dH0C_AF0D6ResultVtF",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "workoutEngine",
+            "printedName": "workoutEngine(_:didCancelWorkout:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WorkoutEngine",
+                "printedName": "SonarFitCore.WorkoutEngine",
+                "usr": "s:12SonarFitCore13WorkoutEngineC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SonarFitCore.WorkoutResult?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WorkoutResult",
+                    "printedName": "SonarFitCore.WorkoutResult",
+                    "usr": "s:12SonarFitCore13WorkoutResultV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SonarFitUI16WorkoutViewModelC13workoutEngine_09didCancelD0y0aB4Core0dH0C_AF0D6ResultVSgtF",
+            "mangledName": "$s10SonarFitUI16WorkoutViewModelC13workoutEngine_09didCancelD0y0aB4Core0dH0C_AF0D6ResultVSgtF",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "workoutEngine",
+            "printedName": "workoutEngine(_:didEncounterMotionPermissionError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WorkoutEngine",
+                "printedName": "SonarFitCore.WorkoutEngine",
+                "usr": "s:12SonarFitCore13WorkoutEngineC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SonarFitUI16WorkoutViewModelC13workoutEngine_33didEncounterMotionPermissionErrory0aB4Core0dH0C_s0M0_ptF",
+            "mangledName": "$s10SonarFitUI16WorkoutViewModelC13workoutEngine_33didEncounterMotionPermissionErrory0aB4Core0dH0C_s0M0_ptF",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "workoutEngine",
+            "printedName": "workoutEngine(_:didUpdateDeviceStatus:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WorkoutEngine",
+                "printedName": "SonarFitCore.WorkoutEngine",
+                "usr": "s:12SonarFitCore13WorkoutEngineC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SonarFitUI16WorkoutViewModelC13workoutEngine_21didUpdateDeviceStatusy0aB4Core0dH0C_SStF",
+            "mangledName": "$s10SonarFitUI16WorkoutViewModelC13workoutEngine_21didUpdateDeviceStatusy0aB4Core0dH0C_SStF",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "workoutEngine",
+            "printedName": "workoutEngine(_:shouldLaunchWatchWithConfig:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WorkoutEngine",
+                "printedName": "SonarFitCore.WorkoutEngine",
+                "usr": "s:12SonarFitCore13WorkoutEngineC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WorkoutConfig",
+                "printedName": "SonarFitCore.WorkoutConfig",
+                "usr": "s:12SonarFitCore13WorkoutConfigV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SonarFitUI16WorkoutViewModelC13workoutEngine_27shouldLaunchWatchWithConfigy0aB4Core0dH0C_AF0dM0VtF",
+            "mangledName": "$s10SonarFitUI16WorkoutViewModelC13workoutEngine_27shouldLaunchWatchWithConfigy0aB4Core0dH0C_AF0dM0VtF",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "workoutEngine",
+            "printedName": "workoutEngine(_:shouldSendWorkoutToWatch:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WorkoutEngine",
+                "printedName": "SonarFitCore.WorkoutEngine",
+                "usr": "s:12SonarFitCore13WorkoutEngineC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WorkoutConfig",
+                "printedName": "SonarFitCore.WorkoutConfig",
+                "usr": "s:12SonarFitCore13WorkoutConfigV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SonarFitUI16WorkoutViewModelC13workoutEngine_010shouldSendD7ToWatchy0aB4Core0dH0C_AF0D6ConfigVtF",
+            "mangledName": "$s10SonarFitUI16WorkoutViewModelC13workoutEngine_010shouldSendD7ToWatchy0aB4Core0dH0C_AF0D6ConfigVtF",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "workoutEngine",
+            "printedName": "workoutEngine(_:shouldUpdateWatchWorkoutState:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WorkoutEngine",
+                "printedName": "SonarFitCore.WorkoutEngine",
+                "usr": "s:12SonarFitCore13WorkoutEngineC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WorkoutSession",
+                "printedName": "SonarFitCore.WorkoutSession",
+                "usr": "s:12SonarFitCore14WorkoutSessionV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SonarFitUI16WorkoutViewModelC13workoutEngine_017shouldUpdateWatchD5Statey0aB4Core0dH0C_AF0D7SessionVtF",
+            "mangledName": "$s10SonarFitUI16WorkoutViewModelC13workoutEngine_017shouldUpdateWatchD5Statey0aB4Core0dH0C_AF0D7SessionVtF",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "workoutEngine",
+            "printedName": "workoutEngine(_:shouldUpdateWatchRestTimer:total:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WorkoutEngine",
+                "printedName": "SonarFitCore.WorkoutEngine",
+                "usr": "s:12SonarFitCore13WorkoutEngineC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SonarFitUI16WorkoutViewModelC13workoutEngine_26shouldUpdateWatchRestTimer5totaly0aB4Core0dH0C_S2itF",
+            "mangledName": "$s10SonarFitUI16WorkoutViewModelC13workoutEngine_26shouldUpdateWatchRestTimer5totaly0aB4Core0dH0C_S2itF",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "workoutEngine",
+            "printedName": "workoutEngine(_:shouldEndWatchWorkout:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WorkoutEngine",
+                "printedName": "SonarFitCore.WorkoutEngine",
+                "usr": "s:12SonarFitCore13WorkoutEngineC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SonarFitCore.WorkoutResult?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WorkoutResult",
+                    "printedName": "SonarFitCore.WorkoutResult",
+                    "usr": "s:12SonarFitCore13WorkoutResultV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SonarFitUI16WorkoutViewModelC13workoutEngine_014shouldEndWatchD0y0aB4Core0dH0C_AF0D6ResultVSgtF",
+            "mangledName": "$s10SonarFitUI16WorkoutViewModelC13workoutEngine_014shouldEndWatchD0y0aB4Core0dH0C_AF0D6ResultVSgtF",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "workoutEngine",
+            "printedName": "workoutEngine(_:shouldSendWatchMessage:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WorkoutEngine",
+                "printedName": "SonarFitCore.WorkoutEngine",
+                "usr": "s:12SonarFitCore13WorkoutEngineC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SonarFitUI16WorkoutViewModelC13workoutEngine_22shouldSendWatchMessagey0aB4Core0dH0C_yptF",
+            "mangledName": "$s10SonarFitUI16WorkoutViewModelC13workoutEngine_22shouldSendWatchMessagey0aB4Core0dH0C_yptF",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:10SonarFitUI16WorkoutViewModelC",
+        "mangledName": "$s10SonarFitUI16WorkoutViewModelC",
+        "moduleName": "SonarFitUI",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ObservableObject",
+            "printedName": "ObservableObject",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ObjectWillChangePublisher",
+                "printedName": "ObjectWillChangePublisher",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObservableObjectPublisher",
+                    "printedName": "Combine.ObservableObjectPublisher",
+                    "usr": "s:7Combine25ObservableObjectPublisherC"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7Combine16ObservableObjectP",
+            "mangledName": "$s7Combine16ObservableObjectP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "WorkoutEngineDelegate",
+            "printedName": "WorkoutEngineDelegate",
+            "usr": "s:12SonarFitCore21WorkoutEngineDelegateP",
+            "mangledName": "$s12SonarFitCore21WorkoutEngineDelegateP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "SonarFitUI"
+      },
+      {
+        "kind": "Import",
+        "name": "SonarFitCore",
+        "printedName": "SonarFitCore",
+        "declKind": "Import",
+        "moduleName": "SonarFitUI"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WorkoutView",
+        "printedName": "WorkoutView",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(config:onCompletion:onPermissionError:onDismissRequest:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WorkoutView",
+                "printedName": "SonarFitUI.WorkoutView",
+                "usr": "s:10SonarFitUI11WorkoutViewV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WorkoutConfig",
+                "printedName": "SonarFitCore.WorkoutConfig",
+                "usr": "s:12SonarFitCore13WorkoutConfigV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SonarFitCore.WorkoutResult?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "SonarFitCore.WorkoutResult?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WorkoutResult",
+                        "printedName": "SonarFitCore.WorkoutResult",
+                        "usr": "s:12SonarFitCore13WorkoutResultV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((any Swift.Error) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(any Swift.Error) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10SonarFitUI11WorkoutViewV6config12onCompletion0G15PermissionError0G14DismissRequestAC0aB4Core0D6ConfigV_yAH0D6ResultVSgcys0J0_pcSgyycSgtcfc",
+            "mangledName": "$s10SonarFitUI11WorkoutViewV6config12onCompletion0G15PermissionError0G14DismissRequestAC0aB4Core0D6ConfigV_yAH0D6ResultVSgcys0J0_pcSgyycSgtcfc",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10SonarFitUI11WorkoutViewV4bodyQrvp",
+            "mangledName": "$s10SonarFitUI11WorkoutViewV4bodyQrvp",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SonarFitUI11WorkoutViewV4bodyQrvg",
+                "mangledName": "$s10SonarFitUI11WorkoutViewV4bodyQrvg",
+                "moduleName": "SonarFitUI",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10SonarFitUI11WorkoutViewV",
+        "mangledName": "$s10SonarFitUI11WorkoutViewV",
+        "moduleName": "SonarFitUI",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "SonarFitUI"
+      },
+      {
+        "kind": "Import",
+        "name": "SonarFitCore",
+        "printedName": "SonarFitCore",
+        "declKind": "Import",
+        "moduleName": "SonarFitUI"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "SonarFitUI"
+      },
+      {
+        "kind": "Import",
+        "name": "SonarFitCore",
+        "printedName": "SonarFitCore",
+        "declKind": "Import",
+        "moduleName": "SonarFitUI"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RepBox",
+        "printedName": "RepBox",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(currentSetRepsCompleted:totalReps:isActive:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RepBox",
+                "printedName": "SonarFitUI.RepBox",
+                "usr": "s:10SonarFitUI6RepBoxV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10SonarFitUI6RepBoxV23currentSetRepsCompleted05totalH08isActiveACSi_SiSbtcfc",
+            "mangledName": "$s10SonarFitUI6RepBoxV23currentSetRepsCompleted05totalH08isActiveACSi_SiSbtcfc",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10SonarFitUI6RepBoxV4bodyQrvp",
+            "mangledName": "$s10SonarFitUI6RepBoxV4bodyQrvp",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SonarFitUI6RepBoxV4bodyQrvg",
+                "mangledName": "$s10SonarFitUI6RepBoxV4bodyQrvg",
+                "moduleName": "SonarFitUI",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10SonarFitUI6RepBoxV",
+        "mangledName": "$s10SonarFitUI6RepBoxV",
+        "moduleName": "SonarFitUI",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SetBox",
+        "printedName": "SetBox",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(currentSetNumber:totalSets:isActive:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SetBox",
+                "printedName": "SonarFitUI.SetBox",
+                "usr": "s:10SonarFitUI6SetBoxV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10SonarFitUI6SetBoxV07currentD6Number9totalSets8isActiveACSi_SiSbtcfc",
+            "mangledName": "$s10SonarFitUI6SetBoxV07currentD6Number9totalSets8isActiveACSi_SiSbtcfc",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10SonarFitUI6SetBoxV4bodyQrvp",
+            "mangledName": "$s10SonarFitUI6SetBoxV4bodyQrvp",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SonarFitUI6SetBoxV4bodyQrvg",
+                "mangledName": "$s10SonarFitUI6SetBoxV4bodyQrvg",
+                "moduleName": "SonarFitUI",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10SonarFitUI6SetBoxV",
+        "mangledName": "$s10SonarFitUI6SetBoxV",
+        "moduleName": "SonarFitUI",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TimerBox",
+        "printedName": "TimerBox",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(remaining:total:isActive:showControls:isPaused:onPause:onResume:onSkip:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TimerBox",
+                "printedName": "SonarFitUI.TimerBox",
+                "usr": "s:10SonarFitUI8TimerBoxV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10SonarFitUI8TimerBoxV9remaining5total8isActive12showControls0H6Paused7onPause0M6Resume0M4SkipACSi_SiS3byycSgA2Ltcfc",
+            "mangledName": "$s10SonarFitUI8TimerBoxV9remaining5total8isActive12showControls0H6Paused7onPause0M6Resume0M4SkipACSi_SiS3byycSgA2Ltcfc",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10SonarFitUI8TimerBoxV4bodyQrvp",
+            "mangledName": "$s10SonarFitUI8TimerBoxV4bodyQrvp",
+            "moduleName": "SonarFitUI",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SonarFitUI8TimerBoxV4bodyQrvg",
+                "mangledName": "$s10SonarFitUI8TimerBoxV4bodyQrvg",
+                "moduleName": "SonarFitUI",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10SonarFitUI8TimerBoxV",
+        "mangledName": "$s10SonarFitUI8TimerBoxV",
+        "moduleName": "SonarFitUI",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "SonarFitUI"
+      },
+      {
+        "kind": "Import",
+        "name": "SonarFitCore",
+        "printedName": "SonarFitCore",
+        "declKind": "Import",
+        "moduleName": "SonarFitUI"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SonarFitUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/ViewModels\/WorkoutViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 371,
+      "length": 21,
+      "value": "\"Checking devices...\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/ViewModels\/WorkoutViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 450,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/ViewModels\/WorkoutViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 511,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/ViewModels\/WorkoutViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 570,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/ViewModels\/WorkoutViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 635,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/ViewModels\/WorkoutViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 690,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/ViewModels\/WorkoutViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 754,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/ViewModels\/WorkoutViewModel.swift",
+      "kind": "Array",
+      "offset": 1065,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Views\/WorkoutView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11657,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Views\/WorkoutView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11677,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Views\/WorkoutView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 31560,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Views\/WorkoutView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 31581,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Views\/WorkoutView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 31607,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Views\/WorkoutView.swift",
+      "kind": "StringLiteral",
+      "offset": 31732,
+      "length": 74,
+      "value": "\"Workout \""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Views\/WorkoutView.swift",
+      "kind": "StringLiteral",
+      "offset": 31757,
+      "length": 1,
+      "value": "\": \""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Views\/WorkoutView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 31791,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Views\/WorkoutView.swift",
+      "kind": "StringLiteral",
+      "offset": 31795,
+      "length": 1,
+      "value": "\"% complete\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Views\/WorkoutView.swift",
+      "kind": "StringLiteral",
+      "offset": 31881,
+      "length": 49,
+      "value": "\"Permission error: \""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Views\/WorkoutView.swift",
+      "kind": "StringLiteral",
+      "offset": 31929,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/TimelineTimerBox.swift",
+      "kind": "BooleanLiteral",
+      "offset": 461,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/TimelineTimerBox.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3179,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/TimelineTimerBox.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3196,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/TimelineTimerBox.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3218,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/TimelineTimerBox.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3418,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/TimelineTimerBox.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3506,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/TimelineTimerBox.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3604,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/WorkoutBox.swift",
+      "kind": "BooleanLiteral",
+      "offset": 324,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/WorkoutBox.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1680,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/WorkoutBox.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2828,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/WorkoutBox.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4141,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/WorkoutBox.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4177,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/WorkoutBox.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4209,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/WorkoutBox.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7029,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/WorkoutBox.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7059,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/WorkoutBox.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7109,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/WorkoutBox.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7123,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/WorkoutBox.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7137,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/WorkoutBox.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7180,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/WorkoutBox.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7194,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/WorkoutBox.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7229,
+      "length": 2,
+      "value": "45"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/WorkoutBox.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7240,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/WorkoutBox.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7258,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/WorkoutBox.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7300,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/WorkoutBox.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7350,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/WorkoutBox.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7365,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/WorkoutBox.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7406,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/WorkoutBox.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7420,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/WorkoutBox.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7433,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/WorkoutBox.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7488,
+      "length": 2,
+      "value": "45"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/WorkoutBox.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7515,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/WorkoutBox.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7545,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/WorkoutBox.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7581,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/WorkoutBox.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7613,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/WorkoutHeader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8137,
+      "length": 2,
+      "value": "40"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/WorkoutHeader.swift",
+      "kind": "StringLiteral",
+      "offset": 8185,
+      "length": 16,
+      "value": "\"Ready to Start\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/WorkoutHeader.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8333,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/WorkoutHeader.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8369,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/WorkoutHeader.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8409,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/WorkoutHeader.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8449,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/WorkoutHeader.swift",
+      "kind": "StringLiteral",
+      "offset": 8507,
+      "length": 9,
+      "value": "\"Lifting\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/WorkoutHeader.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8651,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/WorkoutHeader.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8687,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/WorkoutHeader.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8727,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/WorkoutHeader.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8768,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/WorkoutHeader.swift",
+      "kind": "StringLiteral",
+      "offset": 8827,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/WorkoutHeader.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8966,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/WorkoutHeader.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9002,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/WorkoutHeader.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9042,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitUI\/Components\/WorkoutHeader.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9082,
+      "length": 5,
+      "value": "false"
+    }
+  ]
+}
