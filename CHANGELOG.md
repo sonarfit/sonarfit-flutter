@@ -7,6 +7,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+
+## [2.1.2] - 2026-03-22
+
+**Breaking Changes**
+- Rename SDK module from `SonarFit` to `SonarFitKit` — update all import statements
+- Rename rep and set properties on workout models for clarity — update any references to affected fields
+- Update logging API to support granular log levels — replace previous log configuration calls with the new `LogLevel` API
+
+**Added**
+- Add `WatchStatusManager` to monitor and respond to Apple Watch app state changes
+- Add `resendWatchConfig` method to re-push configuration to the Watch when connectivity is lost
+- Add communicating-state UI indicator when the SDK is syncing with the Watch
+- Add Watch handshake to verify connection before workout operations
+- Add device availability checks when starting or resuming a workout
+- Add headphone status delegate to receive AirPods connectivity updates
+- Add `skipRestWithCountdown` method as a timed variant of `skipRest`
+
+**Changed**
+- Update AirPods rep detector to v2 model with improved motion filtering for more accurate rep counts
+- Replace AirPods workout detection with a new processing pipeline for lower latency and higher reliability
+- Improve Watch connectivity handling and workout device session management
 ## [2.1.1] - 2026-03-22
 
 **Breaking Changes**
