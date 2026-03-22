@@ -231,6 +231,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -1170,6 +1177,101 @@
           },
           {
             "kind": "Function",
+            "name": "setWorkoutStartingHandler",
+            "printedName": "setWorkoutStartingHandler(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20SonarFitConnectivity05PhoneC7ManagerC25setWorkoutStartingHandleryyyycF",
+            "mangledName": "$s20SonarFitConnectivity05PhoneC7ManagerC25setWorkoutStartingHandleryyyycF",
+            "moduleName": "SonarFitConnectivity",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sendConfigToWatch",
+            "printedName": "sendConfigToWatch(config:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WorkoutConfig",
+                "printedName": "SonarFitCore.WorkoutConfig",
+                "usr": "s:12SonarFitCore13WorkoutConfigV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20SonarFitConnectivity05PhoneC7ManagerC17sendConfigToWatch6configy0aB4Core07WorkoutG0V_tF",
+            "mangledName": "$s20SonarFitConnectivity05PhoneC7ManagerC17sendConfigToWatch6configy0aB4Core07WorkoutG0V_tF",
+            "moduleName": "SonarFitConnectivity",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sendConfigUpdate",
+            "printedName": "sendConfigUpdate(config:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WorkoutConfig",
+                "printedName": "SonarFitCore.WorkoutConfig",
+                "usr": "s:12SonarFitCore13WorkoutConfigV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20SonarFitConnectivity05PhoneC7ManagerC16sendConfigUpdate6configy0aB4Core07WorkoutG0V_tF",
+            "mangledName": "$s20SonarFitConnectivity05PhoneC7ManagerC16sendConfigUpdate6configy0aB4Core07WorkoutG0V_tF",
+            "moduleName": "SonarFitConnectivity",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "sendMessage",
             "printedName": "sendMessage(_:)",
             "children": [
@@ -1444,6 +1546,136 @@
           },
           {
             "kind": "Function",
+            "name": "session",
+            "printedName": "session(_:didReceiveMessage:replyHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WCSession",
+                "printedName": "WatchConnectivity.WCSession",
+                "usr": "c:objc(cs)WCSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([Swift.String : Any]) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@SonarFitConnectivity@objc(cs)PhoneConnectivityManager(im)session:didReceiveMessage:replyHandler:",
+            "mangledName": "$s20SonarFitConnectivity05PhoneC7ManagerC7session_17didReceiveMessage12replyHandlerySo9WCSessionC_SDySSypGyAIctF",
+            "moduleName": "SonarFitConnectivity",
+            "objc_name": "session:didReceiveMessage:replyHandler:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "session",
+            "printedName": "session(_:didReceiveMessage:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WCSession",
+                "printedName": "WatchConnectivity.WCSession",
+                "usr": "c:objc(cs)WCSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@SonarFitConnectivity@objc(cs)PhoneConnectivityManager(im)session:didReceiveMessage:",
+            "mangledName": "$s20SonarFitConnectivity05PhoneC7ManagerC7session_17didReceiveMessageySo9WCSessionC_SDySSypGtF",
+            "moduleName": "SonarFitConnectivity",
+            "objc_name": "session:didReceiveMessage:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "workoutSession",
             "printedName": "workoutSession(_:didChangeTo:from:date:)",
             "children": [
@@ -1650,6 +1882,92 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SonarFitConnectivity"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ConnectivityInfo",
+        "printedName": "ConnectivityInfo",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "version",
+            "printedName": "version",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20SonarFitConnectivity0C4InfoO7versionSSvpZ",
+            "mangledName": "$s20SonarFitConnectivity0C4InfoO7versionSSvpZ",
+            "moduleName": "SonarFitConnectivity",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20SonarFitConnectivity0C4InfoO7versionSSvgZ",
+                "mangledName": "$s20SonarFitConnectivity0C4InfoO7versionSSvgZ",
+                "moduleName": "SonarFitConnectivity",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:20SonarFitConnectivity0C4InfoO",
+        "mangledName": "$s20SonarFitConnectivity0C4InfoO",
+        "moduleName": "SonarFitConnectivity",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -2497,92 +2815,6 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "SonarFitConnectivity"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "ConnectivityInfo",
-        "printedName": "ConnectivityInfo",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "version",
-            "printedName": "version",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:20SonarFitConnectivity0C4InfoO7versionSSvpZ",
-            "mangledName": "$s20SonarFitConnectivity0C4InfoO7versionSSvpZ",
-            "moduleName": "SonarFitConnectivity",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:20SonarFitConnectivity0C4InfoO7versionSSvgZ",
-                "mangledName": "$s20SonarFitConnectivity0C4InfoO7versionSSvgZ",
-                "moduleName": "SonarFitConnectivity",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:20SonarFitConnectivity0C4InfoO",
-        "mangledName": "$s20SonarFitConnectivity0C4InfoO",
-        "moduleName": "SonarFitConnectivity",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -3911,32 +4143,32 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/PhoneConnectivityManager.swift",
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/PhoneConnectivityManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 16739,
+      "offset": 18168,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchAppChecker.swift",
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/SonarFitConnectivity.swift",
+      "kind": "StringLiteral",
+      "offset": 335,
+      "length": 7,
+      "value": "\"1.0.0\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchAppChecker.swift",
       "kind": "BooleanLiteral",
       "offset": 315,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchAppChecker.swift",
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchAppChecker.swift",
       "kind": "BooleanLiteral",
       "offset": 372,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/SonarFitConnectivity.swift",
-      "kind": "StringLiteral",
-      "offset": 335,
-      "length": 7,
-      "value": "\"1.0.0\""
     }
   ]
 }

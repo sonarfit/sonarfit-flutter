@@ -113,8 +113,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:11SonarFitKit0aB0C13createWorkout6config0aB4Core0abE0CAF0E6ConfigV_tFZ",
-            "mangledName": "$s11SonarFitKit0aB0C13createWorkout6config0aB4Core0abE0CAF0E6ConfigV_tFZ",
+            "usr": "s:11SonarFitKit0aB0C13createWorkout6config0aB4Core0abE0CAF0E6ConfigV_tKFZ",
+            "mangledName": "$s11SonarFitKit0aB0C13createWorkout6config0aB4Core0abE0CAF0E6ConfigV_tKFZ",
             "moduleName": "SonarFitKit",
             "static": true,
             "intro_Macosx": "10.15",
@@ -129,6 +129,7 @@
               "Custom",
               "RawDocComment"
             ],
+            "throwing": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -156,8 +157,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:11SonarFitKit0aB0C12createEngine6config8delegate0aB4Core07WorkoutE0CAG0I6ConfigV_AG0iE8Delegate_ptFZ",
-            "mangledName": "$s11SonarFitKit0aB0C12createEngine6config8delegate0aB4Core07WorkoutE0CAG0I6ConfigV_AG0iE8Delegate_ptFZ",
+            "usr": "s:11SonarFitKit0aB0C12createEngine6config8delegate0aB4Core07WorkoutE0CAG0I6ConfigV_AG0iE8Delegate_ptKFZ",
+            "mangledName": "$s11SonarFitKit0aB0C12createEngine6config8delegate0aB4Core07WorkoutE0CAG0I6ConfigV_AG0iE8Delegate_ptKFZ",
             "moduleName": "SonarFitKit",
             "static": true,
             "declAttributes": [
@@ -165,6 +166,7 @@
               "AccessControl",
               "RawDocComment"
             ],
+            "throwing": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -615,42 +617,42 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitSDK\/PublicTypes.swift",
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitKit\/PublicTypes.swift",
       "kind": "StringLiteral",
       "offset": 1844,
       "length": 7,
       "value": "\"1.0.0\""
     },
     {
-      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitSDK\/PublicTypes.swift",
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitKit\/PublicTypes.swift",
       "kind": "StringLiteral",
       "offset": 1881,
       "length": 3,
       "value": "\"1\""
     },
     {
-      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitSDK\/Version.swift",
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitKit\/Version.swift",
       "kind": "StringLiteral",
       "offset": 86,
       "length": 7,
-      "value": "\"2.0.0\""
+      "value": "\"2.1.0\""
     },
     {
-      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitSDK\/Version.swift",
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitKit\/Version.swift",
       "kind": "IntegerLiteral",
       "offset": 124,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitSDK\/Version.swift",
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitKit\/Version.swift",
       "kind": "IntegerLiteral",
       "offset": 156,
       "length": 1,
-      "value": "0"
+      "value": "1"
     },
     {
-      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitSDK\/Version.swift",
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitKit\/Version.swift",
       "kind": "IntegerLiteral",
       "offset": 188,
       "length": 1,

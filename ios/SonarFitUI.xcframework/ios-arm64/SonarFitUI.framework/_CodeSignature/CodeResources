@@ -6,27 +6,27 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		wuYGkpZLzlvhk+fq4SRnnqlalVE=
+		qpT6/aYuYt5eROC3JQTIfu34fzg=
 		</data>
 		<key>Modules/SonarFitUI.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		GvHW0ED0TCy+ZSuU/1iYXYQHD6A=
+		1GzPKRavkGj/xihCH5AshbcdSOk=
 		</data>
 		<key>Modules/SonarFitUI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		1/DM/kMT8KxBCxOq6gbm1TqFIt0=
+		XRg3HuJLuyr9s3AdX1LAPkTKZ/4=
 		</data>
 		<key>Modules/SonarFitUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		N6gWdaPDSOyx0709BMgS/rPPnE8=
+		ONb+NF3PbXwXUW0cnptPjKwichs=
 		</data>
 		<key>Modules/SonarFitUI.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		1/DM/kMT8KxBCxOq6gbm1TqFIt0=
+		XRg3HuJLuyr9s3AdX1LAPkTKZ/4=
 		</data>
 		<key>Modules/SonarFitUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		xCvF3DKtAZjXEkxqWaBIhd13ftM=
+		UA/GZsm1s2Pz509onGPTzb6mC2c=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -35,35 +35,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AXo8UY/HDQIzGNUM4VbHaZT0uowMO7Td8ARpb5xBwhY=
+			vC58oxo1wnwJVan8/fDP6k34HVX2FQwTGEwaO4LKcWs=
 			</data>
 		</dict>
 		<key>Modules/SonarFitUI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QDmjl7VOS7R0pCqQz0ePu9TIqEWy+hkXDPQ8BDRCEXw=
+			rzyOQ1bCnBDA+Nfy557gSZ6JqTEzc1LgNIMQg3IuG+I=
 			</data>
 		</dict>
 		<key>Modules/SonarFitUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+FLsiP8NaXRgrz/MbzcnhMXsUjymez1Ru249tebztJ8=
+			g96udCxWVLXEtqefazpm9ZIED74s2MARdogIE82mbL4=
 			</data>
 		</dict>
 		<key>Modules/SonarFitUI.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QDmjl7VOS7R0pCqQz0ePu9TIqEWy+hkXDPQ8BDRCEXw=
+			rzyOQ1bCnBDA+Nfy557gSZ6JqTEzc1LgNIMQg3IuG+I=
 			</data>
 		</dict>
 		<key>Modules/SonarFitUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jTWNdaYr47hNkUhQf8yyQ5ci8aGnNrjbAYGkDbitEvM=
+			tf29l6JAhXK6TnJC5qjSnle0ASz+co6t/Ep5wMomX0Y=
 			</data>
 		</dict>
 	</dict>

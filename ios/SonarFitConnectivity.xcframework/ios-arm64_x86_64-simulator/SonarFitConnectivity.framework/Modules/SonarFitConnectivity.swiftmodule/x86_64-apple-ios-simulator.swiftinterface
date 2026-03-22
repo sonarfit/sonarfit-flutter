@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
 // swift-module-flags: -target x86_64-apple-ios17.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SonarFitConnectivity
-// swift-module-flags-ignorable:  -interface-compiler-version 6.1.2
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import Combine
 import Compression
 import Foundation
@@ -12,35 +12,68 @@ import WatchConnectivity
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public enum WatchMessage : Swift.Codable {
-  case launchWatchUI
-  case workoutStarted(config: SonarFitCore.WorkoutConfig)
-  case repCompleted(rep: Swift.Int, inSet: Swift.Int)
-  case restTimerUpdate(remaining: Swift.Int, total: Swift.Int)
-  case restTimerStarted(startTimestamp: Foundation.TimeInterval, duration: Foundation.TimeInterval, autoStartLift: Swift.Bool)
-  case restTimerPaused(pauseTimestamp: Foundation.TimeInterval, remainingTime: Foundation.TimeInterval)
-  case restTimerResumed(resumeTimestamp: Foundation.TimeInterval, remainingTime: Foundation.TimeInterval)
-  case restTimerSkipped
-  case restTimerCompleted
-  case workoutEnded(result: SonarFitCore.WorkoutResult?)
-  case watchReady
-  case watchError(Swift.String)
-  case pauseRestRequest(timestamp: Foundation.TimeInterval)
-  case resumeRestRequest(timestamp: Foundation.TimeInterval)
-  case skipRestRequest
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
+public enum WatchLaunchError : Foundation.LocalizedError {
+  case appNotInstalled
+  case launchFailed(Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var errorDescription: Swift.String? {
+    get
+  }
+  #endif
 }
-public struct WatchWorkoutState : Swift.Codable {
-  public let currentSetNumber: Swift.Int
-  public let totalSets: Swift.Int
-  public let currentSetRepsCompleted: Swift.Int
-  public let totalReps: Swift.Int
-  public let isResting: Swift.Bool
-  public let isPaused: Swift.Bool
-  public init(from session: SonarFitCore.WorkoutSession)
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class PhoneConnectivityManager : ObjectiveC.NSObject {
+  public static let shared: SonarFitConnectivity.PhoneConnectivityManager
+  final public var isWatchConnected: Swift.Bool {
+    get
+  }
+  final public func cleanupStaleSession()
+  final public func launchWatchApp() async throws
+  final public func startWorkoutOnWatch(config: SonarFitCore.WorkoutConfig) async throws
+  final public func updateWorkoutState(_ session: SonarFitCore.WorkoutSession)
+  final public func notifyRepCompleted(rep: Swift.Int, inSet: Swift.Int)
+  final public func notifySetCompleted(set: Swift.Int)
+  final public func updateRestTimer(remaining: Swift.Int, total: Swift.Int)
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func endWorkoutOnWatch(result: SonarFitCore.WorkoutResult?)
+  #endif
+  final public func setMotionDataHandler(_ handler: @escaping (SonarFitCore.MotionPayload) -> Swift.Void)
+  final public func setWorkoutStartHandler(_ handler: @escaping () -> Swift.Void)
+  final public func setWorkoutPauseHandler(_ handler: @escaping () -> Swift.Void)
+  final public func setWorkoutResumeHandler(_ handler: @escaping () -> Swift.Void)
+  final public func setRestTimerStartHandler(_ handler: @escaping (Foundation.TimeInterval, Foundation.TimeInterval) -> Swift.Void)
+  final public func setRestTimerPauseHandler(_ handler: @escaping (Foundation.TimeInterval) -> Swift.Void)
+  final public func setRestTimerResumeHandler(_ handler: @escaping (Foundation.TimeInterval) -> Swift.Void)
+  final public func setRestTimerSkipHandler(_ handler: @escaping () -> Swift.Void)
+  final public func setAboutToReLiftHandler(_ handler: @escaping () -> Swift.Void)
+  final public func setManualAdjustmentHandler(_ handler: @escaping (Swift.Int) -> Swift.Void)
+  final public func setManualIncrementHandler(_ handler: @escaping () -> Swift.Void)
+  final public func setManualDecrementHandler(_ handler: @escaping () -> Swift.Void)
+  final public func setWorkoutResetHandler(_ handler: @escaping () -> Swift.Void)
+  final public func setFinishAndSaveHandler(_ handler: @escaping () -> Swift.Void)
+  final public func setFinishAndDiscardHandler(_ handler: @escaping () -> Swift.Void)
+  final public func setWorkoutStartingHandler(_ handler: @escaping () -> Swift.Void)
+  final public func sendConfigToWatch(config: SonarFitCore.WorkoutConfig)
+  final public func sendConfigUpdate(config: SonarFitCore.WorkoutConfig)
+  final public func sendMessage(_ message: SonarFitConnectivity.WatchMessage)
+  final public func sendRawMessage(_ message: [Swift.String : Any])
+  @objc deinit
+}
+extension SonarFitConnectivity.PhoneConnectivityManager : WatchConnectivity.WCSessionDelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func session(_ session: WatchConnectivity.WCSession, activationDidCompleteWith activationState: WatchConnectivity.WCSessionActivationState, error: (any Swift.Error)?)
+  #endif
+  @objc final public func sessionDidBecomeInactive(_ session: WatchConnectivity.WCSession)
+  @objc final public func sessionDidDeactivate(_ session: WatchConnectivity.WCSession)
+  @objc final public func sessionReachabilityDidChange(_ session: WatchConnectivity.WCSession)
+  @objc final public func sessionWatchStateDidChange(_ session: WatchConnectivity.WCSession)
+  @objc final public func session(_ session: WatchConnectivity.WCSession, didReceiveMessageData messageData: Foundation.Data)
+  @objc final public func session(_ session: WatchConnectivity.WCSession, didReceiveMessage message: [Swift.String : Any], replyHandler: @escaping ([Swift.String : Any]) -> Swift.Void)
+  @objc final public func session(_ session: WatchConnectivity.WCSession, didReceiveMessage message: [Swift.String : Any])
+}
+extension SonarFitConnectivity.PhoneConnectivityManager : HealthKit.HKWorkoutSessionDelegate {
+  @objc final public func workoutSession(_ workoutSession: HealthKit.HKWorkoutSession, didChangeTo toState: HealthKit.HKWorkoutSessionState, from fromState: HealthKit.HKWorkoutSessionState, date: Foundation.Date)
+  @objc final public func workoutSession(_ workoutSession: HealthKit.HKWorkoutSession, didFailWithError error: any Swift.Error)
+  @objc final public func workoutSession(_ workoutSession: HealthKit.HKWorkoutSession, didReceiveDataFromRemoteWorkoutSession data: [Foundation.Data])
 }
 public enum ConnectivityInfo {
   public static let version: Swift.String
@@ -80,61 +113,41 @@ public enum ConnectivityInfo {
   @objc deinit
 }
 extension SonarFitConnectivity.WatchAppChecker : WatchConnectivity.WCSessionDelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func session(_ session: WatchConnectivity.WCSession, activationDidCompleteWith activationState: WatchConnectivity.WCSessionActivationState, error: (any Swift.Error)?)
+  #endif
   @objc dynamic public func sessionDidBecomeInactive(_ session: WatchConnectivity.WCSession)
   @objc dynamic public func sessionDidDeactivate(_ session: WatchConnectivity.WCSession)
   @objc dynamic public func sessionReachabilityDidChange(_ session: WatchConnectivity.WCSession)
   @objc dynamic public func sessionWatchStateDidChange(_ session: WatchConnectivity.WCSession)
 }
-public enum WatchLaunchError : Foundation.LocalizedError {
-  case appNotInstalled
-  case launchFailed(Swift.String)
-  public var errorDescription: Swift.String? {
-    get
-  }
+public enum WatchMessage : Swift.Codable {
+  case launchWatchUI
+  case workoutStarted(config: SonarFitCore.WorkoutConfig)
+  case repCompleted(rep: Swift.Int, inSet: Swift.Int)
+  case restTimerUpdate(remaining: Swift.Int, total: Swift.Int)
+  case restTimerStarted(startTimestamp: Foundation.TimeInterval, duration: Foundation.TimeInterval, autoStartLift: Swift.Bool)
+  case restTimerPaused(pauseTimestamp: Foundation.TimeInterval, remainingTime: Foundation.TimeInterval)
+  case restTimerResumed(resumeTimestamp: Foundation.TimeInterval, remainingTime: Foundation.TimeInterval)
+  case restTimerSkipped
+  case restTimerCompleted
+  case workoutEnded(result: SonarFitCore.WorkoutResult?)
+  case watchReady
+  case watchError(Swift.String)
+  case pauseRestRequest(timestamp: Foundation.TimeInterval)
+  case resumeRestRequest(timestamp: Foundation.TimeInterval)
+  case skipRestRequest
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class PhoneConnectivityManager : ObjectiveC.NSObject {
-  public static let shared: SonarFitConnectivity.PhoneConnectivityManager
-  final public var isWatchConnected: Swift.Bool {
-    get
-  }
-  final public func cleanupStaleSession()
-  final public func launchWatchApp() async throws
-  final public func startWorkoutOnWatch(config: SonarFitCore.WorkoutConfig) async throws
-  final public func updateWorkoutState(_ session: SonarFitCore.WorkoutSession)
-  final public func notifyRepCompleted(rep: Swift.Int, inSet: Swift.Int)
-  final public func notifySetCompleted(set: Swift.Int)
-  final public func updateRestTimer(remaining: Swift.Int, total: Swift.Int)
-  final public func endWorkoutOnWatch(result: SonarFitCore.WorkoutResult?)
-  final public func setMotionDataHandler(_ handler: @escaping (SonarFitCore.MotionPayload) -> Swift.Void)
-  final public func setWorkoutStartHandler(_ handler: @escaping () -> Swift.Void)
-  final public func setWorkoutPauseHandler(_ handler: @escaping () -> Swift.Void)
-  final public func setWorkoutResumeHandler(_ handler: @escaping () -> Swift.Void)
-  final public func setRestTimerStartHandler(_ handler: @escaping (Foundation.TimeInterval, Foundation.TimeInterval) -> Swift.Void)
-  final public func setRestTimerPauseHandler(_ handler: @escaping (Foundation.TimeInterval) -> Swift.Void)
-  final public func setRestTimerResumeHandler(_ handler: @escaping (Foundation.TimeInterval) -> Swift.Void)
-  final public func setRestTimerSkipHandler(_ handler: @escaping () -> Swift.Void)
-  final public func setAboutToReLiftHandler(_ handler: @escaping () -> Swift.Void)
-  final public func setManualAdjustmentHandler(_ handler: @escaping (Swift.Int) -> Swift.Void)
-  final public func setManualIncrementHandler(_ handler: @escaping () -> Swift.Void)
-  final public func setManualDecrementHandler(_ handler: @escaping () -> Swift.Void)
-  final public func setWorkoutResetHandler(_ handler: @escaping () -> Swift.Void)
-  final public func setFinishAndSaveHandler(_ handler: @escaping () -> Swift.Void)
-  final public func setFinishAndDiscardHandler(_ handler: @escaping () -> Swift.Void)
-  final public func sendMessage(_ message: SonarFitConnectivity.WatchMessage)
-  final public func sendRawMessage(_ message: [Swift.String : Any])
-  @objc deinit
-}
-extension SonarFitConnectivity.PhoneConnectivityManager : WatchConnectivity.WCSessionDelegate {
-  @objc final public func session(_ session: WatchConnectivity.WCSession, activationDidCompleteWith activationState: WatchConnectivity.WCSessionActivationState, error: (any Swift.Error)?)
-  @objc final public func sessionDidBecomeInactive(_ session: WatchConnectivity.WCSession)
-  @objc final public func sessionDidDeactivate(_ session: WatchConnectivity.WCSession)
-  @objc final public func sessionReachabilityDidChange(_ session: WatchConnectivity.WCSession)
-  @objc final public func sessionWatchStateDidChange(_ session: WatchConnectivity.WCSession)
-  @objc final public func session(_ session: WatchConnectivity.WCSession, didReceiveMessageData messageData: Foundation.Data)
-}
-extension SonarFitConnectivity.PhoneConnectivityManager : HealthKit.HKWorkoutSessionDelegate {
-  @objc final public func workoutSession(_ workoutSession: HealthKit.HKWorkoutSession, didChangeTo toState: HealthKit.HKWorkoutSessionState, from fromState: HealthKit.HKWorkoutSessionState, date: Foundation.Date)
-  @objc final public func workoutSession(_ workoutSession: HealthKit.HKWorkoutSession, didFailWithError error: any Swift.Error)
-  @objc final public func workoutSession(_ workoutSession: HealthKit.HKWorkoutSession, didReceiveDataFromRemoteWorkoutSession data: [Foundation.Data])
+public struct WatchWorkoutState : Swift.Codable {
+  public let currentSetNumber: Swift.Int
+  public let totalSets: Swift.Int
+  public let currentSetRepsCompleted: Swift.Int
+  public let totalReps: Swift.Int
+  public let isResting: Swift.Bool
+  public let isPaused: Swift.Bool
+  public init(from session: SonarFitCore.WorkoutSession)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }

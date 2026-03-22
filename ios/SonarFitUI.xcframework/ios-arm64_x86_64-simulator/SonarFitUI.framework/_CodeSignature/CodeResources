@@ -6,47 +6,47 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		GnPukZmOb6J18RPazgAo2arfA5Y=
+		XL7Toc85KkjMGzAh/YohBovh7is=
 		</data>
 		<key>Modules/SonarFitUI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		NDZJ52dAc4hJH/Rifzb0Om69DdM=
+		1GzPKRavkGj/xihCH5AshbcdSOk=
 		</data>
 		<key>Modules/SonarFitUI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		myUn3U1SHI1Vf4l/6s+4nrJcnNM=
+		9Uxwp1IyZ7A1hmzw8dmlddd/Hm0=
 		</data>
 		<key>Modules/SonarFitUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		eqTMbrEBDzXFhfR94rprxGvaotU=
+		onL5UUzHYF11iHXpuhonxN/xdsk=
 		</data>
 		<key>Modules/SonarFitUI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		myUn3U1SHI1Vf4l/6s+4nrJcnNM=
+		9Uxwp1IyZ7A1hmzw8dmlddd/Hm0=
 		</data>
 		<key>Modules/SonarFitUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		jWdR9vD7ohGqh+jqc9s5kl56zWI=
+		OqRGurw3MR7ubT1ssWduO1wNEoY=
 		</data>
 		<key>Modules/SonarFitUI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		NDZJ52dAc4hJH/Rifzb0Om69DdM=
+		1GzPKRavkGj/xihCH5AshbcdSOk=
 		</data>
 		<key>Modules/SonarFitUI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		tonMY0ExRKY7f/WXkgesH7CQql8=
+		bLWpvVSF0wvmAYGVcU7o2iBMs1I=
 		</data>
 		<key>Modules/SonarFitUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		1Ir2P9y0Tkck4qFOpzjuEm99Dnw=
+		WDUmQWGXYGRi7caAUj6g8839DRc=
 		</data>
 		<key>Modules/SonarFitUI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		tonMY0ExRKY7f/WXkgesH7CQql8=
+		bLWpvVSF0wvmAYGVcU7o2iBMs1I=
 		</data>
 		<key>Modules/SonarFitUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		06QnzCK3qgIEL8fS9duMwvor6TY=
+		7TTabz+lp7+/FNxr78C7/8ubdSw=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,70 +55,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jvg2eBHMBSTRymurj4Takyqf3kXqhzL2HDdQ78FJVXQ=
+			vC58oxo1wnwJVan8/fDP6k34HVX2FQwTGEwaO4LKcWs=
 			</data>
 		</dict>
 		<key>Modules/SonarFitUI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mDzEcToayKFV/FSmDNfkhtVMbKK9X2s4vpR3G8VCXbA=
+			Fj9NyjHycDs1dlf5D7hWxFAI2KBEzGgJRyVXlLRsCSU=
 			</data>
 		</dict>
 		<key>Modules/SonarFitUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PZfA6y/sv+8wTLAiTDiSfkgTuPLl06SyOvGmxw+2w4E=
+			I6tdmKCuZETOTPFfRT/Yq7eVjeRpMcakR/U7QTEcB8I=
 			</data>
 		</dict>
 		<key>Modules/SonarFitUI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mDzEcToayKFV/FSmDNfkhtVMbKK9X2s4vpR3G8VCXbA=
+			Fj9NyjHycDs1dlf5D7hWxFAI2KBEzGgJRyVXlLRsCSU=
 			</data>
 		</dict>
 		<key>Modules/SonarFitUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dGXA2GtQefLGK79lOkW6hzZvUkALR8YWggVSd8STrIA=
+			7KUt82cqJeuy440ezCA5UCLeI/O2n/TkhFcipAh5lvY=
 			</data>
 		</dict>
 		<key>Modules/SonarFitUI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jvg2eBHMBSTRymurj4Takyqf3kXqhzL2HDdQ78FJVXQ=
+			vC58oxo1wnwJVan8/fDP6k34HVX2FQwTGEwaO4LKcWs=
 			</data>
 		</dict>
 		<key>Modules/SonarFitUI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kIFFblnmhIrVeP7pZFWwlp0c1qYiAaz8nzQ/DLUfFmM=
+			man6iIEavywQPoKuJPCXjCKbrmEhxbj4Sqp4j13e16I=
 			</data>
 		</dict>
 		<key>Modules/SonarFitUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zPHsx5cE5A5v/J35qsYsZyKiW07OlVqnt60Xuwqk4Yc=
+			2g0L3oE4SFoKVKKKvo8kQUtNQDBP5MK5LmWwSCy2Ai8=
 			</data>
 		</dict>
 		<key>Modules/SonarFitUI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kIFFblnmhIrVeP7pZFWwlp0c1qYiAaz8nzQ/DLUfFmM=
+			man6iIEavywQPoKuJPCXjCKbrmEhxbj4Sqp4j13e16I=
 			</data>
 		</dict>
 		<key>Modules/SonarFitUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JGHvpB7aujzrpc/xMEF1JToWhRWHNSSrhItDxQ0qO9o=
+			8nUiWZbp1m21ErajvNygFDVpXuRBDzvRbVzC2RfgPxE=
 			</data>
 		</dict>
 	</dict>

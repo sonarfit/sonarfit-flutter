@@ -6,27 +6,27 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		9cVFVywmkvk1omtYFeEMBnin0ws=
+		J4UvbNcqs2CS/kS2rYjORfqStJ8=
 		</data>
 		<key>Modules/SonarFitKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		ot2GLraGPPNy+OmmQJ1iVDGPriw=
+		2jN5i/UOp4jy8Pmr9Li95BTExP0=
 		</data>
 		<key>Modules/SonarFitKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		2TBk0XTzMPLAMADjs1mIplbOB/0=
+		wRWV/zVx4Odnr5tIUm7HMU7XHRQ=
 		</data>
 		<key>Modules/SonarFitKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		pnmRdO1k4cayh0IW1USHKf5hufk=
+		xdm0HIlFsruaN1Xw1bYbLdd/ugk=
 		</data>
 		<key>Modules/SonarFitKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		2TBk0XTzMPLAMADjs1mIplbOB/0=
+		wRWV/zVx4Odnr5tIUm7HMU7XHRQ=
 		</data>
 		<key>Modules/SonarFitKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		GnD/QgUdmXMCyC7Hrwu0l6HghHg=
+		17nNsuoJqauwQ0/gqf0DN1dWJ4g=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -35,35 +35,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IRNsBddxhwcQlYUgThWtt0jI12YX8hsgk+jFXKw3jhM=
+			YLKxSygX9v1QIyzvZrXHQDjAQbQy63D0PBqCDWbarp4=
 			</data>
 		</dict>
 		<key>Modules/SonarFitKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AXJO/K+SbqXxhIFNBSWta70lWyDXXTpy32XUFJEDXlE=
+			Zxh7IiRb6Ygs6aS77Lb4FmX9ZNWEU6o/CLvCv7g3MSI=
 			</data>
 		</dict>
 		<key>Modules/SonarFitKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Cm+pQEwPhLNr5hI77qbNM+/LDl7hBzc3Bji6zFUFDkY=
+			A2/es7DoYWMcdnFirQ7AS1I3Q1HjL4bnVjC4tPuVy18=
 			</data>
 		</dict>
 		<key>Modules/SonarFitKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AXJO/K+SbqXxhIFNBSWta70lWyDXXTpy32XUFJEDXlE=
+			Zxh7IiRb6Ygs6aS77Lb4FmX9ZNWEU6o/CLvCv7g3MSI=
 			</data>
 		</dict>
 		<key>Modules/SonarFitKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SEQtcPVWLhfnEDLNPNWJjPQ95PnOVv+H4e66A6dLhAY=
+			Odrrh12yUqwGY8IapGj7+22JaJYv6KDwxcjiI0GTEW8=
 			</data>
 		</dict>
 	</dict>

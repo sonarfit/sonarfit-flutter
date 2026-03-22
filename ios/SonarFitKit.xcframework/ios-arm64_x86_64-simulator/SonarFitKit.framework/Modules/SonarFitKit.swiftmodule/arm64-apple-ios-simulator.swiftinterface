@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
 // swift-module-flags: -target arm64-apple-ios17.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SonarFitKit
-// swift-module-flags-ignorable:  -interface-compiler-version 6.1.2
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import Foundation
 @_exported import SonarFitConnectivity
 @_exported import SonarFitCore
@@ -41,18 +41,32 @@ extension SonarFitKit.SonarFit {
 public typealias SonarFitSDK = SonarFitCore.SonarFitSDK
 @_hasMissingDesignatedInitializers @available(iOS 15.0, *)
 final public class SonarFit {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func startWorkout(config: SonarFitKit.WorkoutConfig, from presentingViewController: UIKit.UIViewController, onCompletion: @escaping (SonarFitKit.WorkoutResult?) -> Swift.Void, onPermissionError: ((any Swift.Error) -> Swift.Void)? = nil, onDismissRequest: (() -> Swift.Void)? = nil)
+  #endif
   @available(iOS 17.0, *)
   public static func launchWatchApp(config: SonarFitKit.WorkoutConfig) async throws
   @available(iOS 17.0, watchOS 10.0, macOS 10.15, *)
-  @_Concurrency.MainActor public static func createWorkout(config: SonarFitKit.WorkoutConfig) -> SonarFitKit.SonarFitWorkout
-  public static func createEngine(config: SonarFitKit.WorkoutConfig, delegate: any SonarFitCore.WorkoutEngineDelegate) -> SonarFitKit.WorkoutEngine
+  @_Concurrency.MainActor public static func createWorkout(config: SonarFitKit.WorkoutConfig) throws -> SonarFitKit.SonarFitWorkout
+  public static func createEngine(config: SonarFitKit.WorkoutConfig, delegate: any SonarFitCore.WorkoutEngineDelegate) throws -> SonarFitKit.WorkoutEngine
+  @available(iOS 17.0, *)
+  @_Concurrency.MainActor public static func observeWatchWorkouts(config: SonarFitKit.WorkoutConfig, onStarted: @escaping (SonarFitKit.SonarFitWorkout) -> Swift.Void)
+  @available(iOS 17.0, *)
+  public static func resendWatchConfig()
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 17.0, *)
+  public static func updateWatchConfig(sets: Swift.Int? = nil, reps: Swift.Int? = nil, restTime: Swift.Int? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func setupWatchHandlers(for engine: SonarFitKit.WorkoutEngine?)
+  #endif
   @objc deinit
 }
 extension SwiftUICore.View {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func sonarFitWorkout(config: SonarFitKit.WorkoutConfig, isPresented: SwiftUICore.Binding<Swift.Bool>, onCompletion: @escaping (SonarFitKit.WorkoutResult?) -> Swift.Void, onPermissionError: ((any Swift.Error) -> Swift.Void)? = nil) -> some SwiftUICore.View
   
+  #endif
 }
 @available(iOS 17.0, *)
 extension SonarFitCore.SonarFitWorkout {

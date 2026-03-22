@@ -6,31 +6,47 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		qwVvclC8D5eAN8NWxmKygD7zZfk=
+		PvEegFEgFnx6TZq+ggQBg+3PByA=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		usuAlVCYzjNM1eWca+l59xXAfWk=
+		BS+4DhmNgsU6m36EM6OLg1CcFd4=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		yZlfORPHdu5njtXgkfp1zMXZRXI=
+		idwi6Lywk+DixmQ6r6NP5F8L1nU=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		D/I41KUxp7GDSYYifMwU8Ns2snk=
+		o3YEpArYjl72KYt2PQHNGcE6CyM=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		yZlfORPHdu5njtXgkfp1zMXZRXI=
+		idwi6Lywk+DixmQ6r6NP5F8L1nU=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		2tzh5PJV2BVDgyD+jr/NC+e4zCg=
+		SbonwWGY8GLNpbR9b2oFEtz+5/I=
 		</data>
 		<key>README.md</key>
 		<data>
 		2+AhXgml61KArd/8f380cKGNAAw=
+		</data>
+		<key>RepDetector_v2.mlmodelc/_B0000.DAT</key>
+		<data>
+		0VVn9LIH7gkrkHjT2dkXyRqr19k=
+		</data>
+		<key>RepDetector_v2.mlmodelc/analytics/coremldata.bin</key>
+		<data>
+		C9/SmC551e5rEEidS3i/eDXsmS8=
+		</data>
+		<key>RepDetector_v2.mlmodelc/coremldata.bin</key>
+		<data>
+		bfdL4bJ2QewStzTmTR882ilf89M=
+		</data>
+		<key>RepDetector_v2.mlmodelc/metadata.json</key>
+		<data>
+		/pok31YwJ8sL8V88kY2NPi/5278=
 		</data>
 		<key>beep.wav</key>
 		<data>
@@ -211,35 +227,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HjzsXjw4z5OXNf5NuIjlQKtXDts9G9ysr1OmZ5X1vbU=
+			7YfVUj/UoECI7fRX2nyy+CaU8P1ba0L/YHyLb39kJ/U=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			R+HTay8YiADLRVHs2b5h6G1McA4nGVc9p32Bl16UQ9o=
+			CrVAJj3VqKCJX1GVfRaIPTdpjDXfdtMJg3CdXXuOGe4=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UxIdHiSVYCeqqmu5GRDWnBk/aSKdYf8R21FKm0cNgCM=
+			l7+UwOgbX0J7WpgRM4GoQgI5lrG74EiEvstLYq8dxPU=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			R+HTay8YiADLRVHs2b5h6G1McA4nGVc9p32Bl16UQ9o=
+			CrVAJj3VqKCJX1GVfRaIPTdpjDXfdtMJg3CdXXuOGe4=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0URKBEiiOLIF8ReEPun0PRy2NTR8WHMVFgAoDN2LtFY=
+			/MA2J0qaOqHR1KIvYIA/KSOzP859WlFUoIWGPqWzU0M=
 			</data>
 		</dict>
 		<key>README.md</key>
@@ -247,6 +263,34 @@
 			<key>hash2</key>
 			<data>
 			N0S4tJjAO1K9H9UAVnyCW+9w8DBpQRS0/n0RCjonDu0=
+			</data>
+		</dict>
+		<key>RepDetector_v2.mlmodelc/_B0000.DAT</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ytPzz72lg3ESHsc3JKCOVD/Z77Kueo5csrXToSYms6M=
+			</data>
+		</dict>
+		<key>RepDetector_v2.mlmodelc/analytics/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mpJaE4gpC5CCzRo/QwoUIzOJUBV/5V/G0Zy6DBRC+U4=
+			</data>
+		</dict>
+		<key>RepDetector_v2.mlmodelc/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			hl9TG4nFE/jo/aLbLyh95nWCXhZzC4hcd/Xv3Fqr9XU=
+			</data>
+		</dict>
+		<key>RepDetector_v2.mlmodelc/metadata.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			x5ZYyipVyh6OcoMuFgF5mQrWKHfB1DmPrF3m9iZ+KC8=
 			</data>
 		</dict>
 		<key>beep.wav</key>

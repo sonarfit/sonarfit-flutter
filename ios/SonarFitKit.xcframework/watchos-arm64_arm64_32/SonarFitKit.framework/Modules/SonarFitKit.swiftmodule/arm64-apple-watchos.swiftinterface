@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
 // swift-module-flags: -target arm64-apple-watchos10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SonarFitKit
-// swift-module-flags-ignorable:  -interface-compiler-version 6.1.2
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import Foundation
 @_exported import SonarFitConnectivity
 @_exported import SonarFitCore
@@ -12,18 +12,6 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public struct SonarFitSDKVersion {
-  public static let current: Swift.String
-  public static let major: Swift.Int
-  public static let minor: Swift.Int
-  public static let patch: Swift.Int
-  public static var full: Swift.String {
-    get
-  }
-  public static var buildNumber: Swift.String {
-    get
-  }
-}
 public typealias SonarWorkoutType = SonarFitKit.WorkoutType
 public typealias SonarWorkoutConfig = SonarFitKit.WorkoutConfig
 public typealias SonarWorkoutResult = SonarFitKit.WorkoutResult
@@ -54,7 +42,19 @@ public typealias SonarFitSDK = SonarFitCore.SonarFitSDK
 @_hasMissingDesignatedInitializers @available(iOS 15.0, *)
 final public class SonarFit {
   @available(iOS 17.0, watchOS 10.0, macOS 10.15, *)
-  @_Concurrency.MainActor public static func createWorkout(config: SonarFitKit.WorkoutConfig) -> SonarFitKit.SonarFitWorkout
-  public static func createEngine(config: SonarFitKit.WorkoutConfig, delegate: any SonarFitCore.WorkoutEngineDelegate) -> SonarFitKit.WorkoutEngine
+  @_Concurrency.MainActor public static func createWorkout(config: SonarFitKit.WorkoutConfig) throws -> SonarFitKit.SonarFitWorkout
+  public static func createEngine(config: SonarFitKit.WorkoutConfig, delegate: any SonarFitCore.WorkoutEngineDelegate) throws -> SonarFitKit.WorkoutEngine
   @objc deinit
+}
+public struct SonarFitSDKVersion {
+  public static let current: Swift.String
+  public static let major: Swift.Int
+  public static let minor: Swift.Int
+  public static let patch: Swift.Int
+  public static var full: Swift.String {
+    get
+  }
+  public static var buildNumber: Swift.String {
+    get
+  }
 }

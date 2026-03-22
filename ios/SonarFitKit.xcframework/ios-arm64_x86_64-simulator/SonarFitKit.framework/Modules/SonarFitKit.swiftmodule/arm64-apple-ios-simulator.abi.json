@@ -249,8 +249,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:11SonarFitKit0aB0C13createWorkout6config0aB4Core0abE0CAF0E6ConfigV_tFZ",
-            "mangledName": "$s11SonarFitKit0aB0C13createWorkout6config0aB4Core0abE0CAF0E6ConfigV_tFZ",
+            "usr": "s:11SonarFitKit0aB0C13createWorkout6config0aB4Core0abE0CAF0E6ConfigV_tKFZ",
+            "mangledName": "$s11SonarFitKit0aB0C13createWorkout6config0aB4Core0abE0CAF0E6ConfigV_tKFZ",
             "moduleName": "SonarFitKit",
             "static": true,
             "intro_Macosx": "10.15",
@@ -265,6 +265,7 @@
               "Custom",
               "RawDocComment"
             ],
+            "throwing": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -292,13 +293,159 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:11SonarFitKit0aB0C12createEngine6config8delegate0aB4Core07WorkoutE0CAG0I6ConfigV_AG0iE8Delegate_ptFZ",
-            "mangledName": "$s11SonarFitKit0aB0C12createEngine6config8delegate0aB4Core07WorkoutE0CAG0I6ConfigV_AG0iE8Delegate_ptFZ",
+            "usr": "s:11SonarFitKit0aB0C12createEngine6config8delegate0aB4Core07WorkoutE0CAG0I6ConfigV_AG0iE8Delegate_ptKFZ",
+            "mangledName": "$s11SonarFitKit0aB0C12createEngine6config8delegate0aB4Core07WorkoutE0CAG0I6ConfigV_AG0iE8Delegate_ptKFZ",
             "moduleName": "SonarFitKit",
             "static": true,
             "declAttributes": [
               "Final",
               "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "observeWatchWorkouts",
+            "printedName": "observeWatchWorkouts(config:onStarted:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WorkoutConfig",
+                "printedName": "SonarFitCore.WorkoutConfig",
+                "usr": "s:12SonarFitCore13WorkoutConfigV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SonarFitCore.SonarFitWorkout) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SonarFitWorkout",
+                    "printedName": "SonarFitCore.SonarFitWorkout",
+                    "usr": "s:12SonarFitCore0aB7WorkoutC"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SonarFitKit0aB0C20observeWatchWorkouts6config9onStartedy0aB4Core13WorkoutConfigV_yAG0abK0CctFZ",
+            "mangledName": "$s11SonarFitKit0aB0C20observeWatchWorkouts6config9onStartedy0aB4Core13WorkoutConfigV_yAG0abK0CctFZ",
+            "moduleName": "SonarFitKit",
+            "static": true,
+            "intro_iOS": "17.0",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Available",
+              "Custom",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "resendWatchConfig",
+            "printedName": "resendWatchConfig()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SonarFitKit0aB0C17resendWatchConfigyyFZ",
+            "mangledName": "$s11SonarFitKit0aB0C17resendWatchConfigyyFZ",
+            "moduleName": "SonarFitKit",
+            "static": true,
+            "intro_iOS": "17.0",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateWatchConfig",
+            "printedName": "updateWatchConfig(sets:reps:restTime:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SonarFitKit0aB0C17updateWatchConfig4sets4reps8restTimeySiSg_A2HtFZ",
+            "mangledName": "$s11SonarFitKit0aB0C17updateWatchConfig4sets4reps8restTimeySiSg_A2HtFZ",
+            "moduleName": "SonarFitKit",
+            "static": true,
+            "intro_iOS": "17.0",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Available",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -918,6 +1065,7 @@
         "declAttributes": [
           "Preconcurrency",
           "TypeEraser",
+          "TypeEraser",
           "OriginallyDefinedIn",
           "OriginallyDefinedIn",
           "OriginallyDefinedIn",
@@ -1039,49 +1187,49 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitSDK\/PublicTypes.swift",
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitKit\/PublicTypes.swift",
       "kind": "StringLiteral",
       "offset": 1844,
       "length": 7,
       "value": "\"1.0.0\""
     },
     {
-      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitSDK\/PublicTypes.swift",
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitKit\/PublicTypes.swift",
       "kind": "StringLiteral",
       "offset": 1881,
       "length": 3,
       "value": "\"1\""
     },
     {
-      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitSDK\/SonarFit.swift",
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitKit\/SonarFit.swift",
       "kind": "Dictionary",
-      "offset": 12463,
+      "offset": 16106,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitSDK\/Version.swift",
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitKit\/Version.swift",
       "kind": "StringLiteral",
       "offset": 86,
       "length": 7,
-      "value": "\"2.0.0\""
+      "value": "\"2.1.0\""
     },
     {
-      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitSDK\/Version.swift",
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitKit\/Version.swift",
       "kind": "IntegerLiteral",
       "offset": 124,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitSDK\/Version.swift",
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitKit\/Version.swift",
       "kind": "IntegerLiteral",
       "offset": 156,
       "length": 1,
-      "value": "0"
+      "value": "1"
     },
     {
-      "filePath": "\/Users\/adamfrancis\/Library\/Mobile Documents\/com~apple~CloudDocs\/personal-trainer\/sdk\/SonarFitSDKProject\/Sources\/SonarFitSDK\/Version.swift",
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitKit\/Version.swift",
       "kind": "IntegerLiteral",
       "offset": 188,
       "length": 1,
