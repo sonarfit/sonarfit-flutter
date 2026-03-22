@@ -6,11 +6,11 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		XxkVAve7HtiL/We/ENXARAIDiBc=
+		VLgKeYWIij9GFug1lfa88T/v7rA=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		lWW0EXCrYSKul6acCnOjduS3XYc=
+		wCEv+gsR6uSawo5MkZKsm5sZ6XM=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		iHAUjW3ci9wJdUylh6kCphWIRlw=
+		ieAta9CcgmpzQ35yjuJA8rzF600=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		lWW0EXCrYSKul6acCnOjduS3XYc=
+		wCEv+gsR6uSawo5MkZKsm5sZ6XM=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -46,19 +46,15 @@
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		JQnJRiqoIpLhCBLQxIAVFNgnLUs=
-		</data>
-		<key>README.md</key>
-		<data>
-		2+AhXgml61KArd/8f380cKGNAAw=
+		vZ2I8UkSTOcqxjm7qnbLJ3IDcPE=
 		</data>
 		<key>RepDetector_v2.mlmodelc/_B0000.DAT</key>
 		<data>
-		0VVn9LIH7gkrkHjT2dkXyRqr19k=
+		8s/vKVmc0cWblrmHoXo7gDzYHJk=
 		</data>
 		<key>RepDetector_v2.mlmodelc/analytics/coremldata.bin</key>
 		<data>
-		C9/SmC551e5rEEidS3i/eDXsmS8=
+		j4w13kuCoDxWE8wLI1FxWOjGmsc=
 		</data>
 		<key>RepDetector_v2.mlmodelc/coremldata.bin</key>
 		<data>
@@ -247,7 +243,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pMFqgLB+3emeYxanfZmtkyUJ2xjGq+IY814YFS5H8CM=
+			4AljspjhPdswqbURy/rxnwPxqnZq8a7pWrU60N03IXk=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -275,14 +271,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cVueLB3vH/GfKSA8uE/zpl2+d61sAGG5eCykULNz7Vk=
+			MI2NzIOYhDyR950mEhB0ABK0ED9MDjm0y7txmR0arDo=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pMFqgLB+3emeYxanfZmtkyUJ2xjGq+IY814YFS5H8CM=
+			4AljspjhPdswqbURy/rxnwPxqnZq8a7pWrU60N03IXk=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -310,28 +306,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			X6402oFx3/uPUjvEQSQL7Or7DvKB/gQscH6wB5g4wws=
-			</data>
-		</dict>
-		<key>README.md</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			N0S4tJjAO1K9H9UAVnyCW+9w8DBpQRS0/n0RCjonDu0=
+			3Vv1Ko29MfSRsgQB/OHfSUpcqaxEIYiy+qLDvQyisSQ=
 			</data>
 		</dict>
 		<key>RepDetector_v2.mlmodelc/_B0000.DAT</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ytPzz72lg3ESHsc3JKCOVD/Z77Kueo5csrXToSYms6M=
+			mi63KoUtpT3ik7jYnjg5FjVb8SnlekplSLRMwcp7Z5w=
 			</data>
 		</dict>
 		<key>RepDetector_v2.mlmodelc/analytics/coremldata.bin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mpJaE4gpC5CCzRo/QwoUIzOJUBV/5V/G0Zy6DBRC+U4=
+			/5ykjjmOyZOw0f+YPuJYO+DU/LXHpt4N7D6UEot8paA=
 			</data>
 		</dict>
 		<key>RepDetector_v2.mlmodelc/coremldata.bin</key>

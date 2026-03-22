@@ -3696,6 +3696,16 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
+        "moduleName": "SonarFitCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "SonarFitCore"
       },
       {
@@ -8753,16 +8763,6 @@
         "printedName": "Accelerate",
         "declKind": "Import",
         "moduleName": "SonarFitCore"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "SonarFitCore",
-        "declAttributes": [
-          "RawDocComment"
-        ]
       },
       {
         "kind": "Import",
@@ -15594,16 +15594,6 @@
             "mangledName": "$ss9EscapableP"
           }
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "CoreML",
-        "printedName": "CoreML",
-        "declKind": "Import",
-        "moduleName": "SonarFitCore",
-        "declAttributes": [
-          "RawDocComment"
-        ]
       }
     ],
     "json_format_version": 8
@@ -16966,13 +16956,6 @@
       "offset": 4897,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Library\/Developer\/Xcode\/DerivedData\/SonarFitSDK_Wrapper-alonmxmisahgjxcgilvgsqfaswxy\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SonarFitSDK_watchOS\/IntermediateBuildFilesPath\/SonarFitSDK_Wrapper.build\/Release-watchsimulator\/SonarFitCore_watchOS.build\/DerivedSources\/CoreMLGenerated\/RepDetector_v2\/RepDetector_v2.swift",
-      "kind": "Array",
-      "offset": 4040,
-      "length": 973,
-      "value": "[\"active_duration_frac\", \"vel_x_return_pct\", \"vel_x_excursion\", \"vel_x_crossing\", \"vel_y_return_pct\", \"vel_y_excursion\", \"vel_y_crossing\", \"vel_z_return_pct\", \"vel_z_excursion\", \"vel_z_crossing\", \"vel_best_return_pct\", \"vel_return_deviation\", \"vel_best_crossing\", \"vel_best_excursion\", \"max_rot_x\", \"range_rot_x\", \"mean_rot_x\", \"std_rot_x\", \"max_rot_y\", \"range_rot_y\", \"mean_rot_y\", \"std_rot_y\", \"max_rot_z\", \"range_rot_z\", \"mean_rot_z\", \"std_rot_z\", \"biphasic_symmetry\", \"half_energy_accel_x\", \"half_energy_accel_y\", \"half_energy_accel_z\", \"jerk_mean\", \"jerk_max\", \"peak_count\", \"peak_prom_mean\", \"dominant_freq\", \"mean_accel_mag\", \"mean_rot_mag\", \"hp_vel_best_return_pct\", \"hp_vel_best_crossing\", \"subwindow_vel_return\", \"subwindow_return_count\", \"vel_detrended_return\", \"vel_monotonicity\", \"vel_template_corr\", \"accel_sign_change_ratio\", \"normalized_excursion\", \"energy_concentration\", \"rotation_coherence\", \"vel_symmetry_index\", \"turn_centrality\", \"accel_rot_coupling\"]"
     }
   ]
 }

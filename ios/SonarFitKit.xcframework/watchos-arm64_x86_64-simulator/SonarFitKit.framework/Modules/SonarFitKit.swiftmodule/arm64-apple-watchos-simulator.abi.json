@@ -635,7 +635,7 @@
       "kind": "StringLiteral",
       "offset": 86,
       "length": 7,
-      "value": "\"2.1.2\""
+      "value": "\"2.1.3\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitKit\/Version.swift",
@@ -656,7 +656,7 @@
       "kind": "IntegerLiteral",
       "offset": 188,
       "length": 1,
-      "value": "2"
+      "value": "3"
     }
   ]
 }
