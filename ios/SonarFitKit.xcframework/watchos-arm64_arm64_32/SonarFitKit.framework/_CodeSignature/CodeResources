@@ -10,7 +10,7 @@
 		</data>
 		<key>Modules/SonarFitKit.swiftmodule/arm64-apple-watchos.abi.json</key>
 		<data>
-		GvxmetreOr7WARznd7RqCw3TQkg=
+		rmdSdsFPg8faBYytZf7fENaa9jU=
 		</data>
 		<key>Modules/SonarFitKit.swiftmodule/arm64-apple-watchos.private.swiftinterface</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/SonarFitKit.swiftmodule/arm64-apple-watchos.swiftmodule</key>
 		<data>
-		EfqV2eYGalvavQWqUcnXlhyhLbQ=
+		wcDy9sDrXGS5NQUbafIOBJvoO4w=
 		</data>
 		<key>Modules/SonarFitKit.swiftmodule/arm64_32-apple-watchos.abi.json</key>
 		<data>
-		GvxmetreOr7WARznd7RqCw3TQkg=
+		rmdSdsFPg8faBYytZf7fENaa9jU=
 		</data>
 		<key>Modules/SonarFitKit.swiftmodule/arm64_32-apple-watchos.private.swiftinterface</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/SonarFitKit.swiftmodule/arm64_32-apple-watchos.swiftmodule</key>
 		<data>
-		2Je4JcKfJ1BYBCNRrswIG0rd8Vc=
+		wQvYkvcpxuqciYqOlJj+/jyUWew=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,11 +55,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GvxmetreOr7WARznd7RqCw3TQkg=
+			rmdSdsFPg8faBYytZf7fENaa9jU=
 			</data>
 			<key>hash2</key>
 			<data>
-			FKHCtzCXSlRvbSzVfWH6Zodirtkce5iRMiZ4zIViV3k=
+			RiHK3KrX/CuANXChfG0uwQA6FdjLG5Ms1r7EhZQidNI=
 			</data>
 		</dict>
 		<key>Modules/SonarFitKit.swiftmodule/arm64-apple-watchos.private.swiftinterface</key>
@@ -99,22 +99,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EfqV2eYGalvavQWqUcnXlhyhLbQ=
+			wcDy9sDrXGS5NQUbafIOBJvoO4w=
 			</data>
 			<key>hash2</key>
 			<data>
-			L1cYITL2pzlrRIOd2pe35Ez2BKaq1omr5qsru9QwgXE=
+			vmlHYR7Z115M1RmYxzgg5V0xZZ4FmRs3Jac3sT2hfRU=
 			</data>
 		</dict>
 		<key>Modules/SonarFitKit.swiftmodule/arm64_32-apple-watchos.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GvxmetreOr7WARznd7RqCw3TQkg=
+			rmdSdsFPg8faBYytZf7fENaa9jU=
 			</data>
 			<key>hash2</key>
 			<data>
-			FKHCtzCXSlRvbSzVfWH6Zodirtkce5iRMiZ4zIViV3k=
+			RiHK3KrX/CuANXChfG0uwQA6FdjLG5Ms1r7EhZQidNI=
 			</data>
 		</dict>
 		<key>Modules/SonarFitKit.swiftmodule/arm64_32-apple-watchos.private.swiftinterface</key>
@@ -154,11 +154,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2Je4JcKfJ1BYBCNRrswIG0rd8Vc=
+			wQvYkvcpxuqciYqOlJj+/jyUWew=
 			</data>
 			<key>hash2</key>
 			<data>
-			TKo43xfs1U+QphcLNNByQs7mim+FnlStcH5N29Xr14k=
+			jgtA+eQnmrzbJklyqDPgFR800cx+2ovWmr9es6K4ydk=
 			</data>
 		</dict>
 	</dict>

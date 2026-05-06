@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+
+## [2.2.0] - 2026-05-06
+
+### Changed
+- Improve AirPods detector
+- Improve Watch detector
 ## [2.1.3] - 2026-03-22
 
 **Changed**

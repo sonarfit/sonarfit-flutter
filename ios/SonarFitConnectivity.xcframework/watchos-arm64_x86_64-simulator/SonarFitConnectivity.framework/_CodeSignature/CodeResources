@@ -10,7 +10,7 @@
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-watchos-simulator.abi.json</key>
 		<data>
-		UhZIg6iuc54e9UPt5/HprTZo8VU=
+		KsDvjx5iRn7b6ZMZ8D8BCgTNsHM=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-watchos-simulator.private.swiftinterface</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-watchos-simulator.swiftmodule</key>
 		<data>
-		yQI9nTsKYlIZKsGc1f6dDmPnFX8=
+		hgMEg2LNTNteHOgF7a6tO8wF5JA=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-watchos-simulator.abi.json</key>
 		<data>
-		UhZIg6iuc54e9UPt5/HprTZo8VU=
+		KsDvjx5iRn7b6ZMZ8D8BCgTNsHM=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-watchos-simulator.private.swiftinterface</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-watchos-simulator.swiftmodule</key>
 		<data>
-		cau5eu0AyfODooMMqC+aAKpWgE4=
+		8joMMmwvZJUAJukmVyetGf/WF8Q=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,7 +55,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sZIKKsN/L0+4vh3Mhkgod3RBwVCsLuPwalUO/ndeY48=
+			CYHys0W/JTGzgsAVadVDhSj5GNM95bwmIF4SBzhNwWM=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-watchos-simulator.private.swiftinterface</key>
@@ -83,14 +83,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/tsrTO66ZyF+dRx6ddU/W4D8VzIx/UhTqKEh4BGh86s=
+			mnSsnq+yiyCS+fYhcwX0IyrsEWJHBiz9Q58NaI8sJTs=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-watchos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sZIKKsN/L0+4vh3Mhkgod3RBwVCsLuPwalUO/ndeY48=
+			CYHys0W/JTGzgsAVadVDhSj5GNM95bwmIF4SBzhNwWM=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-watchos-simulator.private.swiftinterface</key>
@@ -118,7 +118,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2grxvknQD5KXn8BFLi7ZsBZ920IgNI4lBHL3XQsxpuw=
+			ZsFNZQY7E8fg96rUbpaqNwRUA8efzrLABxox0kmaEdA=
 			</data>
 		</dict>
 	</dict>

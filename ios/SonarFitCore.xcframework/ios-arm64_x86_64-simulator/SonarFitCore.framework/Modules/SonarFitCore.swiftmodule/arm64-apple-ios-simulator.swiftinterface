@@ -5,8 +5,11 @@
 import AVFoundation
 import Accelerate
 import Combine
+import Compression
+import CoreBluetooth
 import CoreML
 import CoreMotion
+import CryptoKit
 import Foundation
 import MediaPlayer
 import Swift
@@ -133,6 +136,133 @@ extension SonarFitCore.WorkoutEngine : SonarFitCore.MotionProcessorDelegate {
   final public func motionProcessor<T>(_ processor: T, didEncounterPermissionError error: any Swift.Error)
   final public func getCurrentSetNumber() -> Swift.Int
   final public func getCurrentSetRepsCompleted() -> Swift.Int
+}
+public class AirPodsHybridDetector {
+  public var onRepDetected: ((Swift.Int) -> Swift.Void)?
+  public var repCount: Swift.Int {
+    get
+  }
+  public var recordCSV: Swift.Bool
+  final public let workoutType: Swift.String
+  final public let deviceType: Swift.String?
+  final public let expectedReps: Swift.Int?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(workoutType: Swift.String = "squat", deviceType: Swift.String? = nil, expectedReps: Swift.Int? = nil)
+  #endif
+  public func processSample(accX: Swift.Double, accY: Swift.Double, accZ: Swift.Double, rotX: Swift.Double, rotY: Swift.Double, rotZ: Swift.Double, gravX: Swift.Double, gravY: Swift.Double, gravZ: Swift.Double, pitch: Swift.Double, globalPitchRate: Swift.Double = 0.0)
+  @discardableResult
+  public func flush() -> Swift.Int
+  public func reset()
+  public var gyroRepCount: Swift.Int {
+    get
+  }
+  @objc deinit
+}
+final public class AppleWatchDetector {
+  public static let sampleRate: Swift.Double
+  public static let dt: Swift.Double
+  public struct RepCandidate {
+    public var sample: Swift.Int
+    public var descent: Swift.Double
+    public var ascent: Swift.Double
+    public var descVel: Swift.Double
+    public var ascVel: Swift.Double
+    public var vaValley: Swift.Double
+    public var peakBefore: Swift.Int
+    public var peakAfter: Swift.Int
+    public var rescue: Swift.Bool
+    public var selfRescue: Swift.Bool
+    public var cadenceProjRescue: Swift.Bool
+    public var biphasicRescue: Swift.Bool
+  }
+  final public let expectedReps: Swift.Int?
+  final public var candidates: [SonarFitCore.AppleWatchDetector.RepCandidate] {
+    get
+  }
+  final public var repCount: Swift.Int {
+    get
+  }
+  final public var displayCount: Swift.Int {
+    get
+  }
+  final public var onRepDetected: ((Swift.Int) -> Swift.Void)?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(expectedReps: Swift.Int? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @discardableResult
+  final public func processSample(accelX: Swift.Double, accelY: Swift.Double, accelZ: Swift.Double, rotX: Swift.Double, rotY: Swift.Double, rotZ: Swift.Double, gravX: Swift.Double, gravY: Swift.Double, gravZ: Swift.Double, pitch: Swift.Double = 0, roll: Swift.Double = 0, yaw: Swift.Double = 0, quatW: Swift.Double? = nil, quatX: Swift.Double? = nil, quatY: Swift.Double? = nil, quatZ: Swift.Double? = nil) -> [SonarFitCore.AppleWatchDetector.RepCandidate]
+  #endif
+  @discardableResult
+  final public func flush() -> Swift.Int
+  final public func getLatencies() -> [Swift.Double]
+  @objc deinit
+}
+final public class BenchpressDetector {
+  public static let sampleRate: Swift.Double
+  final public let expectedReps: Swift.Int?
+  public struct RepCandidate {
+    public var sample: Swift.Int
+    public var prominence: Swift.Double
+    public var rescue: Swift.Bool
+  }
+  final public var candidates: [SonarFitCore.BenchpressDetector.RepCandidate] {
+    get
+  }
+  final public var repCount: Swift.Int {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(expectedReps: Swift.Int? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func processSample(accelX: Swift.Double, accelY: Swift.Double, accelZ: Swift.Double, rotX: Swift.Double, rotY: Swift.Double, rotZ: Swift.Double, gravX: Swift.Double, gravY: Swift.Double, gravZ: Swift.Double, pitch: Swift.Double = 0, roll: Swift.Double = 0, yaw: Swift.Double = 0, quatW: Swift.Double? = nil, quatX: Swift.Double? = nil, quatY: Swift.Double? = nil, quatZ: Swift.Double? = nil)
+  #endif
+  @discardableResult
+  final public func flush() -> Swift.Int
+  @objc deinit
+}
+public class IncrementalBatchDetector {
+  final public let workoutType: Swift.String
+  final public let deviceType: Swift.String?
+  final public let expectedReps: Swift.Int?
+  public var displayCount: Swift.Int {
+    get
+  }
+  public var repCount: Swift.Int {
+    get
+  }
+  public var onRepDetected: ((Swift.Int) -> Swift.Void)?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(workoutType: Swift.String, deviceType: Swift.String?, expectedReps: Swift.Int? = nil)
+  #endif
+  public func processSample(accelX: Swift.Double, accelY: Swift.Double, accelZ: Swift.Double, rotX: Swift.Double, rotY: Swift.Double, rotZ: Swift.Double, gravX: Swift.Double, gravY: Swift.Double, gravZ: Swift.Double, pitch: Swift.Double)
+  @discardableResult
+  public func flush() -> Swift.Int
+  @objc deinit
+}
+final public class IncrementalBatchWatchDetector {
+  final public let expectedReps: Swift.Int?
+  final public var nSamples: Swift.Int {
+    get
+  }
+  final public var displayCount: Swift.Int {
+    get
+  }
+  final public var repCount: Swift.Int {
+    get
+  }
+  final public var onRepDetected: ((Swift.Int) -> Swift.Void)?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(expectedReps: Swift.Int? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func processSample(accelX: Swift.Double, accelY: Swift.Double, accelZ: Swift.Double, rotX: Swift.Double, rotY: Swift.Double, rotZ: Swift.Double, gravX: Swift.Double, gravY: Swift.Double, gravZ: Swift.Double, pitch: Swift.Double = 0, roll: Swift.Double = 0, yaw: Swift.Double = 0, quatW: Swift.Double? = nil, quatX: Swift.Double? = nil, quatY: Swift.Double? = nil, quatZ: Swift.Double? = nil)
+  #endif
+  @discardableResult
+  final public func flush() -> Swift.Int
+  final public func getLatencies() -> [Swift.Double]
+  @objc deinit
 }
 public struct CountdownState {
   public let startDate: Foundation.Date
@@ -301,7 +431,25 @@ public struct MotionPayload : Swift.Codable {
   public let rotationX: Swift.Double
   public let rotationY: Swift.Double
   public let rotationZ: Swift.Double
-  public init(timestamp: Foundation.Date = Date(), accelerationX: Swift.Double, accelerationY: Swift.Double, accelerationZ: Swift.Double, rotationX: Swift.Double, rotationY: Swift.Double, rotationZ: Swift.Double)
+  public let gravityX: Swift.Double?
+  public let gravityY: Swift.Double?
+  public let gravityZ: Swift.Double?
+  public let pitch: Swift.Double?
+  public let roll: Swift.Double?
+  public let yaw: Swift.Double?
+  public let quatW: Swift.Double?
+  public let quatX: Swift.Double?
+  public let quatY: Swift.Double?
+  public let quatZ: Swift.Double?
+  public let magX: Swift.Double?
+  public let magY: Swift.Double?
+  public let magZ: Swift.Double?
+  public let magAccuracy: Swift.Int?
+  public let heading: Swift.Double?
+  public let sensorTimestamp: Swift.Double?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(timestamp: Foundation.Date = Date(), accelerationX: Swift.Double, accelerationY: Swift.Double, accelerationZ: Swift.Double, rotationX: Swift.Double, rotationY: Swift.Double, rotationZ: Swift.Double, gravityX: Swift.Double? = nil, gravityY: Swift.Double? = nil, gravityZ: Swift.Double? = nil, pitch: Swift.Double? = nil, roll: Swift.Double? = nil, yaw: Swift.Double? = nil, quatW: Swift.Double? = nil, quatX: Swift.Double? = nil, quatY: Swift.Double? = nil, quatZ: Swift.Double? = nil, magX: Swift.Double? = nil, magY: Swift.Double? = nil, magZ: Swift.Double? = nil, magAccuracy: Swift.Int? = nil, heading: Swift.Double? = nil, sensorTimestamp: Swift.Double? = nil)
+  #endif
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }

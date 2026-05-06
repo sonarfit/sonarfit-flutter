@@ -6,55 +6,59 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		Zw2maWmkenBrP1GJz8t0TDnyfPk=
+		CebnrsOYJfC2+im7oVRVBREdodY=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-watchos.abi.json</key>
 		<data>
-		cMr8X/4FpfBAeHoMTRRkYKcokSU=
+		DYEkTQofajC/0Abfgkt6xz8ZbOM=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-watchos.private.swiftinterface</key>
 		<data>
-		GH4N0XcjdKZSi5ToUnn3+cO/uZk=
+		BiUWigfbgwZKLpJIBWyoVMWRYFY=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-watchos.swiftdoc</key>
 		<data>
-		PN/ZBZS+glqyD9+DjWt3pcRUENY=
+		9R/JM5M48yOVGMrHJAWnwuOXqj0=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-watchos.swiftinterface</key>
 		<data>
-		GH4N0XcjdKZSi5ToUnn3+cO/uZk=
+		BiUWigfbgwZKLpJIBWyoVMWRYFY=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-watchos.swiftmodule</key>
 		<data>
-		xMgTrO65T8yxFiFM0sOQycdL8eE=
+		JbfUwwiHLtDIsGOA6ei73gAaPuE=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64_32-apple-watchos.abi.json</key>
 		<data>
-		cMr8X/4FpfBAeHoMTRRkYKcokSU=
+		DYEkTQofajC/0Abfgkt6xz8ZbOM=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64_32-apple-watchos.private.swiftinterface</key>
 		<data>
-		T0JVWUivJuJ1MdOMxMzIqMZOtpg=
+		J2ueDilbuP/rlCBK7KN0EXFiT+s=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64_32-apple-watchos.swiftdoc</key>
 		<data>
-		Kuwo7jegB753WURf9yweMEBtYhI=
+		LOb9mgB9B7E0CtwGPkCCFpdgnYE=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64_32-apple-watchos.swiftinterface</key>
 		<data>
-		T0JVWUivJuJ1MdOMxMzIqMZOtpg=
+		J2ueDilbuP/rlCBK7KN0EXFiT+s=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64_32-apple-watchos.swiftmodule</key>
 		<data>
-		CGIxcLdXpBI68EpV5DbB6mhuAWw=
+		h9tlGuoPvLewWLNhaU8jMWMgPOI=
+		</data>
+		<key>README.md</key>
+		<data>
+		2+AhXgml61KArd/8f380cKGNAAw=
 		</data>
 		<key>RepDetector_v2.mlmodelc/_B0000.DAT</key>
 		<data>
-		8s/vKVmc0cWblrmHoXo7gDzYHJk=
+		0VVn9LIH7gkrkHjT2dkXyRqr19k=
 		</data>
 		<key>RepDetector_v2.mlmodelc/analytics/coremldata.bin</key>
 		<data>
-		j4w13kuCoDxWE8wLI1FxWOjGmsc=
+		C9/SmC551e5rEEidS3i/eDXsmS8=
 		</data>
 		<key>RepDetector_v2.mlmodelc/coremldata.bin</key>
 		<data>
@@ -243,132 +247,143 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cMr8X/4FpfBAeHoMTRRkYKcokSU=
+			DYEkTQofajC/0Abfgkt6xz8ZbOM=
 			</data>
 			<key>hash2</key>
 			<data>
-			+sjWR2vtZaNB17ZzB+vkdPuMwtJko/AJnxD58/c5FUA=
+			JrUEufA6SHlZKKY5gN6vCzBhvQzAzdxp8/zJ2pj/BgM=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-watchos.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GH4N0XcjdKZSi5ToUnn3+cO/uZk=
+			BiUWigfbgwZKLpJIBWyoVMWRYFY=
 			</data>
 			<key>hash2</key>
 			<data>
-			zYtWyyeiY29YMGKu1hKLGL4DDImueMObmw9OuqgJdJQ=
+			CsHH/Sp53Dw62q/4+C7PMeKCwaDXRvUUmvPJJ7Sz8QY=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-watchos.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PN/ZBZS+glqyD9+DjWt3pcRUENY=
+			9R/JM5M48yOVGMrHJAWnwuOXqj0=
 			</data>
 			<key>hash2</key>
 			<data>
-			h7cJfuZXOw/e77zUVp9tNS8LpWVLlIIGr+gh+1lOtv4=
+			/yy3ygz3EkGCiTxkDP46jBF0bdWBz4TqtJHAPlYdpoA=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-watchos.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GH4N0XcjdKZSi5ToUnn3+cO/uZk=
+			BiUWigfbgwZKLpJIBWyoVMWRYFY=
 			</data>
 			<key>hash2</key>
 			<data>
-			zYtWyyeiY29YMGKu1hKLGL4DDImueMObmw9OuqgJdJQ=
+			CsHH/Sp53Dw62q/4+C7PMeKCwaDXRvUUmvPJJ7Sz8QY=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-watchos.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xMgTrO65T8yxFiFM0sOQycdL8eE=
+			JbfUwwiHLtDIsGOA6ei73gAaPuE=
 			</data>
 			<key>hash2</key>
 			<data>
-			fuU3yxU/mAqQG68B291OYLdWDTWilzd/nZKfzM8AiyE=
+			8OqcqTqurRSH347timHhqSKCKLemQVzr/WN9w4MdDM0=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/arm64_32-apple-watchos.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cMr8X/4FpfBAeHoMTRRkYKcokSU=
+			DYEkTQofajC/0Abfgkt6xz8ZbOM=
 			</data>
 			<key>hash2</key>
 			<data>
-			+sjWR2vtZaNB17ZzB+vkdPuMwtJko/AJnxD58/c5FUA=
+			JrUEufA6SHlZKKY5gN6vCzBhvQzAzdxp8/zJ2pj/BgM=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/arm64_32-apple-watchos.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			T0JVWUivJuJ1MdOMxMzIqMZOtpg=
+			J2ueDilbuP/rlCBK7KN0EXFiT+s=
 			</data>
 			<key>hash2</key>
 			<data>
-			NT3Npy0qs/fQrUzq/C+DmzCANLH8wcLBJ5PL+ht5Mpo=
+			rd3D7FH2MeHd0mFNH8POgwthDklpGF2gx4455md6UNA=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/arm64_32-apple-watchos.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Kuwo7jegB753WURf9yweMEBtYhI=
+			LOb9mgB9B7E0CtwGPkCCFpdgnYE=
 			</data>
 			<key>hash2</key>
 			<data>
-			iTQMJGtlV1Mk9wNSW055zg5Ca/adbVdF+lnYzxLc3YE=
+			kOOhA2jzQfcQj37efd9oscKi/z3KOgB+5NMVDXCzIec=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/arm64_32-apple-watchos.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			T0JVWUivJuJ1MdOMxMzIqMZOtpg=
+			J2ueDilbuP/rlCBK7KN0EXFiT+s=
 			</data>
 			<key>hash2</key>
 			<data>
-			NT3Npy0qs/fQrUzq/C+DmzCANLH8wcLBJ5PL+ht5Mpo=
+			rd3D7FH2MeHd0mFNH8POgwthDklpGF2gx4455md6UNA=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/arm64_32-apple-watchos.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CGIxcLdXpBI68EpV5DbB6mhuAWw=
+			h9tlGuoPvLewWLNhaU8jMWMgPOI=
 			</data>
 			<key>hash2</key>
 			<data>
-			SAsxq+nCWBupDeiFutQYlQ7njtfUr/cHIDhZKYCUSME=
+			Zt64UL8W6gMwDKcadlCjW5iqIWEo4biZCn0++LwEncc=
+			</data>
+		</dict>
+		<key>README.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2+AhXgml61KArd/8f380cKGNAAw=
+			</data>
+			<key>hash2</key>
+			<data>
+			N0S4tJjAO1K9H9UAVnyCW+9w8DBpQRS0/n0RCjonDu0=
 			</data>
 		</dict>
 		<key>RepDetector_v2.mlmodelc/_B0000.DAT</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8s/vKVmc0cWblrmHoXo7gDzYHJk=
+			0VVn9LIH7gkrkHjT2dkXyRqr19k=
 			</data>
 			<key>hash2</key>
 			<data>
-			mi63KoUtpT3ik7jYnjg5FjVb8SnlekplSLRMwcp7Z5w=
+			ytPzz72lg3ESHsc3JKCOVD/Z77Kueo5csrXToSYms6M=
 			</data>
 		</dict>
 		<key>RepDetector_v2.mlmodelc/analytics/coremldata.bin</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			j4w13kuCoDxWE8wLI1FxWOjGmsc=
+			C9/SmC551e5rEEidS3i/eDXsmS8=
 			</data>
 			<key>hash2</key>
 			<data>
-			/5ykjjmOyZOw0f+YPuJYO+DU/LXHpt4N7D6UEot8paA=
+			mpJaE4gpC5CCzRo/QwoUIzOJUBV/5V/G0Zy6DBRC+U4=
 			</data>
 		</dict>
 		<key>RepDetector_v2.mlmodelc/coremldata.bin</key>
