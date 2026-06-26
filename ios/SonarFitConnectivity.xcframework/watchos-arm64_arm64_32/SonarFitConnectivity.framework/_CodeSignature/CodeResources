@@ -10,43 +10,51 @@
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-watchos.abi.json</key>
 		<data>
-		KsDvjx5iRn7b6ZMZ8D8BCgTNsHM=
+		tdS8D2KcXOYAwMhakcCU5kTXhBw=
+		</data>
+		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-watchos.package.swiftinterface</key>
+		<data>
+		w6YvQ56GKPETkvUFtmb3Aw3O+OQ=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-watchos.private.swiftinterface</key>
 		<data>
-		xEd7vleVdf7Nwm8ChajBD29VmO4=
+		w6YvQ56GKPETkvUFtmb3Aw3O+OQ=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-watchos.swiftdoc</key>
 		<data>
-		/OxBJOmV+QyygojmamezRKlsXcw=
+		JkOiRis/iAo+/kcq8OmLmB73b3Q=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-watchos.swiftinterface</key>
 		<data>
-		xEd7vleVdf7Nwm8ChajBD29VmO4=
+		w6YvQ56GKPETkvUFtmb3Aw3O+OQ=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-watchos.swiftmodule</key>
 		<data>
-		WC88ZPhmXebFZIA13GR110bPPCk=
+		timtQlQQtInjlyoW4vZHsWJjs2Y=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64_32-apple-watchos.abi.json</key>
 		<data>
-		KsDvjx5iRn7b6ZMZ8D8BCgTNsHM=
+		tdS8D2KcXOYAwMhakcCU5kTXhBw=
+		</data>
+		<key>Modules/SonarFitConnectivity.swiftmodule/arm64_32-apple-watchos.package.swiftinterface</key>
+		<data>
+		roEMbRiqJfHk+vZg67Bj1Rp6qQY=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64_32-apple-watchos.private.swiftinterface</key>
 		<data>
-		1P/lnmnIbNbf9LBGTVsqXONZGoQ=
+		roEMbRiqJfHk+vZg67Bj1Rp6qQY=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64_32-apple-watchos.swiftdoc</key>
 		<data>
-		VWsYBEo2voWyz1RqnL/gN4emS7U=
+		GOgtNvM5SfJ2htZ4JRLKUSRJq+Q=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64_32-apple-watchos.swiftinterface</key>
 		<data>
-		1P/lnmnIbNbf9LBGTVsqXONZGoQ=
+		roEMbRiqJfHk+vZg67Bj1Rp6qQY=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64_32-apple-watchos.swiftmodule</key>
 		<data>
-		OprSKQsO26fW3jkg6ZOrq3XPql0=
+		EJmhQ62w/0fUYAHTOhCVgvvN7ww=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,110 +63,132 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KsDvjx5iRn7b6ZMZ8D8BCgTNsHM=
+			tdS8D2KcXOYAwMhakcCU5kTXhBw=
 			</data>
 			<key>hash2</key>
 			<data>
-			CYHys0W/JTGzgsAVadVDhSj5GNM95bwmIF4SBzhNwWM=
+			pS4+SLefozFkx+sjSgkliUfLgqVGADRMLfXnR5D0i2I=
+			</data>
+		</dict>
+		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-watchos.package.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			w6YvQ56GKPETkvUFtmb3Aw3O+OQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			RgXayGs65GfhGmAIzM2tOVQOhEHP+5Z9M93mCXUaBqM=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-watchos.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xEd7vleVdf7Nwm8ChajBD29VmO4=
+			w6YvQ56GKPETkvUFtmb3Aw3O+OQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			qMTdwbZFcmS8Ks0T7COUsx7Cll7Y9nI4gMJs45FjEuE=
+			RgXayGs65GfhGmAIzM2tOVQOhEHP+5Z9M93mCXUaBqM=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-watchos.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/OxBJOmV+QyygojmamezRKlsXcw=
+			JkOiRis/iAo+/kcq8OmLmB73b3Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			nZ4qMIVxrRddvw9y5ljR4r89L3DM7DEhAhueNnSr+7c=
+			H+ITGkvEwRSWcp2DYAGg5YaHuBpR3FMrIAsm7VO+OBo=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-watchos.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xEd7vleVdf7Nwm8ChajBD29VmO4=
+			w6YvQ56GKPETkvUFtmb3Aw3O+OQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			qMTdwbZFcmS8Ks0T7COUsx7Cll7Y9nI4gMJs45FjEuE=
+			RgXayGs65GfhGmAIzM2tOVQOhEHP+5Z9M93mCXUaBqM=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-watchos.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WC88ZPhmXebFZIA13GR110bPPCk=
+			timtQlQQtInjlyoW4vZHsWJjs2Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			kmkAZql8rkSn5JVvfeo3m5l8l9VDyhC58g5tutv789o=
+			kZdzEGS2TPYNhKC46h7FpkivkoU9qbf9MtwDLQjxgj8=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64_32-apple-watchos.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			KsDvjx5iRn7b6ZMZ8D8BCgTNsHM=
+			tdS8D2KcXOYAwMhakcCU5kTXhBw=
 			</data>
 			<key>hash2</key>
 			<data>
-			CYHys0W/JTGzgsAVadVDhSj5GNM95bwmIF4SBzhNwWM=
+			pS4+SLefozFkx+sjSgkliUfLgqVGADRMLfXnR5D0i2I=
+			</data>
+		</dict>
+		<key>Modules/SonarFitConnectivity.swiftmodule/arm64_32-apple-watchos.package.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			roEMbRiqJfHk+vZg67Bj1Rp6qQY=
+			</data>
+			<key>hash2</key>
+			<data>
+			hZHvmx3htDQhyN3RaFaf1oWmsCBvsfudteja5SdKiow=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64_32-apple-watchos.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1P/lnmnIbNbf9LBGTVsqXONZGoQ=
+			roEMbRiqJfHk+vZg67Bj1Rp6qQY=
 			</data>
 			<key>hash2</key>
 			<data>
-			xrfieabQDEOphPW33ODqNaDhsmU6jc/YLNvx499vxk8=
+			hZHvmx3htDQhyN3RaFaf1oWmsCBvsfudteja5SdKiow=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64_32-apple-watchos.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VWsYBEo2voWyz1RqnL/gN4emS7U=
+			GOgtNvM5SfJ2htZ4JRLKUSRJq+Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			suHbde60qIhXM3MvBkYet1D083RRu1Dg6mwhEeo0BiA=
+			pspdQWMFiSUJ2il9XkPu8opzhYQyPkAaWzqIsmmv+IQ=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64_32-apple-watchos.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1P/lnmnIbNbf9LBGTVsqXONZGoQ=
+			roEMbRiqJfHk+vZg67Bj1Rp6qQY=
 			</data>
 			<key>hash2</key>
 			<data>
-			xrfieabQDEOphPW33ODqNaDhsmU6jc/YLNvx499vxk8=
+			hZHvmx3htDQhyN3RaFaf1oWmsCBvsfudteja5SdKiow=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64_32-apple-watchos.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OprSKQsO26fW3jkg6ZOrq3XPql0=
+			EJmhQ62w/0fUYAHTOhCVgvvN7ww=
 			</data>
 			<key>hash2</key>
 			<data>
-			ByS63vIy7yjQcAUtSzJHA9bFfdCMm2fF41iW51fc6Ew=
+			Ux4o73iPWSWiJefnLXSHJKColdt4fgw9lXFM9owfUHU=
 			</data>
 		</dict>
 	</dict>

@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
-// swift-module-flags: -target arm64-apple-ios17.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SonarFitConnectivity
+// swift-module-flags: -target arm64-apple-ios17.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SonarFitConnectivity -package-name SonarFitSDK
 // swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import Combine
 import Compression
@@ -26,6 +26,7 @@ public enum WatchLaunchError : Foundation.LocalizedError {
   final public var isWatchConnected: Swift.Bool {
     get
   }
+  final public func setupHealthKitMirroring()
   final public func cleanupStaleSession()
   final public func launchWatchApp() async throws
   final public func startWorkoutOnWatch(config: SonarFitCore.WorkoutConfig) async throws
@@ -48,12 +49,25 @@ public enum WatchLaunchError : Foundation.LocalizedError {
   final public func setManualAdjustmentHandler(_ handler: @escaping (Swift.Int) -> Swift.Void)
   final public func setManualIncrementHandler(_ handler: @escaping () -> Swift.Void)
   final public func setManualDecrementHandler(_ handler: @escaping () -> Swift.Void)
+  final public func setWatchRepDetectedHandler(_ handler: @escaping (Swift.Int) -> Swift.Void)
+  final public func setWatchEndSetEarlyHandler(_ handler: @escaping () -> Swift.Void)
+  final public func setWatchReadyHandler(_ handler: @escaping () -> Swift.Void)
+  final public func setMirroringRunningHandler(_ handler: @escaping () -> Swift.Void)
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func setWatchReviewVerdictHandler(_ handler: @escaping (Swift.Int, Swift.String, Swift.Int?) -> Swift.Void)
+  #endif
+  final public func setWatchTypeReportHandler(_ handler: @escaping (Swift.String) -> Swift.Void)
+  final public func setWatchRepCountResetHandler(_ handler: @escaping (Swift.Int) -> Swift.Void)
+  final public func setWatchSetCSVHandler(_ handler: @escaping (Swift.Int, Foundation.Data, Swift.String, Swift.Int) -> Swift.Void)
   final public func setWorkoutResetHandler(_ handler: @escaping () -> Swift.Void)
   final public func setFinishAndSaveHandler(_ handler: @escaping () -> Swift.Void)
   final public func setFinishAndDiscardHandler(_ handler: @escaping () -> Swift.Void)
   final public func setWorkoutStartingHandler(_ handler: @escaping () -> Swift.Void)
-  final public func sendConfigToWatch(config: SonarFitCore.WorkoutConfig)
-  final public func sendConfigUpdate(config: SonarFitCore.WorkoutConfig)
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func sendVersionedConfigToWatch(_ versioned: SonarFitCore.VersionedConfig?)
+  #endif
+  final public func sendVersionedConfigEvent(_ versioned: SonarFitCore.VersionedConfig)
+  final public func confirmWorkoutTypeToWatch(_ rawType: Swift.String)
   final public func sendMessage(_ message: SonarFitConnectivity.WatchMessage)
   final public func sendRawMessage(_ message: [Swift.String : Any])
   @objc deinit
@@ -69,6 +83,10 @@ extension SonarFitConnectivity.PhoneConnectivityManager : WatchConnectivity.WCSe
   @objc final public func session(_ session: WatchConnectivity.WCSession, didReceiveMessageData messageData: Foundation.Data)
   @objc final public func session(_ session: WatchConnectivity.WCSession, didReceiveMessage message: [Swift.String : Any], replyHandler: @escaping ([Swift.String : Any]) -> Swift.Void)
   @objc final public func session(_ session: WatchConnectivity.WCSession, didReceiveMessage message: [Swift.String : Any])
+  @objc final public func session(_ session: WatchConnectivity.WCSession, didReceive file: WatchConnectivity.WCSessionFile)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func session(_ session: WatchConnectivity.WCSession, didFinish fileTransfer: WatchConnectivity.WCSessionFileTransfer, error: (any Swift.Error)?)
+  #endif
 }
 extension SonarFitConnectivity.PhoneConnectivityManager : HealthKit.HKWorkoutSessionDelegate {
   @objc final public func workoutSession(_ workoutSession: HealthKit.HKWorkoutSession, didChangeTo toState: HealthKit.HKWorkoutSessionState, from fromState: HealthKit.HKWorkoutSessionState, date: Foundation.Date)

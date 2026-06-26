@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
-// swift-module-flags: -target arm64_32-apple-watchos10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SonarFitConnectivity
+// swift-module-flags: -target arm64_32-apple-watchos10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SonarFitConnectivity -package-name SonarFitSDK
 // swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import Combine
 import Compression
@@ -87,8 +87,11 @@ public enum ConnectivityInfo {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
+  final public func resetForNewWorkout()
   final public func startMotionCapture()
   final public func stopMotionCapture()
+  final public func endSetAndTransferCSV(setEndedEarly: Swift.Bool = false)
+  final public func swapDetectorWorkoutType(_ newType: Swift.String)
   final public func sendMessage(_ message: SonarFitConnectivity.WatchMessage)
   final public func sendSimpleEvent(eventType: Swift.String, inputPayload: [Swift.String : Any] = [:])
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
@@ -175,6 +178,10 @@ public struct WatchWorkoutState : Swift.Codable {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
+  final public var isConfigReadyForDetection: Swift.Bool {
+    get
+  }
+  final public func markDetectorPending()
   @Combine.Published @_projectedValueProperty($currentSetRepsCompleted) final public var currentSetRepsCompleted: Swift.Int {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
@@ -264,6 +271,22 @@ public struct WatchWorkoutState : Swift.Codable {
   }
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
+  @Combine.Published @_projectedValueProperty($pendingSetReview) final public var pendingSetReview: SonarFitCore.PendingSetReview? {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var $pendingSetReview: Combine.Published<SonarFitCore.PendingSetReview?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var currentWorkoutSession: HealthKit.HKWorkoutSession? {
     get
   }
@@ -281,6 +304,12 @@ public struct WatchWorkoutState : Swift.Codable {
   final public func finishWorkout(save: Swift.Bool)
   final public func resetToReady()
   final public func updateConfig(_ newConfig: SonarFitCore.WorkoutConfig)
+  final public func endSetEarly()
+  public enum WatchReviewVerdict {
+    case actual(reps: Swift.Int)
+    case dismissed
+  }
+  final public func recordSetReview(setIndex: Swift.Int, verdict: SonarFitConnectivity.WatchWorkoutSessionManager.WatchReviewVerdict)
   final public func incrementRep()
   final public func decrementRep()
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher

@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
-// swift-module-flags: -target arm64-apple-ios17.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SonarFitKit
+// swift-module-flags: -target arm64-apple-ios17.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SonarFitKit -package-name SonarFitSDK
 // swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import Foundation
 @_exported import SonarFitConnectivity
@@ -53,9 +53,11 @@ final public class SonarFit {
   @_Concurrency.MainActor public static func observeWatchWorkouts(config: SonarFitKit.WorkoutConfig, onStarted: @escaping (SonarFitKit.SonarFitWorkout) -> Swift.Void)
   @available(iOS 17.0, *)
   public static func resendWatchConfig()
+  @available(iOS 17.0, *)
+  public static func prewarmWatch()
   #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 17.0, *)
-  public static func updateWatchConfig(sets: Swift.Int? = nil, reps: Swift.Int? = nil, restTime: Swift.Int? = nil)
+  public static func updateWatchConfig(workoutType: SonarFitKit.WorkoutType? = nil, sets: Swift.Int? = nil, reps: Swift.Int? = nil, restTime: Swift.Int? = nil)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   public static func setupWatchHandlers(for engine: SonarFitKit.WorkoutEngine?)
@@ -71,6 +73,14 @@ extension SwiftUICore.View {
 @available(iOS 17.0, *)
 extension SonarFitCore.SonarFitWorkout {
   @_Concurrency.MainActor public func launchWatchAndStart() async throws
+}
+@available(iOS 15.0, watchOS 10.0, *)
+extension SonarFitKit.SonarFit {
+  public static var feedbackSheetEnabled: Swift.Bool {
+    get
+  }
+  public static func recordSetReview(setIndex: Swift.Int, verdict: SonarFitCore.SetReviewVerdict)
+  public static func discardSet(setIndex: Swift.Int)
 }
 public struct SonarFitSDKVersion {
   public static let current: Swift.String

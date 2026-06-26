@@ -1,11 +1,10 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
-// swift-module-flags: -target arm64-apple-ios17.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SonarFitCore -package-name SonarFitSDK
+// swift-module-flags: -target arm64_32-apple-watchos10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SonarFitCore -package-name SonarFitSDK
 // swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import AVFoundation
 import Combine
 import Compression
-import CoreBluetooth
 import CoreMotion
 import CryptoKit
 import DeviceCheck
@@ -14,9 +13,7 @@ import MediaPlayer
 import Security
 import Swift
 import UIKit
-import UIKit
-import UIKit
-import WatchConnectivity
+import WatchKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
@@ -155,21 +152,6 @@ final public class WorkoutEngine {
   final public var motionProcessor: SonarFitCore.EnhancedMotionProcessor {
     get
   }
-  final public var isHeadphonesConnected: Swift.Bool {
-    get
-  }
-  final public var isHeadphonesInEar: Swift.Bool {
-    get
-  }
-  final public var isWatchPaired: Swift.Bool {
-    get
-  }
-  final public var isWatchAppInstalled: Swift.Bool {
-    get
-  }
-  final public var isWatchReachable: Swift.Bool {
-    get
-  }
   final public var restTimerState: SonarFitCore.RestTimerState? {
     get
   }
@@ -208,6 +190,32 @@ extension SonarFitCore.WorkoutEngine : SonarFitCore.MotionProcessorDelegate {
   final public func motionProcessor<T>(_ processor: T, didEncounterPermissionError error: any Swift.Error)
   final public func getCurrentSetNumber() -> Swift.Int
   final public func getCurrentSetRepsCompleted() -> Swift.Int
+}
+package protocol WatchRepDetector : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  var onRepDetected: ((Swift.Int) -> Swift.Void)? { get set }
+  #endif
+  var displayCount: Swift.Int { get }
+  var repCount: Swift.Int { get }
+  #if compiler(>=5.3) && $NonescapableTypes
+  func processSample(accelX: Swift.Double, accelY: Swift.Double, accelZ: Swift.Double, rotX: Swift.Double, rotY: Swift.Double, rotZ: Swift.Double, gravX: Swift.Double, gravY: Swift.Double, gravZ: Swift.Double, pitch: Swift.Double, roll: Swift.Double, yaw: Swift.Double, quatW: Swift.Double?, quatX: Swift.Double?, quatY: Swift.Double?, quatZ: Swift.Double?)
+  #endif
+  @discardableResult
+  func flush() -> Swift.Int
+}
+package protocol EndOfSetWatchDetector : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  func processSample(accelX: Swift.Double, accelY: Swift.Double, accelZ: Swift.Double, rotX: Swift.Double, rotY: Swift.Double, rotZ: Swift.Double, gravX: Swift.Double, gravY: Swift.Double, gravZ: Swift.Double, pitch: Swift.Double, roll: Swift.Double, yaw: Swift.Double, quatW: Swift.Double?, quatX: Swift.Double?, quatY: Swift.Double?, quatZ: Swift.Double?)
+  #endif
+  @discardableResult
+  func flush() -> Swift.Int
+  var repCount: Swift.Int { get }
+  var repSamples: [Swift.Int] { get }
+}
+package enum WatchRepDetectorFactory {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func make(workoutType: Swift.String?, expectedReps: Swift.Int?) -> any SonarFitCore.WatchRepDetector
+  #endif
 }
 public struct CountdownState {
   public let startDate: Foundation.Date
@@ -315,11 +323,6 @@ public enum DeviceType : Swift.String, Swift.CaseIterable, Swift.Codable {
     get
   }
   public var rawValue: Swift.String {
-    get
-  }
-}
-extension SonarFitCore.DeviceType {
-  public var isAvailable: Swift.Bool {
     get
   }
 }
@@ -503,20 +506,8 @@ public protocol WorkoutEngineDelegate : AnyObject {
   func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didUpdateDeviceStatus status: Swift.String)
   func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, setReadyForReview setIndex: Swift.Int, liveRepCount: Swift.Int, deadline: Foundation.Date)
   func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, setReviewResolved setIndex: Swift.Int)
-  func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, shouldLaunchWatchWithConfig config: SonarFitCore.WorkoutConfig)
-  func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, shouldSendWorkoutToWatch config: SonarFitCore.WorkoutConfig)
-  func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, shouldUpdateWatchRestTimer remaining: Swift.Int, total: Swift.Int)
-  #if compiler(>=5.3) && $NonescapableTypes
-  func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, shouldEndWatchWorkout result: SonarFitCore.WorkoutResult?)
-  #endif
-  func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, shouldSendWatchMessage message: Any)
 }
 public protocol DeviceStatusDelegate : AnyObject {
-  func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didUpdateHeadphoneConnection isConnected: Swift.Bool)
-  func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didUpdateHeadphoneInEar isInEar: Swift.Bool)
-  func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didUpdateWatchPaired isPaired: Swift.Bool)
-  func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didUpdateWatchAppInstalled isInstalled: Swift.Bool)
-  func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didUpdateWatchReachable isReachable: Swift.Bool)
 }
 public protocol MotionProcessorDelegate : AnyObject {
   func motionProcessor<T>(_ processor: T, didDetectRep confidence: Swift.Double)
@@ -540,20 +531,6 @@ extension SonarFitCore.WorkoutEngineDelegate {
   public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didUpdateDeviceStatus status: Swift.String)
   public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, setReadyForReview setIndex: Swift.Int, liveRepCount: Swift.Int, deadline: Foundation.Date)
   public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, setReviewResolved setIndex: Swift.Int)
-  public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, shouldLaunchWatchWithConfig config: SonarFitCore.WorkoutConfig)
-  public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, shouldSendWorkoutToWatch config: SonarFitCore.WorkoutConfig)
-  public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, shouldUpdateWatchRestTimer remaining: Swift.Int, total: Swift.Int)
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, shouldEndWatchWorkout result: SonarFitCore.WorkoutResult?)
-  #endif
-  public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, shouldSendWatchMessage message: Any)
-}
-extension SonarFitCore.DeviceStatusDelegate {
-  public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didUpdateHeadphoneConnection isConnected: Swift.Bool)
-  public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didUpdateHeadphoneInEar isInEar: Swift.Bool)
-  public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didUpdateWatchPaired isPaired: Swift.Bool)
-  public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didUpdateWatchAppInstalled isInstalled: Swift.Bool)
-  public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didUpdateWatchReachable isReachable: Swift.Bool)
 }
 extension SonarFitCore.MotionProcessorDelegate {
   public func motionProcessor<T>(_ processor: T, didDetectRep confidence: Swift.Double)
@@ -571,7 +548,7 @@ public enum SonarFitDefaults {
     public static let textOnBackground: UIKit.UIColor
     public static let subtextOnBackground: UIKit.UIColor
     public static let textOnPrimary: UIKit.UIColor
-    public static let timerWarning: UIKit.UIColor
+    public static let timerWarning: SonarFitCore.PlatformColor
   }
   public enum Fonts {
     public static let title: UIKit.UIFont
@@ -658,60 +635,6 @@ public enum SonarFitLogLevel : Swift.Int, Swift.Comparable {
   @objc deinit
 }
 public typealias SFLog = SonarFitCore.SonarFitLogger
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class WatchStatusManager : ObjectiveC.NSObject, Foundation.ObservableObject {
-  public static let shared: SonarFitCore.WatchStatusManager
-  @Combine.Published @_projectedValueProperty($isWatchPaired) final public var isWatchPaired: Swift.Bool {
-    get
-    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-    set
-    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-    _modify
-  }
-  final public var $isWatchPaired: Combine.Published<Swift.Bool>.Publisher {
-    get
-    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
-    set
-  }
-  @Combine.Published @_projectedValueProperty($isWatchAppInstalled) final public var isWatchAppInstalled: Swift.Bool {
-    get
-    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-    set
-    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-    _modify
-  }
-  final public var $isWatchAppInstalled: Combine.Published<Swift.Bool>.Publisher {
-    get
-    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
-    set
-  }
-  @Combine.Published @_projectedValueProperty($isWatchReachable) final public var isWatchReachable: Swift.Bool {
-    get
-    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-    set
-    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-    _modify
-  }
-  final public var $isWatchReachable: Combine.Published<Swift.Bool>.Publisher {
-    get
-    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
-    set
-  }
-  @Combine.Published @_projectedValueProperty($isWatchAvailable) final public var isWatchAvailable: Swift.Bool {
-    get
-    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-    set
-    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-    _modify
-  }
-  final public var $isWatchAvailable: Combine.Published<Swift.Bool>.Publisher {
-    get
-    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
-    set
-  }
-  final public func checkWatchAppAvailability()
-  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
-  @objc deinit
-}
 @available(iOS 17.0, watchOS 10.0, macOS 10.15, *)
 public class SonarFitWorkout : Foundation.ObservableObject, SonarFitCore.WorkoutEngineDelegate {
   @Combine.Published @_projectedValueProperty($state) public var state: SonarFitCore.WorkoutState {
@@ -790,67 +713,7 @@ public class SonarFitWorkout : Foundation.ObservableObject, SonarFitCore.Workout
   public var $deviceType: Combine.Published<SonarFitCore.DeviceType>.Publisher {
     get
   }
-  @Combine.Published @_projectedValueProperty($isHeadphonesConnected) public var isHeadphonesConnected: Swift.Bool {
-    get
-  }
-  public var $isHeadphonesConnected: Combine.Published<Swift.Bool>.Publisher {
-    get
-  }
-  @Combine.Published @_projectedValueProperty($isHeadphonesInEar) public var isHeadphonesInEar: Swift.Bool {
-    get
-  }
-  public var $isHeadphonesInEar: Combine.Published<Swift.Bool>.Publisher {
-    get
-  }
-  @Combine.Published @_projectedValueProperty($isWatchPaired) public var isWatchPaired: Swift.Bool {
-    get
-  }
-  public var $isWatchPaired: Combine.Published<Swift.Bool>.Publisher {
-    get
-  }
-  @Combine.Published @_projectedValueProperty($isWatchAppInstalled) public var isWatchAppInstalled: Swift.Bool {
-    get
-  }
-  public var $isWatchAppInstalled: Combine.Published<Swift.Bool>.Publisher {
-    get
-  }
-  @Combine.Published @_projectedValueProperty($isWatchReachable) public var isWatchReachable: Swift.Bool {
-    get
-  }
-  public var $isWatchReachable: Combine.Published<Swift.Bool>.Publisher {
-    get
-  }
-  @Combine.Published @_projectedValueProperty($isLaunchingWatch) public var isLaunchingWatch: Swift.Bool {
-    get
-    @available(iOS 17.0, tvOS 13.0, watchOS 10.0, macOS 10.15, *)
-    set
-    @available(iOS 17.0, tvOS 13.0, watchOS 10.0, macOS 10.15, *)
-    _modify
-  }
-  public var $isLaunchingWatch: Combine.Published<Swift.Bool>.Publisher {
-    get
-    @available(iOS 17.0, tvOS 14.0, watchOS 10.0, macOS 11.0, *)
-    set
-  }
-  #if compiler(>=5.3) && $NonescapableTypes
-  @Combine.Published @_projectedValueProperty($watchLaunchError) public var watchLaunchError: (any Swift.Error)? {
-    get
-    @available(iOS 17.0, tvOS 13.0, watchOS 10.0, macOS 10.15, *)
-    set
-    @available(iOS 17.0, tvOS 13.0, watchOS 10.0, macOS 10.15, *)
-    _modify
-  }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public var $watchLaunchError: Combine.Published<(any Swift.Error)?>.Publisher {
-    get
-    @available(iOS 17.0, tvOS 14.0, watchOS 10.0, macOS 11.0, *)
-    set
-  }
-  #endif
   final public let config: SonarFitCore.WorkoutConfig
-  public var onDeviceChange: ((SonarFitCore.DeviceType) -> Swift.Void)?
-  public var onSendWatchMessage: (([Swift.String : Any]) -> Swift.Void)?
   public init(config: SonarFitCore.WorkoutConfig, engine: SonarFitCore.WorkoutEngine)
   public func start()
   public func pause()

@@ -150,8 +150,8 @@
       },
       {
         "kind": "Import",
-        "name": "Compression",
-        "printedName": "Compression",
+        "name": "WatchKit",
+        "printedName": "WatchKit",
         "declKind": "Import",
         "moduleName": "SonarFitConnectivity"
       },
@@ -1345,6 +1345,28 @@
           },
           {
             "kind": "Function",
+            "name": "resetForNewWorkout",
+            "printedName": "resetForNewWorkout()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20SonarFitConnectivity05WatchC7ManagerC18resetForNewWorkoutyyF",
+            "mangledName": "$s20SonarFitConnectivity05WatchC7ManagerC18resetForNewWorkoutyyF",
+            "moduleName": "SonarFitConnectivity",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "startMotionCapture",
             "printedName": "startMotionCapture()",
             "children": [
@@ -1379,6 +1401,63 @@
             "declKind": "Func",
             "usr": "s:20SonarFitConnectivity05WatchC7ManagerC17stopMotionCaptureyyF",
             "mangledName": "$s20SonarFitConnectivity05WatchC7ManagerC17stopMotionCaptureyyF",
+            "moduleName": "SonarFitConnectivity",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "endSetAndTransferCSV",
+            "printedName": "endSetAndTransferCSV(setEndedEarly:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20SonarFitConnectivity05WatchC7ManagerC20endSetAndTransferCSV13setEndedEarlyySb_tF",
+            "mangledName": "$s20SonarFitConnectivity05WatchC7ManagerC20endSetAndTransferCSV13setEndedEarlyySb_tF",
+            "moduleName": "SonarFitConnectivity",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "swapDetectorWorkoutType",
+            "printedName": "swapDetectorWorkoutType(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20SonarFitConnectivity05WatchC7ManagerC23swapDetectorWorkoutTypeyySSF",
+            "mangledName": "$s20SonarFitConnectivity05WatchC7ManagerC23swapDetectorWorkoutTypeyySSF",
             "moduleName": "SonarFitConnectivity",
             "declAttributes": [
               "Final",
@@ -3891,6 +3970,73 @@
           },
           {
             "kind": "Var",
+            "name": "isConfigReadyForDetection",
+            "printedName": "isConfigReadyForDetection",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20SonarFitConnectivity26WatchWorkoutSessionManagerC25isConfigReadyForDetectionSbvp",
+            "mangledName": "$s20SonarFitConnectivity26WatchWorkoutSessionManagerC25isConfigReadyForDetectionSbvp",
+            "moduleName": "SonarFitConnectivity",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20SonarFitConnectivity26WatchWorkoutSessionManagerC25isConfigReadyForDetectionSbvg",
+                "mangledName": "$s20SonarFitConnectivity26WatchWorkoutSessionManagerC25isConfigReadyForDetectionSbvg",
+                "moduleName": "SonarFitConnectivity",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "markDetectorPending",
+            "printedName": "markDetectorPending()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20SonarFitConnectivity26WatchWorkoutSessionManagerC19markDetectorPendingyyF",
+            "mangledName": "$s20SonarFitConnectivity26WatchWorkoutSessionManagerC19markDetectorPendingyyF",
+            "moduleName": "SonarFitConnectivity",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
             "name": "currentSetRepsCompleted",
             "printedName": "currentSetRepsCompleted",
             "children": [
@@ -5479,6 +5625,251 @@
           },
           {
             "kind": "Var",
+            "name": "pendingSetReview",
+            "printedName": "pendingSetReview",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SonarFitCore.PendingSetReview?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PendingSetReview",
+                    "printedName": "SonarFitCore.PendingSetReview",
+                    "usr": "s:12SonarFitCore16PendingSetReviewV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20SonarFitConnectivity26WatchWorkoutSessionManagerC16pendingSetReview0aB4Core07PendingiJ0VSgvp",
+            "mangledName": "$s20SonarFitConnectivity26WatchWorkoutSessionManagerC16pendingSetReview0aB4Core07PendingiJ0VSgvp",
+            "moduleName": "SonarFitConnectivity",
+            "declAttributes": [
+              "Final",
+              "ProjectedValueProperty",
+              "AccessControl",
+              "Custom",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "SonarFitCore.PendingSetReview?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PendingSetReview",
+                        "printedName": "SonarFitCore.PendingSetReview",
+                        "usr": "s:12SonarFitCore16PendingSetReviewV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20SonarFitConnectivity26WatchWorkoutSessionManagerC16pendingSetReview0aB4Core07PendingiJ0VSgvg",
+                "mangledName": "$s20SonarFitConnectivity26WatchWorkoutSessionManagerC16pendingSetReview0aB4Core07PendingiJ0VSgvg",
+                "moduleName": "SonarFitConnectivity",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "SonarFitCore.PendingSetReview?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PendingSetReview",
+                        "printedName": "SonarFitCore.PendingSetReview",
+                        "usr": "s:12SonarFitCore16PendingSetReviewV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20SonarFitConnectivity26WatchWorkoutSessionManagerC16pendingSetReview0aB4Core07PendingiJ0VSgvs",
+                "mangledName": "$s20SonarFitConnectivity26WatchWorkoutSessionManagerC16pendingSetReview0aB4Core07PendingiJ0VSgvs",
+                "moduleName": "SonarFitConnectivity",
+                "implicit": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Final",
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20SonarFitConnectivity26WatchWorkoutSessionManagerC16pendingSetReview0aB4Core07PendingiJ0VSgvM",
+                "mangledName": "$s20SonarFitConnectivity26WatchWorkoutSessionManagerC16pendingSetReview0aB4Core07PendingiJ0VSgvM",
+                "moduleName": "SonarFitConnectivity",
+                "implicit": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Final",
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$pendingSetReview",
+            "printedName": "$pendingSetReview",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Publisher",
+                "printedName": "Combine.Published<Swift.Optional<SonarFitCore.PendingSetReview>>.Publisher",
+                "usr": "s:7Combine9PublishedV9PublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20SonarFitConnectivity26WatchWorkoutSessionManagerC17$pendingSetReview7Combine9PublishedV9PublisherVy0aB4Core07PendingiJ0VSg_Gvp",
+            "mangledName": "$s20SonarFitConnectivity26WatchWorkoutSessionManagerC17$pendingSetReview7Combine9PublishedV9PublisherVy0aB4Core07PendingiJ0VSg_Gvp",
+            "moduleName": "SonarFitConnectivity",
+            "implicit": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.Optional<SonarFitCore.PendingSetReview>>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20SonarFitConnectivity26WatchWorkoutSessionManagerC17$pendingSetReview7Combine9PublishedV9PublisherVy0aB4Core07PendingiJ0VSg_Gvg",
+                "mangledName": "$s20SonarFitConnectivity26WatchWorkoutSessionManagerC17$pendingSetReview7Combine9PublishedV9PublisherVy0aB4Core07PendingiJ0VSg_Gvg",
+                "moduleName": "SonarFitConnectivity",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.Optional<SonarFitCore.PendingSetReview>>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20SonarFitConnectivity26WatchWorkoutSessionManagerC17$pendingSetReview7Combine9PublishedV9PublisherVy0aB4Core07PendingiJ0VSg_Gvs",
+                "mangledName": "$s20SonarFitConnectivity26WatchWorkoutSessionManagerC17$pendingSetReview7Combine9PublishedV9PublisherVy0aB4Core07PendingiJ0VSg_Gvs",
+                "moduleName": "SonarFitConnectivity",
+                "implicit": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "14.0",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Final",
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20SonarFitConnectivity26WatchWorkoutSessionManagerC17$pendingSetReview7Combine9PublishedV9PublisherVy0aB4Core07PendingiJ0VSg_GvM",
+                "mangledName": "$s20SonarFitConnectivity26WatchWorkoutSessionManagerC17$pendingSetReview7Combine9PublishedV9PublisherVy0aB4Core07PendingiJ0VSg_GvM",
+                "moduleName": "SonarFitConnectivity",
+                "implicit": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "14.0",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Final",
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "currentWorkoutSession",
             "printedName": "currentWorkoutSession",
             "children": [
@@ -5828,6 +6219,190 @@
             "declAttributes": [
               "Final",
               "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "endSetEarly",
+            "printedName": "endSetEarly()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20SonarFitConnectivity26WatchWorkoutSessionManagerC11endSetEarlyyyF",
+            "mangledName": "$s20SonarFitConnectivity26WatchWorkoutSessionManagerC11endSetEarlyyyF",
+            "moduleName": "SonarFitConnectivity",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "WatchReviewVerdict",
+            "printedName": "WatchReviewVerdict",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "actual",
+                "printedName": "actual",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(SonarFitConnectivity.WatchWorkoutSessionManager.WatchReviewVerdict.Type) -> (Swift.Int) -> SonarFitConnectivity.WatchWorkoutSessionManager.WatchReviewVerdict",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.Int) -> SonarFitConnectivity.WatchWorkoutSessionManager.WatchReviewVerdict",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "WatchReviewVerdict",
+                            "printedName": "SonarFitConnectivity.WatchWorkoutSessionManager.WatchReviewVerdict",
+                            "usr": "s:20SonarFitConnectivity26WatchWorkoutSessionManagerC0D13ReviewVerdictO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(reps: Swift.Int)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int",
+                                "printedName": "Swift.Int",
+                                "usr": "s:Si"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "SonarFitConnectivity.WatchWorkoutSessionManager.WatchReviewVerdict.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "WatchReviewVerdict",
+                            "printedName": "SonarFitConnectivity.WatchWorkoutSessionManager.WatchReviewVerdict",
+                            "usr": "s:20SonarFitConnectivity26WatchWorkoutSessionManagerC0D13ReviewVerdictO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:20SonarFitConnectivity26WatchWorkoutSessionManagerC0D13ReviewVerdictO6actualyAESi_tcAEmF",
+                "mangledName": "$s20SonarFitConnectivity26WatchWorkoutSessionManagerC0D13ReviewVerdictO6actualyAESi_tcAEmF",
+                "moduleName": "SonarFitConnectivity"
+              },
+              {
+                "kind": "Var",
+                "name": "dismissed",
+                "printedName": "dismissed",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(SonarFitConnectivity.WatchWorkoutSessionManager.WatchReviewVerdict.Type) -> SonarFitConnectivity.WatchWorkoutSessionManager.WatchReviewVerdict",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WatchReviewVerdict",
+                        "printedName": "SonarFitConnectivity.WatchWorkoutSessionManager.WatchReviewVerdict",
+                        "usr": "s:20SonarFitConnectivity26WatchWorkoutSessionManagerC0D13ReviewVerdictO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "SonarFitConnectivity.WatchWorkoutSessionManager.WatchReviewVerdict.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "WatchReviewVerdict",
+                            "printedName": "SonarFitConnectivity.WatchWorkoutSessionManager.WatchReviewVerdict",
+                            "usr": "s:20SonarFitConnectivity26WatchWorkoutSessionManagerC0D13ReviewVerdictO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:20SonarFitConnectivity26WatchWorkoutSessionManagerC0D13ReviewVerdictO9dismissedyA2EmF",
+                "mangledName": "$s20SonarFitConnectivity26WatchWorkoutSessionManagerC0D13ReviewVerdictO9dismissedyA2EmF",
+                "moduleName": "SonarFitConnectivity",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:20SonarFitConnectivity26WatchWorkoutSessionManagerC0D13ReviewVerdictO",
+            "mangledName": "$s20SonarFitConnectivity26WatchWorkoutSessionManagerC0D13ReviewVerdictO",
+            "moduleName": "SonarFitConnectivity",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "recordSetReview",
+            "printedName": "recordSetReview(setIndex:verdict:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WatchReviewVerdict",
+                "printedName": "SonarFitConnectivity.WatchWorkoutSessionManager.WatchReviewVerdict",
+                "usr": "s:20SonarFitConnectivity26WatchWorkoutSessionManagerC0D13ReviewVerdictO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20SonarFitConnectivity26WatchWorkoutSessionManagerC15recordSetReview8setIndex7verdictySi_AC0dJ7VerdictOtF",
+            "mangledName": "$s20SonarFitConnectivity26WatchWorkoutSessionManagerC15recordSetReview8setIndex7verdictySi_AC0dJ7VerdictOtF",
+            "moduleName": "SonarFitConnectivity",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -6229,57 +6804,85 @@
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchConnectivityManager.swift",
-      "kind": "Array",
-      "offset": 1135,
-      "length": 2,
-      "value": "[]"
+      "kind": "StringLiteral",
+      "offset": 1659,
+      "length": 31,
+      "value": "\"com.sonarfit.WatchMotionQueue\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchConnectivityManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1256,
+      "offset": 1731,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchConnectivityManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2563,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchConnectivityManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1305,
+      "offset": 2683,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchConnectivityManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2732,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchConnectivityManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1353,
+      "offset": 2780,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchConnectivityManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1411,
+      "offset": 2838,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchConnectivityManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1545,
+      "offset": 2972,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchConnectivityManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9225,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchConnectivityManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11941,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchConnectivityManager.swift",
       "kind": "Dictionary",
-      "offset": 15764,
+      "offset": 27850,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchConnectivityManager.swift",
       "kind": "StringLiteral",
-      "offset": 21390,
+      "offset": 34453,
       "length": 31,
       "value": "\"com.sonarfit.workoutRequested\""
     },
@@ -6293,63 +6896,91 @@
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchWorkoutSessionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 660,
+      "offset": 801,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchWorkoutSessionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1135,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchWorkoutSessionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1309,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchWorkoutSessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1553,
+      "length": 29,
+      "value": "\"SonarFitLastVersionedConfig\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchWorkoutSessionManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2042,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchWorkoutSessionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 712,
+      "offset": 2094,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchWorkoutSessionManager.swift",
       "kind": "Array",
-      "offset": 763,
+      "offset": 2145,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchWorkoutSessionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 813,
+      "offset": 2195,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchWorkoutSessionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 862,
+      "offset": 2244,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchWorkoutSessionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 914,
+      "offset": 2296,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchWorkoutSessionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 11513,
+      "offset": 32100,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchWorkoutSessionManager.swift",
       "kind": "Dictionary",
-      "offset": 17485,
+      "offset": 38850,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchWorkoutSessionManager.swift",
       "kind": "Dictionary",
-      "offset": 38307,
+      "offset": 67941,
       "length": 3,
       "value": "[]"
     }

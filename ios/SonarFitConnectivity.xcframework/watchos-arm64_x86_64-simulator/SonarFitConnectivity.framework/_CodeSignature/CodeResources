@@ -10,43 +10,51 @@
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-watchos-simulator.abi.json</key>
 		<data>
-		KsDvjx5iRn7b6ZMZ8D8BCgTNsHM=
+		tdS8D2KcXOYAwMhakcCU5kTXhBw=
+		</data>
+		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-watchos-simulator.package.swiftinterface</key>
+		<data>
+		NVNT3zpbFzdnarkr9jqgbjC0Tuw=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-watchos-simulator.private.swiftinterface</key>
 		<data>
-		aCkAF4l/3Lu+Nc2EdaCXHiuZmCc=
+		NVNT3zpbFzdnarkr9jqgbjC0Tuw=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-watchos-simulator.swiftdoc</key>
 		<data>
-		j4wzed7/47dxmJdoq5wjCSoyVeM=
+		lhQQrVx2oxD8Ii+r3vlBIJoULvI=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-watchos-simulator.swiftinterface</key>
 		<data>
-		aCkAF4l/3Lu+Nc2EdaCXHiuZmCc=
+		NVNT3zpbFzdnarkr9jqgbjC0Tuw=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-watchos-simulator.swiftmodule</key>
 		<data>
-		hgMEg2LNTNteHOgF7a6tO8wF5JA=
+		5ZNhgAlm4Ho8saVJS+tJbhYVgWk=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-watchos-simulator.abi.json</key>
 		<data>
-		KsDvjx5iRn7b6ZMZ8D8BCgTNsHM=
+		tdS8D2KcXOYAwMhakcCU5kTXhBw=
+		</data>
+		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-watchos-simulator.package.swiftinterface</key>
+		<data>
+		jdbFSE7J7h7lkwy//B8AyC/v4rI=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-watchos-simulator.private.swiftinterface</key>
 		<data>
-		//Ua94EM9JQb2VE7CdwYgTUW7HU=
+		jdbFSE7J7h7lkwy//B8AyC/v4rI=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-watchos-simulator.swiftdoc</key>
 		<data>
-		wq/GTfOFje/EXcgsRmb+UjIXBI0=
+		xedDbGy8Hmj9e6GVpv9WyviBCU4=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-watchos-simulator.swiftinterface</key>
 		<data>
-		//Ua94EM9JQb2VE7CdwYgTUW7HU=
+		jdbFSE7J7h7lkwy//B8AyC/v4rI=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-watchos-simulator.swiftmodule</key>
 		<data>
-		8joMMmwvZJUAJukmVyetGf/WF8Q=
+		s5Q9/MRcQdXVzzHgbRruNlDz9bM=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,70 +63,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CYHys0W/JTGzgsAVadVDhSj5GNM95bwmIF4SBzhNwWM=
+			pS4+SLefozFkx+sjSgkliUfLgqVGADRMLfXnR5D0i2I=
+			</data>
+		</dict>
+		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-watchos-simulator.package.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gHgjonVEDZQ8PqnLWF4cS/zEjr0p+9X+64rs9m49WgE=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-watchos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iWdISODZrBO+r03z4NLWD+ipnTQ80MTFW9vm7NNgLJk=
+			gHgjonVEDZQ8PqnLWF4cS/zEjr0p+9X+64rs9m49WgE=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-watchos-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WfE1Tw1rtdQQcciZWNatz3ivTx7xPd1T9Y35FLzoGjs=
+			yxC44iAGUsB+aJqC7Iq3ZQEHTgFHQ3M5qgdTZpwnSos=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-watchos-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iWdISODZrBO+r03z4NLWD+ipnTQ80MTFW9vm7NNgLJk=
+			gHgjonVEDZQ8PqnLWF4cS/zEjr0p+9X+64rs9m49WgE=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-watchos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mnSsnq+yiyCS+fYhcwX0IyrsEWJHBiz9Q58NaI8sJTs=
+			2MvvmrdndamBG+teVS4D7iAtVXRwC6SXENu3apuDL7s=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-watchos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CYHys0W/JTGzgsAVadVDhSj5GNM95bwmIF4SBzhNwWM=
+			pS4+SLefozFkx+sjSgkliUfLgqVGADRMLfXnR5D0i2I=
+			</data>
+		</dict>
+		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-watchos-simulator.package.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5c+D/L5L0TLPQ1GrySREtsa6si3Nwt+E0w+DyAa7d9M=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-watchos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LrkToaTgPf0+CDmwFmHegvZQ+g+UP8NMlETo0Q0UHHE=
+			5c+D/L5L0TLPQ1GrySREtsa6si3Nwt+E0w+DyAa7d9M=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-watchos-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			o7PiQImhDz2le5JzTSNJ84sdyy87051HThJgOhSpTE0=
+			die0CxNv0HzylKe9817OYrQodeWNYdAOf0BweI9rOFw=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-watchos-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LrkToaTgPf0+CDmwFmHegvZQ+g+UP8NMlETo0Q0UHHE=
+			5c+D/L5L0TLPQ1GrySREtsa6si3Nwt+E0w+DyAa7d9M=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-watchos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZsFNZQY7E8fg96rUbpaqNwRUA8efzrLABxox0kmaEdA=
+			dg9KbXm3xNzUjN8x7YZ2wcBRj8mje5hdgxgiy73Qeek=
 			</data>
 		</dict>
 	</dict>

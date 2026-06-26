@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
-// swift-module-flags: -target arm64_32-apple-watchos10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SonarFitKit
+// swift-module-flags: -target arm64_32-apple-watchos10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SonarFitKit -package-name SonarFitSDK
 // swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import Foundation
 @_exported import SonarFitConnectivity
@@ -45,6 +45,14 @@ final public class SonarFit {
   @_Concurrency.MainActor public static func createWorkout(config: SonarFitKit.WorkoutConfig) throws -> SonarFitKit.SonarFitWorkout
   public static func createEngine(config: SonarFitKit.WorkoutConfig, delegate: any SonarFitCore.WorkoutEngineDelegate) throws -> SonarFitKit.WorkoutEngine
   @objc deinit
+}
+@available(iOS 15.0, watchOS 10.0, *)
+extension SonarFitKit.SonarFit {
+  public static var feedbackSheetEnabled: Swift.Bool {
+    get
+  }
+  public static func recordSetReview(setIndex: Swift.Int, verdict: SonarFitCore.SetReviewVerdict)
+  public static func discardSet(setIndex: Swift.Int)
 }
 public struct SonarFitSDKVersion {
   public static let current: Swift.String

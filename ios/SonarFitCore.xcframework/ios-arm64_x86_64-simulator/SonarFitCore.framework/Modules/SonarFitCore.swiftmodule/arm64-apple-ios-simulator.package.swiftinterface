@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
-// swift-module-flags: -target arm64-apple-ios17.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SonarFitCore -package-name SonarFitSDK
+// swift-module-flags: -target arm64-apple-ios17.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SonarFitCore -package-name SonarFitSDK
 // swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import AVFoundation
 import Combine
@@ -208,6 +208,32 @@ extension SonarFitCore.WorkoutEngine : SonarFitCore.MotionProcessorDelegate {
   final public func motionProcessor<T>(_ processor: T, didEncounterPermissionError error: any Swift.Error)
   final public func getCurrentSetNumber() -> Swift.Int
   final public func getCurrentSetRepsCompleted() -> Swift.Int
+}
+package protocol WatchRepDetector : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  var onRepDetected: ((Swift.Int) -> Swift.Void)? { get set }
+  #endif
+  var displayCount: Swift.Int { get }
+  var repCount: Swift.Int { get }
+  #if compiler(>=5.3) && $NonescapableTypes
+  func processSample(accelX: Swift.Double, accelY: Swift.Double, accelZ: Swift.Double, rotX: Swift.Double, rotY: Swift.Double, rotZ: Swift.Double, gravX: Swift.Double, gravY: Swift.Double, gravZ: Swift.Double, pitch: Swift.Double, roll: Swift.Double, yaw: Swift.Double, quatW: Swift.Double?, quatX: Swift.Double?, quatY: Swift.Double?, quatZ: Swift.Double?)
+  #endif
+  @discardableResult
+  func flush() -> Swift.Int
+}
+package protocol EndOfSetWatchDetector : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  func processSample(accelX: Swift.Double, accelY: Swift.Double, accelZ: Swift.Double, rotX: Swift.Double, rotY: Swift.Double, rotZ: Swift.Double, gravX: Swift.Double, gravY: Swift.Double, gravZ: Swift.Double, pitch: Swift.Double, roll: Swift.Double, yaw: Swift.Double, quatW: Swift.Double?, quatX: Swift.Double?, quatY: Swift.Double?, quatZ: Swift.Double?)
+  #endif
+  @discardableResult
+  func flush() -> Swift.Int
+  var repCount: Swift.Int { get }
+  var repSamples: [Swift.Int] { get }
+}
+package enum WatchRepDetectorFactory {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func make(workoutType: Swift.String?, expectedReps: Swift.Int?) -> any SonarFitCore.WatchRepDetector
+  #endif
 }
 public struct CountdownState {
   public let startDate: Foundation.Date

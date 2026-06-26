@@ -10,6 +10,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+
+## [2.3.0] - 2026-06-26
+
+### Added
+- Apple Watch rep detection for shoulder press, bicep curl, and deadlift.
+- `WorkoutType` metadata: muscle groups, supported devices, and exercise-category filtering.
+- On-watch set-review sheet (confirm, adjust reps, or discard a set) with an auto-skip timer.
+- End-set-early during a workout, from the watch or the phone.
+- Per-rep verdict callbacks (`onUserVerdictResolved`, `onAnyVerdictResolved`).
+- Raw-set upload pipeline for feedback and rest analysis.
+
+### Changed
+- The watch returns to the clock face after a workout and wakes to the ready screen only on intent (open app, return from background, or edit the workout).
+- Workout configuration is now a single versioned source delivered watch↔phone, removing config-sync races.
+- The HealthKit session ends on workout completion so the watch app can background; no HealthKit session runs while idle (battery).
+
+### Fixed
+- Rep-count accuracy improvements across the watch detectors.
+- Back-to-back workouts now start reliably (resolved a mirror-start stall).
+- Correct set indexing when a new set or workout begins during the end-of-set window.
+
+### Security
+- Production builds strip symbol and reflection-metadata names; detection internals are no longer present as readable text in the shipped binary. No public API change.
 ## [2.2.0] - 2026-05-06
 
 ### Changed
