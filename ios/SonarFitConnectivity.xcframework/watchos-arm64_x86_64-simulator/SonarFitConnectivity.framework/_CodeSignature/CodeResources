@@ -10,7 +10,7 @@
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-watchos-simulator.abi.json</key>
 		<data>
-		tdS8D2KcXOYAwMhakcCU5kTXhBw=
+		iQwX3MJKgP5RVWMSrdWWTqDtl/w=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-watchos-simulator.package.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-watchos-simulator.swiftmodule</key>
 		<data>
-		5ZNhgAlm4Ho8saVJS+tJbhYVgWk=
+		JXX0jUjitWDuc4VOYIF5/nP8oU4=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-watchos-simulator.abi.json</key>
 		<data>
-		tdS8D2KcXOYAwMhakcCU5kTXhBw=
+		iQwX3MJKgP5RVWMSrdWWTqDtl/w=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-watchos-simulator.package.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-watchos-simulator.swiftmodule</key>
 		<data>
-		s5Q9/MRcQdXVzzHgbRruNlDz9bM=
+		fS83pT99vBsKkiPUrmhUTSui2+k=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -63,7 +63,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pS4+SLefozFkx+sjSgkliUfLgqVGADRMLfXnR5D0i2I=
+			iV0MxcyjfFD364hEBQKkj/aP3ZUkcIa/5NzHHzaPA9I=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-watchos-simulator.package.swiftinterface</key>
@@ -98,14 +98,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2MvvmrdndamBG+teVS4D7iAtVXRwC6SXENu3apuDL7s=
+			3Cle8skktIu4jbXI40mU5z4AU+hpdKbbntRswWOBaN8=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-watchos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pS4+SLefozFkx+sjSgkliUfLgqVGADRMLfXnR5D0i2I=
+			iV0MxcyjfFD364hEBQKkj/aP3ZUkcIa/5NzHHzaPA9I=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-watchos-simulator.package.swiftinterface</key>
@@ -140,7 +140,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dg9KbXm3xNzUjN8x7YZ2wcBRj8mje5hdgxgiy73Qeek=
+			CO2KE58EkYdJ3T9cf5X71f0OS9gbPvR+suqVIfg1eE0=
 			</data>
 		</dict>
 	</dict>

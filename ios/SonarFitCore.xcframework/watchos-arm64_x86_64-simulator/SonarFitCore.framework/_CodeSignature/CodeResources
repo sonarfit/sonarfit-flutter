@@ -10,7 +10,7 @@
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-watchos-simulator.abi.json</key>
 		<data>
-		eU5WcXIYB1QsNDjuTDWdIWlwvpM=
+		szLa+tWYgYFSYMTYYWhsF7oE3Cs=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-watchos-simulator.package.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-watchos-simulator.swiftmodule</key>
 		<data>
-		+z23AiShdwHmOO8N79RQ58ZUXxE=
+		cb5/rSYR1Y5yIXLpyqVgM+ywYU0=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/x86_64-apple-watchos-simulator.abi.json</key>
 		<data>
-		eU5WcXIYB1QsNDjuTDWdIWlwvpM=
+		szLa+tWYgYFSYMTYYWhsF7oE3Cs=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/x86_64-apple-watchos-simulator.package.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/x86_64-apple-watchos-simulator.swiftmodule</key>
 		<data>
-		Fi0TPsTUfp0NwjtoaCORQpAXbOs=
+		4vbPZ4CYFpHm3WGDJn4Elb9C6W8=
 		</data>
 		<key>beep.wav</key>
 		<data>
@@ -75,7 +75,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			77YnabcQI7v+NURxsf4fH/qUa/DUAIts4rkZygAuBEU=
+			10+t9TlEzUf9t1vJWlbcXDzhSIbJTwvMuc4w0PNbHN4=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-watchos-simulator.package.swiftinterface</key>
@@ -110,14 +110,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Cu5Xter8StlGTvxazDn8Zf73oZaNbwzRzzVQe8ClUSs=
+			C+uRSV3ULGFCYQe5Crng8aKo8cbav/QXTSAVwDFsQTA=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/x86_64-apple-watchos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			77YnabcQI7v+NURxsf4fH/qUa/DUAIts4rkZygAuBEU=
+			10+t9TlEzUf9t1vJWlbcXDzhSIbJTwvMuc4w0PNbHN4=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/x86_64-apple-watchos-simulator.package.swiftinterface</key>
@@ -152,7 +152,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+Id7yKeV0bxBNCW+8kMDmSZpLC1b0IWuG+NagayW7Cc=
+			gnSTBjoBnuDuHe9e2A+g1IipJN1TkHRtLpN+e5YDr/E=
 			</data>
 		</dict>
 		<key>beep.wav</key>

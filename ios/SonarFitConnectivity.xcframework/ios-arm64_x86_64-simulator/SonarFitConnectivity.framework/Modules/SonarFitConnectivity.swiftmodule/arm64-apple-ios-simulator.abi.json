@@ -4659,21 +4659,49 @@
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/PhoneConnectivityManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 5267,
+      "offset": 5935,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/PhoneConnectivityManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 5929,
+      "offset": 6597,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/PhoneConnectivityManager.swift",
+      "kind": "FloatLiteral",
+      "offset": 8142,
+      "length": 3,
+      "value": "3.0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/PhoneConnectivityManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 31237,
+      "offset": 8411,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/PhoneConnectivityManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8463,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/PhoneConnectivityManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8721,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/PhoneConnectivityManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 38684,
       "length": 1,
       "value": "0"
     },
