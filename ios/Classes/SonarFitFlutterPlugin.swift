@@ -135,6 +135,10 @@ public class SonarFitFlutterPlugin: NSObject, FlutterPlugin {
             workoutType = .deadlift
         case "benchpress":
             workoutType = .benchpress
+        case "shoulder_press":
+            workoutType = .shoulderPress
+        case "bicep_curl":
+            workoutType = .bicepCurl
         default:
             return nil
         }

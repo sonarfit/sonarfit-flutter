@@ -1,14 +1,14 @@
 # SonarFit Flutter Plugin
 
-Official Flutter plugin for the SonarFit SDK - AI-powered strength training with real-time rep detection using Apple Watch or AirPods Pro motion sensors.
+Official Flutter plugin for the SonarFit SDK - automatic rep counting from Apple Watch or AirPods Pro motion sensors.
 
 [![pub package](https://img.shields.io/pub/v/sonarfit_flutter.svg)](https://pub.dev/packages/sonarfit_flutter)
 [![Platform](https://img.shields.io/badge/platform-iOS-blue.svg)](https://www.apple.com/ios/)
 
 ## Features
 
-- **Real-time Rep Detection**: AI-powered motion analysis counts reps automatically
-- **Multiple Exercise Support**: Squats, deadlifts, bench press, and more
+- **Real-time Rep Detection**: Motion-sensor analysis counts reps automatically
+- **Multiple Exercise Support**: Squats & deadlifts on AirPods; squats, deadlifts, bench press, shoulder press & bicep curls on Apple Watch
 - **Device Flexibility**: Works with Apple Watch or AirPods Pro
 - **Built-in UI**: Beautiful, ready-to-use workout interface
 - **Progress Tracking**: Automatic set/rep tracking with rest timers
@@ -27,7 +27,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  sonarfit_flutter: ^1.0.0
+  sonarfit_flutter: ^2.4.1
 ```
 
 Then run:
@@ -208,9 +208,11 @@ Supported exercise types.
 
 ```dart
 enum WorkoutType {
-  squat,
-  deadlift,
-  benchpress,
+  squat,          // AirPods or Apple Watch
+  deadlift,       // AirPods or Apple Watch
+  benchpress,     // Apple Watch only
+  shoulderPress,  // Apple Watch only
+  bicepCurl,      // Apple Watch only
 }
 ```
 
@@ -435,6 +437,8 @@ class WorkoutTypeSelector extends StatelessWidget {
     WorkoutType.squat,
     WorkoutType.deadlift,
     WorkoutType.benchpress,
+    WorkoutType.shoulderPress,
+    WorkoutType.bicepCurl,
   ];
 
   Future<void> _startWorkout(BuildContext context, WorkoutType type) async {
@@ -557,6 +561,6 @@ MIT License - see LICENSE file for details
 
 ## About SonarFit
 
-SonarFit provides AI-powered workout execution intelligence for fitness apps. Our SDK handles real-time rep counting, form analysis, and workout progression so you can focus on building great user experiences.
+SonarFit provides automatic rep counting for fitness apps. Our SDK handles real-time rep counting and workout progression so you can focus on building great user experiences.
 
 Learn more at [https://sonarfit.com](https://sonarfit.com)

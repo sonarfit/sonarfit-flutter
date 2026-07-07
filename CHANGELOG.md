@@ -11,6 +11,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+## [2.4.1] - 2026-07-07
+
+### Fixed
+- **Now ships the current SDK binary.** Earlier releases vendored stale, pre-rewrite
+  XCFrameworks (old Core ML models + older detectors). This release re-vendors the
+  current SDK build — no bundled ML models, and the current signal-based detectors
+  (including the v53–v56 shoulder-press, stairs, parity and live-stream fixes).
+
+### Added
+- **Shoulder Press and Bicep Curl** (Apple Watch), matching the native SDK.
+  `WorkoutType` now includes `shoulderPress` and `bicepCurl`.
+
 ## [2.4.0] - 2026-06-28
 
 ### Fixed

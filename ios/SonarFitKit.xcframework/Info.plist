@@ -8,18 +8,16 @@
 			<key>BinaryPath</key>
 			<string>SonarFitKit.framework/SonarFitKit</string>
 			<key>LibraryIdentifier</key>
-			<string>watchos-arm64_x86_64-simulator</string>
+			<string>watchos-arm64_arm64_32</string>
 			<key>LibraryPath</key>
 			<string>SonarFitKit.framework</string>
 			<key>SupportedArchitectures</key>
 			<array>
 				<string>arm64</string>
-				<string>x86_64</string>
+				<string>arm64_32</string>
 			</array>
 			<key>SupportedPlatform</key>
 			<string>watchos</string>
-			<key>SupportedPlatformVariant</key>
-			<string>simulator</string>
 		</dict>
 		<dict>
 			<key>BinaryPath</key>
@@ -39,21 +37,6 @@
 			<key>BinaryPath</key>
 			<string>SonarFitKit.framework/SonarFitKit</string>
 			<key>LibraryIdentifier</key>
-			<string>watchos-arm64_arm64_32</string>
-			<key>LibraryPath</key>
-			<string>SonarFitKit.framework</string>
-			<key>SupportedArchitectures</key>
-			<array>
-				<string>arm64</string>
-				<string>arm64_32</string>
-			</array>
-			<key>SupportedPlatform</key>
-			<string>watchos</string>
-		</dict>
-		<dict>
-			<key>BinaryPath</key>
-			<string>SonarFitKit.framework/SonarFitKit</string>
-			<key>LibraryIdentifier</key>
 			<string>ios-arm64_x86_64-simulator</string>
 			<key>LibraryPath</key>
 			<string>SonarFitKit.framework</string>
@@ -64,6 +47,23 @@
 			</array>
 			<key>SupportedPlatform</key>
 			<string>ios</string>
+			<key>SupportedPlatformVariant</key>
+			<string>simulator</string>
+		</dict>
+		<dict>
+			<key>BinaryPath</key>
+			<string>SonarFitKit.framework/SonarFitKit</string>
+			<key>LibraryIdentifier</key>
+			<string>watchos-arm64_x86_64-simulator</string>
+			<key>LibraryPath</key>
+			<string>SonarFitKit.framework</string>
+			<key>SupportedArchitectures</key>
+			<array>
+				<string>arm64</string>
+				<string>x86_64</string>
+			</array>
+			<key>SupportedPlatform</key>
+			<string>watchos</string>
 			<key>SupportedPlatformVariant</key>
 			<string>simulator</string>
 		</dict>

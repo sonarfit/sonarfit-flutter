@@ -2,7 +2,9 @@
 enum WorkoutType {
   squat('squat'),
   deadlift('deadlift'),
-  benchpress('benchpress');
+  benchpress('benchpress'),
+  shoulderPress('shoulder_press'),
+  bicepCurl('bicep_curl');
 
   const WorkoutType(this.value);
   final String value;
