@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'sonarfit_flutter'
-  s.version          = '2.4.1'
+  s.version          = '2.4.2'
   s.summary          = 'Flutter plugin for SonarFit SDK'
   s.description      = <<-DESC
 Flutter plugin for SonarFit SDK - AI-powered strength training with real-time rep detection.

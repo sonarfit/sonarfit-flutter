@@ -6861,28 +6861,28 @@
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchConnectivityManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 9225,
+      "offset": 9237,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchConnectivityManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 11941,
+      "offset": 11953,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchConnectivityManager.swift",
       "kind": "Dictionary",
-      "offset": 27850,
+      "offset": 27952,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchConnectivityManager.swift",
       "kind": "StringLiteral",
-      "offset": 34453,
+      "offset": 34627,
       "length": 31,
       "value": "\"com.sonarfit.workoutRequested\""
     },
@@ -6973,21 +6973,21 @@
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchWorkoutSessionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 32995,
+      "offset": 33097,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchWorkoutSessionManager.swift",
       "kind": "Dictionary",
-      "offset": 39745,
+      "offset": 39937,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchWorkoutSessionManager.swift",
       "kind": "Dictionary",
-      "offset": 70722,
+      "offset": 71100,
       "length": 3,
       "value": "[]"
     }

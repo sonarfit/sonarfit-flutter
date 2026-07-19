@@ -10,7 +10,7 @@
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		5RcK3N5EeKZRiuHlgDva2b+EV+M=
+		5dtioxGWplfLtQtKECD0ea4i41c=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios-simulator.package.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		m9ZaJB0cX0aILWoiwnQVYDvgKhU=
+		oRCJelXKi13MNTyQXyIc/EH0t8k=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		5RcK3N5EeKZRiuHlgDva2b+EV+M=
+		5dtioxGWplfLtQtKECD0ea4i41c=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/x86_64-apple-ios-simulator.package.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		AnajoCCsDuWB06egThOciPheUdU=
+		m9UOUxEn28HdeSN2/LvLKBVgYVA=
 		</data>
 		<key>beep.wav</key>
 		<data>
@@ -75,7 +75,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gB3MiSOzUuV7QRm5C7GE6FOq5XubEeQjwMnuGJ3te18=
+			uiwl0NrNzVotUdyBWqpuVoZIW6FZRvDQprtxcksO+5Y=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios-simulator.package.swiftinterface</key>
@@ -110,14 +110,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zjXNa8jKf/jby1e/3zOlYWEEBBaQP2/UeUVwE2voR7s=
+			RRtowtDOfG46GwPmf4VCQhHeyl1UUWJ1EBxTDWC3+88=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gB3MiSOzUuV7QRm5C7GE6FOq5XubEeQjwMnuGJ3te18=
+			uiwl0NrNzVotUdyBWqpuVoZIW6FZRvDQprtxcksO+5Y=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/x86_64-apple-ios-simulator.package.swiftinterface</key>
@@ -152,7 +152,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LcWZ+39hjTC3G2AnW9lVBfgqm9Pul1flZH8lLfGQeZs=
+			/spRT+Le7AGqJf/FIzziwPFrI+fvTGafF7MMdIrTyA0=
 			</data>
 		</dict>
 		<key>beep.wav</key>

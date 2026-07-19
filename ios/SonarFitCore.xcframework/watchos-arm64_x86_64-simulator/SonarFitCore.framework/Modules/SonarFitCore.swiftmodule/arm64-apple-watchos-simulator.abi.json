@@ -24012,21 +24012,21 @@
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Engine\/WorkoutEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 66753,
+      "offset": 66783,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Engine\/WorkoutEngine.swift",
       "kind": "IntegerLiteral",
-      "offset": 66781,
+      "offset": 66811,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Engine\/WorkoutEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 66803,
+      "offset": 66833,
       "length": 5,
       "value": "false"
     },
@@ -24040,639 +24040,625 @@
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 989,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "StringLiteral",
-      "offset": 2199,
-      "length": 7,
-      "value": "\"squat\""
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "Array",
-      "offset": 4484,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 4770,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "BooleanLiteral",
-      "offset": 9778,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "StringLiteral",
-      "offset": 9885,
-      "length": 5,
-      "value": "\"max\""
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "StringLiteral",
-      "offset": 9908,
-      "length": 5,
-      "value": "\"pro\""
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10188,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10228,
-      "length": 2,
-      "value": "50"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10345,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10983,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "BooleanLiteral",
-      "offset": 11394,
+      "offset": 1008,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "StringLiteral",
-      "offset": 11427,
-      "length": 10,
-      "value": "\"deadlift\""
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 12423,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 12493,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 12934,
-      "length": 1,
-      "value": "3"
+      "offset": 2219,
+      "length": 7,
+      "value": "\"squat\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "Array",
-      "offset": 13067,
+      "offset": 4550,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13095,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13114,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13141,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13330,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13346,
-      "length": 3,
-      "value": "999"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 13378,
-      "length": 3,
-      "value": "0.3"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 13400,
-      "length": 4,
-      "value": "0.75"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 13440,
-      "length": 3,
-      "value": "0.4"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 13462,
-      "length": 4,
-      "value": "0.65"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "StringLiteral",
-      "offset": 15346,
-      "length": 50,
-      "value": "\"HybridDetector flush: final repCount=\""
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "StringLiteral",
-      "offset": 15395,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 21659,
-      "length": 4,
-      "value": "50.0"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 21700,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 21706,
-      "length": 4,
-      "value": "50.0"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 21752,
-      "length": 6,
-      "value": "0.9755"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 21801,
-      "length": 5,
-      "value": "0.999"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 21856,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 21910,
-      "length": 4,
-      "value": "0.04"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 21962,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 22019,
-      "length": 2,
-      "value": "20"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 22073,
-      "length": 4,
-      "value": "0.07"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 22128,
-      "length": 2,
-      "value": "40"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 22185,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 22237,
-      "length": 4,
-      "value": "0.50"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 22297,
-      "length": 5,
-      "value": "0.012"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 22347,
-      "length": 5,
-      "value": "0.025"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 22405,
-      "length": 4,
-      "value": "0.06"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 22465,
-      "length": 4,
-      "value": "0.04"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 22562,
-      "length": 4,
-      "value": "0.03"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 22628,
-      "length": 5,
-      "value": "0.015"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 22693,
-      "length": 5,
-      "value": "0.015"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 22804,
-      "length": 4,
-      "value": "0.07"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 22868,
-      "length": 2,
-      "value": "25"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 22939,
-      "length": 2,
-      "value": "11"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 22987,
-      "length": 5,
-      "value": "-0.06"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 23521,
-      "length": 6,
-      "value": "-0.025"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 23580,
-      "length": 3,
-      "value": "200"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 23641,
-      "length": 3,
-      "value": "0.8"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 23933,
-      "length": 3,
-      "value": "1.7"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 23988,
-      "length": 4,
-      "value": "0.05"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 24042,
-      "length": 3,
-      "value": "0.5"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 24099,
-      "length": 4,
-      "value": "0.15"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 24154,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 24211,
-      "length": 4,
-      "value": "0.55"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 24264,
-      "length": 4,
-      "value": "0.04"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 24315,
-      "length": 5,
-      "value": "0.010"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 24371,
-      "length": 3,
-      "value": "1.5"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 24428,
-      "length": 4,
-      "value": "0.35"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 24481,
-      "length": 5,
-      "value": "0.040"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 24538,
-      "length": 4,
-      "value": "0.12"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 24659,
-      "length": 4,
-      "value": "0.02"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 24724,
-      "length": 4,
-      "value": "0.05"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 24780,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 24833,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 24889,
-      "length": 4,
-      "value": "0.05"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 24946,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 24997,
-      "length": 3,
-      "value": "250"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 25048,
-      "length": 3,
-      "value": "0.3"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 25256,
+      "offset": 4836,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 25296,
+      "offset": 9844,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 9951,
+      "length": 5,
+      "value": "\"max\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 9974,
+      "length": 5,
+      "value": "\"pro\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10254,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10294,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10411,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11049,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11460,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 11493,
+      "length": 10,
+      "value": "\"deadlift\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12489,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12559,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13000,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "Array",
+      "offset": 13133,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13161,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13180,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13207,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13396,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13412,
+      "length": 3,
+      "value": "999"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 13444,
+      "length": 3,
+      "value": "0.3"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 13466,
+      "length": 4,
+      "value": "0.75"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 13506,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 13528,
+      "length": 4,
+      "value": "0.65"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 15412,
+      "length": 50,
+      "value": "\"HybridDetector flush: final repCount=\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 15461,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 21783,
+      "length": 4,
+      "value": "50.0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 21824,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 21830,
+      "length": 4,
+      "value": "50.0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 21876,
+      "length": 6,
+      "value": "0.9755"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 21925,
+      "length": 5,
+      "value": "0.999"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 21980,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 22034,
+      "length": 4,
+      "value": "0.04"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 22086,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 22143,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 22197,
+      "length": 4,
+      "value": "0.07"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 22252,
+      "length": 2,
+      "value": "40"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 22309,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 22361,
+      "length": 4,
+      "value": "0.50"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 22421,
+      "length": 5,
+      "value": "0.012"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 22471,
+      "length": 5,
+      "value": "0.025"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 22529,
+      "length": 4,
+      "value": "0.06"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 22589,
+      "length": 4,
+      "value": "0.04"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 22686,
+      "length": 4,
+      "value": "0.03"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 22752,
+      "length": 5,
+      "value": "0.015"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 22817,
+      "length": 5,
+      "value": "0.015"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 22928,
+      "length": 4,
+      "value": "0.07"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 22992,
+      "length": 2,
+      "value": "25"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 23063,
+      "length": 2,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 23111,
+      "length": 5,
+      "value": "-0.06"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 23645,
+      "length": 6,
+      "value": "-0.025"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 23704,
+      "length": 3,
+      "value": "200"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 23765,
+      "length": 3,
+      "value": "0.8"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 24057,
+      "length": 3,
+      "value": "1.7"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 24112,
+      "length": 4,
+      "value": "0.05"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 24166,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 24223,
+      "length": 4,
+      "value": "0.15"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 24278,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 24335,
+      "length": 4,
+      "value": "0.55"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 24388,
+      "length": 4,
+      "value": "0.04"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 24439,
+      "length": 5,
+      "value": "0.010"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 24495,
+      "length": 3,
+      "value": "1.5"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 24552,
+      "length": 4,
+      "value": "0.35"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 24605,
+      "length": 5,
+      "value": "0.040"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 24662,
+      "length": 4,
+      "value": "0.12"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 24783,
+      "length": 4,
+      "value": "0.02"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 24848,
+      "length": 4,
+      "value": "0.05"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 24904,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 24957,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 25013,
+      "length": 4,
+      "value": "0.05"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 25070,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 25121,
+      "length": 3,
+      "value": "250"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 25172,
+      "length": 3,
+      "value": "0.3"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 25380,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "BooleanLiteral",
+      "offset": 25420,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "Array",
-      "offset": 25667,
+      "offset": 25791,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 25706,
+      "offset": 25830,
       "length": 4,
       "value": "1e30"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 25747,
+      "offset": 25871,
       "length": 5,
       "value": "-1e30"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "Array",
-      "offset": 25826,
+      "offset": 25950,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "Array",
-      "offset": 25868,
+      "offset": 25992,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "Array",
-      "offset": 25906,
+      "offset": 26030,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "Array",
-      "offset": 25947,
+      "offset": 26071,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "Array",
-      "offset": 25987,
+      "offset": 26111,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "Array",
-      "offset": 26068,
+      "offset": 26192,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "Array",
-      "offset": 26130,
+      "offset": 26254,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 26171,
+      "offset": 26295,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 26210,
+      "offset": 26334,
       "length": 1,
       "value": "0"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "Array",
-      "offset": 26296,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
-      "kind": "Array",
-      "offset": 26342,
-      "length": 2,
-      "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
@@ -24684,1736 +24670,1750 @@
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "Array",
-      "offset": 26711,
+      "offset": 26466,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "Array",
-      "offset": 26759,
+      "offset": 26544,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "Array",
-      "offset": 26807,
+      "offset": 26835,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "Array",
+      "offset": 26883,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
+      "kind": "Array",
+      "offset": 26931,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 26925,
+      "offset": 27049,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "Array",
-      "offset": 26979,
+      "offset": 27103,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 27212,
+      "offset": 27336,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 27261,
+      "offset": 27385,
       "length": 5,
       "value": "-1e30"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 27310,
+      "offset": 27434,
       "length": 4,
       "value": "1e30"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 27359,
+      "offset": 27483,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 27407,
+      "offset": 27531,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 27455,
+      "offset": 27579,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 27506,
+      "offset": 27630,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 27552,
+      "offset": 27676,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 27820,
+      "offset": 27944,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 28621,
+      "offset": 28745,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 28652,
+      "offset": 28776,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 28677,
+      "offset": 28801,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 28720,
+      "offset": 28844,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 28751,
+      "offset": 28875,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 28790,
+      "offset": 28914,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 28820,
+      "offset": 28944,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 28859,
+      "offset": 28983,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 29735,
+      "offset": 29859,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 29769,
+      "offset": 29893,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "Array",
-      "offset": 30165,
+      "offset": 30289,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 30193,
+      "offset": 30317,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "Array",
-      "offset": 32066,
+      "offset": 32190,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "Array",
-      "offset": 32117,
+      "offset": 32241,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 32157,
+      "offset": 32281,
       "length": 5,
       "value": "-1e30"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 32199,
+      "offset": 32323,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 32237,
+      "offset": 32361,
       "length": 4,
       "value": "1e30"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 32277,
+      "offset": 32401,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 32485,
+      "offset": 32609,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 72225,
+      "offset": 72349,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "Array",
-      "offset": 72356,
+      "offset": 72480,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 72376,
+      "offset": 72500,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 72395,
+      "offset": 72519,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 72422,
+      "offset": 72546,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 72545,
+      "offset": 72669,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 72559,
+      "offset": 72683,
       "length": 3,
       "value": "2.5"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 73809,
+      "offset": 73933,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 73827,
+      "offset": 73951,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 81517,
+      "offset": 81641,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "StringLiteral",
-      "offset": 81651,
+      "offset": 81775,
       "length": 10,
       "value": "\"deadlift\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 81704,
+      "offset": 81828,
       "length": 4,
       "value": "0.75"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "Array",
-      "offset": 81945,
+      "offset": 82069,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 81965,
+      "offset": 82089,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 81987,
+      "offset": 82111,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 82034,
+      "offset": 82158,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "Dictionary",
-      "offset": 82374,
+      "offset": 82498,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 82707,
+      "offset": 82831,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 82728,
+      "offset": 82852,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 83384,
+      "offset": 83508,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 83421,
+      "offset": 83545,
       "length": 3,
       "value": "1.5"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 83473,
+      "offset": 83597,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 83544,
+      "offset": 83668,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 83690,
+      "offset": 83814,
       "length": 4,
       "value": "0.03"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 84564,
+      "offset": 84688,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 84666,
+      "offset": 84790,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 84797,
+      "offset": 84921,
       "length": 4,
       "value": "0.01"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 84934,
+      "offset": 85058,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 84956,
+      "offset": 85080,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "StringLiteral",
-      "offset": 85001,
+      "offset": 85125,
       "length": 48,
       "value": "\"HybridDetector terminal rescue: sample=\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "StringLiteral",
-      "offset": 85048,
+      "offset": 85172,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 87155,
+      "offset": 87279,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "Dictionary",
-      "offset": 87351,
+      "offset": 87475,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 88144,
+      "offset": 88268,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "Array",
-      "offset": 88270,
+      "offset": 88394,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 88290,
+      "offset": 88414,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 88312,
+      "offset": 88436,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 88359,
+      "offset": 88483,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 88584,
+      "offset": 88708,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 88805,
+      "offset": 88929,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 88848,
+      "offset": 88972,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 89183,
+      "offset": 89307,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "StringLiteral",
-      "offset": 89228,
+      "offset": 89352,
       "length": 64,
       "value": "\"HybridDetector trailing trough rescue: sample=\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "StringLiteral",
-      "offset": 89291,
+      "offset": 89415,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 89636,
+      "offset": 89760,
       "length": 4,
       "value": "0.75"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 89696,
+      "offset": 89820,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "Array",
-      "offset": 89829,
+      "offset": 89953,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 89853,
+      "offset": 89977,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 89875,
+      "offset": 89999,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 89926,
+      "offset": 90050,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 90080,
+      "offset": 90204,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 90124,
+      "offset": 90248,
       "length": 5,
       "value": "999.0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 90154,
+      "offset": 90278,
       "length": 3,
       "value": "0.4"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 90215,
+      "offset": 90339,
       "length": 4,
       "value": "0.65"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "StringLiteral",
-      "offset": 90355,
+      "offset": 90479,
       "length": 79,
       "value": "\"HybridDetector locomotion filter: clearing all \""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "StringLiteral",
-      "offset": 90422,
+      "offset": 90546,
       "length": 10,
       "value": "\" candidates\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "Array",
-      "offset": 91907,
+      "offset": 92031,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 91927,
+      "offset": 92051,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 91949,
+      "offset": 92073,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 91996,
+      "offset": 92120,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 92251,
+      "offset": 92375,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 92427,
+      "offset": 92551,
       "length": 5,
       "value": "0.020"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 92452,
+      "offset": 92576,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 92667,
+      "offset": 92791,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 93150,
+      "offset": 93274,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 93344,
+      "offset": 93468,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 93825,
+      "offset": 93949,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 93970,
+      "offset": 94094,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 93997,
+      "offset": 94121,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 94019,
+      "offset": 94143,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 94087,
+      "offset": 94211,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 94135,
+      "offset": 94259,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 94257,
+      "offset": 94381,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 94350,
+      "offset": 94474,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 94858,
+      "offset": 94982,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 94932,
+      "offset": 95056,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 95234,
+      "offset": 95358,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 95276,
+      "offset": 95400,
       "length": 5,
       "value": "999.0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 95334,
+      "offset": 95458,
       "length": 3,
       "value": "1.4"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 95347,
+      "offset": 95471,
       "length": 3,
       "value": "2.5"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 95406,
+      "offset": 95530,
       "length": 4,
       "value": "0.06"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 95451,
+      "offset": 95575,
       "length": 5,
       "value": "0.020"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 95779,
+      "offset": 95903,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 95845,
+      "offset": 95969,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 96056,
+      "offset": 96180,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 96181,
+      "offset": 96305,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 96331,
+      "offset": 96455,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "Array",
-      "offset": 96462,
+      "offset": 96586,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 96482,
+      "offset": 96606,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 96503,
+      "offset": 96627,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 96551,
+      "offset": 96675,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 96772,
+      "offset": 96896,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 96806,
+      "offset": 96930,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 96825,
+      "offset": 96949,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 96885,
+      "offset": 97009,
       "length": 4,
       "value": "0.45"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "StringLiteral",
-      "offset": 97044,
+      "offset": 97168,
       "length": 84,
       "value": "\"HybridDetector cadence validation: removed rescue first-rep sample=\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "StringLiteral",
-      "offset": 97127,
+      "offset": 97251,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 110920,
+      "offset": 111044,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 111057,
+      "offset": 111181,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 111421,
+      "offset": 111545,
       "length": 4,
       "value": "0.50"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 111460,
+      "offset": 111584,
       "length": 4,
       "value": "0.08"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 111499,
+      "offset": 111623,
       "length": 5,
       "value": "0.005"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 111539,
+      "offset": 111663,
       "length": 2,
       "value": "25"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 111573,
+      "offset": 111697,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "Array",
-      "offset": 112208,
+      "offset": 112332,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 112361,
+      "offset": 112485,
       "length": 2,
       "value": "25"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 113270,
+      "offset": 113394,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 113436,
+      "offset": 113560,
       "length": 3,
       "value": "1.5"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 113489,
+      "offset": 113613,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 113559,
+      "offset": 113683,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 113688,
+      "offset": 113812,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 113792,
+      "offset": 113916,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 113804,
+      "offset": 113928,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 113920,
+      "offset": 114044,
       "length": 4,
       "value": "0.03"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 114149,
+      "offset": 114273,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 114681,
+      "offset": 114805,
       "length": 4,
       "value": "1e-9"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 116121,
+      "offset": 116245,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "StringLiteral",
-      "offset": 116254,
+      "offset": 116378,
       "length": 89,
       "value": "\"HybridDetector backstop: promoted \""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "StringLiteral",
-      "offset": 116303,
+      "offset": 116427,
       "length": 2,
       "value": "\" to reach \""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "StringLiteral",
-      "offset": 116332,
+      "offset": 116456,
       "length": 1,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "StringLiteral",
-      "offset": 116342,
+      "offset": 116466,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 117005,
+      "offset": 117129,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 117112,
+      "offset": 117236,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 117136,
+      "offset": 117260,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 117162,
+      "offset": 117286,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 117327,
+      "offset": 117451,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 117358,
+      "offset": 117482,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "Array",
-      "offset": 117411,
+      "offset": 117535,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 117513,
+      "offset": 117637,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 117537,
+      "offset": 117661,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 117639,
+      "offset": 117763,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 117766,
+      "offset": 117890,
       "length": 3,
       "value": "1.6"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 117798,
+      "offset": 117922,
       "length": 3,
       "value": "2.5"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 118120,
+      "offset": 118244,
       "length": 2,
       "value": "25"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 118531,
+      "offset": 118655,
       "length": 4,
       "value": "1e-9"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 119953,
+      "offset": 120077,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "StringLiteral",
-      "offset": 120127,
+      "offset": 120251,
       "length": 90,
       "value": "\"HybridDetector gap-fill: promoted \""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "StringLiteral",
-      "offset": 120177,
+      "offset": 120301,
       "length": 2,
       "value": "\" to reach \""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "StringLiteral",
-      "offset": 120206,
+      "offset": 120330,
       "length": 1,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "StringLiteral",
-      "offset": 120216,
+      "offset": 120340,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 120394,
+      "offset": 120518,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 120482,
+      "offset": 120606,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 120543,
+      "offset": 120667,
       "length": 5,
       "value": "0.010"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "Array",
-      "offset": 120716,
+      "offset": 120840,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 120736,
+      "offset": 120860,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 120760,
+      "offset": 120884,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 120811,
+      "offset": 120935,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 121079,
+      "offset": 121203,
       "length": 3,
       "value": "1.2"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 122221,
+      "offset": 122345,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 122248,
+      "offset": 122372,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 122272,
+      "offset": 122396,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 122318,
+      "offset": 122442,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 122379,
+      "offset": 122503,
       "length": 3,
       "value": "1.4"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 122555,
+      "offset": 122679,
       "length": 3,
       "value": "0.4"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 122595,
+      "offset": 122719,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 123057,
+      "offset": 123181,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 123098,
+      "offset": 123222,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 123213,
+      "offset": 123337,
       "length": 3,
       "value": "0.4"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 123305,
+      "offset": 123429,
       "length": 4,
       "value": "1e-9"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 123373,
+      "offset": 123497,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 123418,
+      "offset": 123542,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 123655,
+      "offset": 123779,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 123769,
+      "offset": 123893,
       "length": 3,
       "value": "0.4"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 123809,
+      "offset": 123933,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 124734,
+      "offset": 124858,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 124756,
+      "offset": 124880,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 125009,
+      "offset": 125133,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "Array",
-      "offset": 125106,
+      "offset": 125230,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 125130,
+      "offset": 125254,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 125154,
+      "offset": 125278,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 125312,
+      "offset": 125436,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 125596,
+      "offset": 125720,
       "length": 5,
       "value": "0.001"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 125641,
+      "offset": 125765,
       "length": 5,
       "value": "0.001"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 125672,
+      "offset": 125796,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 125684,
+      "offset": 125808,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 126214,
+      "offset": 126338,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "Array",
-      "offset": 126478,
+      "offset": 126602,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 126498,
+      "offset": 126622,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 126524,
+      "offset": 126648,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 126579,
+      "offset": 126703,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "Array",
-      "offset": 126806,
+      "offset": 126930,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 126834,
+      "offset": 126958,
       "length": 3,
       "value": "1.5"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 127111,
+      "offset": 127235,
       "length": 3,
       "value": "1.2"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 128103,
+      "offset": 128227,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 128218,
+      "offset": 128342,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 128244,
+      "offset": 128368,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 128296,
+      "offset": 128420,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 128359,
+      "offset": 128483,
       "length": 3,
       "value": "1.4"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 128418,
+      "offset": 128542,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 128536,
+      "offset": 128660,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 128614,
+      "offset": 128738,
       "length": 4,
       "value": "0.45"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 128688,
+      "offset": 128812,
       "length": 4,
       "value": "0.45"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 128731,
+      "offset": 128855,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 128912,
+      "offset": 129036,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 129018,
+      "offset": 129142,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 129065,
+      "offset": 129189,
       "length": 3,
       "value": "0.4"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 129103,
+      "offset": 129227,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 129148,
+      "offset": 129272,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 129194,
+      "offset": 129318,
       "length": 3,
       "value": "0.4"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 129232,
+      "offset": 129356,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 129277,
+      "offset": 129401,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 129339,
+      "offset": 129463,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 130276,
+      "offset": 130400,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 130561,
+      "offset": 130685,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 130579,
+      "offset": 130703,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "Dictionary",
-      "offset": 131103,
+      "offset": 131227,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 131418,
+      "offset": 131542,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "Array",
-      "offset": 132213,
+      "offset": 132337,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 132233,
+      "offset": 132357,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 132257,
+      "offset": 132381,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 132308,
+      "offset": 132432,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 132539,
+      "offset": 132663,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 132687,
+      "offset": 132811,
       "length": 4,
       "value": "0.12"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 132875,
+      "offset": 132999,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/AirPodsHybridDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 133158,
+      "offset": 133282,
       "length": 4,
       "value": "true"
     },
@@ -29297,9 +29297,9 @@
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/BundleAccessor.swift",
       "kind": "StringLiteral",
-      "offset": 1294,
-      "length": 73,
-      "value": "\"⚠️ SonarFit: Could not find resource bundle, using framework bundle\""
+      "offset": 1302,
+      "length": 66,
+      "value": "\"SonarFit: Could not find resource bundle, using framework bundle\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/SDKVersion.swift",
@@ -29692,6 +29692,13 @@
       "offset": 4181,
       "length": 2,
       "value": "56"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/SDKVersion.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4234,
+      "length": 2,
+      "value": "57"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/SonarFitSDK.swift",

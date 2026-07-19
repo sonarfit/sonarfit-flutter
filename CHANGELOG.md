@@ -11,6 +11,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+
+## [2.4.2] - 2026-07-19
+
+### Changed
+- Improve shoulder-press rep counting: setup and re-rack movements are no longer miscounted.
+- Reduce false reps triggered by stair climbing (AirPods).
+- Improve live rep-count responsiveness on Apple Watch.
+- Internal diagnostics hardening — no functional change.
+
+### Fixed
+- Restore AirPods deadlift detector parity.
 ## [2.4.1] - 2026-07-07
 
 ### Fixed

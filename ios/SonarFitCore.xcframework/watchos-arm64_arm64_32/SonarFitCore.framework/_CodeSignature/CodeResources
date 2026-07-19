@@ -10,7 +10,7 @@
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-watchos.abi.json</key>
 		<data>
-		lFs7MmuE7FmMPgouycSe+0M+fZA=
+		9BgsEG15b2xf7B24kPBF0VxhNhM=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-watchos.package.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-watchos.swiftmodule</key>
 		<data>
-		TJZuUc8OFPuFPYp1zU392Sap5HI=
+		Giw06E+XTlXIoKPbQt/Dnim8Qxc=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64_32-apple-watchos.abi.json</key>
 		<data>
-		lFs7MmuE7FmMPgouycSe+0M+fZA=
+		9BgsEG15b2xf7B24kPBF0VxhNhM=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64_32-apple-watchos.package.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64_32-apple-watchos.swiftmodule</key>
 		<data>
-		Jwr/F+Yk9KRT43AJkRGDJUCZpgE=
+		Gt3LyoaDLeYCvOMV/41mm4BIBd8=
 		</data>
 		<key>beep.wav</key>
 		<data>
@@ -75,11 +75,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lFs7MmuE7FmMPgouycSe+0M+fZA=
+			9BgsEG15b2xf7B24kPBF0VxhNhM=
 			</data>
 			<key>hash2</key>
 			<data>
-			PIrS/Zg5a4cdpmTdJ+njvWIn0h1xEl3lXXYtEf/kNbw=
+			RkG15eQhaxFNvLCt2otxKAb6CFGZKCx2A1IdAa2c0L0=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-watchos.package.swiftinterface</key>
@@ -130,22 +130,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TJZuUc8OFPuFPYp1zU392Sap5HI=
+			Giw06E+XTlXIoKPbQt/Dnim8Qxc=
 			</data>
 			<key>hash2</key>
 			<data>
-			v3bbOFXeHJo4/q6sB4dDVqJH4AVsTrCJ9v9ebtM6QHQ=
+			sAeLDp2hF6ipKquERJ621Twdu1k5fyrX1PclJZOKQbI=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/arm64_32-apple-watchos.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lFs7MmuE7FmMPgouycSe+0M+fZA=
+			9BgsEG15b2xf7B24kPBF0VxhNhM=
 			</data>
 			<key>hash2</key>
 			<data>
-			PIrS/Zg5a4cdpmTdJ+njvWIn0h1xEl3lXXYtEf/kNbw=
+			RkG15eQhaxFNvLCt2otxKAb6CFGZKCx2A1IdAa2c0L0=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/arm64_32-apple-watchos.package.swiftinterface</key>
@@ -196,11 +196,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Jwr/F+Yk9KRT43AJkRGDJUCZpgE=
+			Gt3LyoaDLeYCvOMV/41mm4BIBd8=
 			</data>
 			<key>hash2</key>
 			<data>
-			Dg6Fk+iHUdytnH/EpuYFD30zfHi8lA3aIGXhCWgqvQ4=
+			Dfma6Z38+c/isJqviKzgefq4ioEVxw9/ZlZVP6E2sBk=
 			</data>
 		</dict>
 		<key>beep.wav</key>
