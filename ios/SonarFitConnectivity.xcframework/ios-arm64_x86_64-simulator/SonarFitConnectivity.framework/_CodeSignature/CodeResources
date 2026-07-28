@@ -10,7 +10,7 @@
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		xcL26vBnRVrSKq7MvKuYbErJIG8=
+		4lDyUk1S1zGI2rZAEZGvI0BnZ9g=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-ios-simulator.package.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		tZHbJyiwLQVvoQeNGuNgi2nYZxI=
+		ji+GTnL93WoIQmWUeNUVDrBHqww=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		xcL26vBnRVrSKq7MvKuYbErJIG8=
+		4lDyUk1S1zGI2rZAEZGvI0BnZ9g=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-ios-simulator.package.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		B4rfxWbkAoJF+KrUn8OmzSqCCWo=
+		BI49VdvBSLIdqVnCnzajbzxsvH4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -63,7 +63,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eeFEuoXTl/dGwPtN2UoUq4QYv4dH06a2ohZwD0Awpxw=
+			qg30fU4KX1ClDFv0dcrvjbVZTaIOnSFZy2tCDTOp9rY=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-ios-simulator.package.swiftinterface</key>
@@ -98,14 +98,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NkTbd5eYPLuYw0oP4qR5308DeCWN50FdDW3MPNkXIXI=
+			cxe2+77BGwBoKNIHQUFwJ1y/j+apZhkd0xPNTvpWROM=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eeFEuoXTl/dGwPtN2UoUq4QYv4dH06a2ohZwD0Awpxw=
+			qg30fU4KX1ClDFv0dcrvjbVZTaIOnSFZy2tCDTOp9rY=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-ios-simulator.package.swiftinterface</key>
@@ -140,7 +140,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			r1cem1Jp7yDs2kGuC7pSH7mpBtCHNC7t/1ThEv/EaAc=
+			jiCrbeU+iqyTn89PxDjMQS71tUVBrZjcJL0ZPi8HYlM=
 			</data>
 		</dict>
 	</dict>

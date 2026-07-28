@@ -12,6 +12,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+
+## [2.5.1] - 2026-07-28
+
+**Added**
+- Offline-first licensing — the SDK initialises and runs fully offline, with no network call at startup. Your API key carries a licence that is verified on-device and renews silently when a connection is available.
+- Privacy tier — usage can be metered as an anonymous aggregate count with no device identifier, for privacy-first apps.
+
+**Fixed**
+- Apple Watch: the first workout after a fresh install now detects reps reliably.
+
+_2.5.1 aligns the React Native and Flutter wrappers with the 2.5.0 iOS release._
 ## [2.4.2] - 2026-07-19
 
 ### Changed

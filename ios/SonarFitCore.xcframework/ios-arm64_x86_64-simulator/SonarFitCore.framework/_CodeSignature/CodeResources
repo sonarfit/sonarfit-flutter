@@ -10,15 +10,15 @@
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		5dtioxGWplfLtQtKECD0ea4i41c=
+		Y/lY09I6vPlWJAxenT/5pZmdluc=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios-simulator.package.swiftinterface</key>
 		<data>
-		BaYPC4IbnuJIsoUIqQKB/REhpm8=
+		bxtrBrRkG0gMl88vR9qYcrFPV7E=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		eboQ7lxieLYLP5/7nc4TYN6YPb8=
+		LmtsLsjVgiP34FAfOb7Omx9/Hno=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,23 +26,23 @@
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		eboQ7lxieLYLP5/7nc4TYN6YPb8=
+		LmtsLsjVgiP34FAfOb7Omx9/Hno=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		oRCJelXKi13MNTyQXyIc/EH0t8k=
+		/5pbtaIsTGCcOhUE0rU5F42Fl0s=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		5dtioxGWplfLtQtKECD0ea4i41c=
+		Y/lY09I6vPlWJAxenT/5pZmdluc=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/x86_64-apple-ios-simulator.package.swiftinterface</key>
 		<data>
-		xqow0cRAbTUcxRkCDpgiR4JUo0A=
+		3EJ947VkBps1XuC40mDVj9dUEc8=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		P5EbUTDLMz6F9TVVzOkJm0r1kOo=
+		An3jYhOtSDPgzcbAWOJWT1U3jjc=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		P5EbUTDLMz6F9TVVzOkJm0r1kOo=
+		An3jYhOtSDPgzcbAWOJWT1U3jjc=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		m9UOUxEn28HdeSN2/LvLKBVgYVA=
+		DIC5xeuyf//sRBO8IiKathUmQOA=
 		</data>
 		<key>beep.wav</key>
 		<data>
@@ -75,21 +75,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uiwl0NrNzVotUdyBWqpuVoZIW6FZRvDQprtxcksO+5Y=
+			QW3UnaMb2U+TZq1bbQDaS+0H0EhOQb0pPO2ijot6xAU=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios-simulator.package.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			z6L65EB5G98Z2K4mSvUUf6nBC2KnMFUM5m5tR6eoZHg=
+			V72GsUSDq5JJWCFeLlzNJQXJDnd0JDifum54U2FKTK0=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			W8BoNCebTCVDSn3KTh1M/TXUF8+H3hQy+D6LZnjj4Vo=
+			6qobkc8iPdEG2concs9rAFKcIcsPgMSWapPJ2Z22gvI=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -103,35 +103,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			W8BoNCebTCVDSn3KTh1M/TXUF8+H3hQy+D6LZnjj4Vo=
+			6qobkc8iPdEG2concs9rAFKcIcsPgMSWapPJ2Z22gvI=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RRtowtDOfG46GwPmf4VCQhHeyl1UUWJ1EBxTDWC3+88=
+			GaRWbDCEQYL6aT0mUWhzissZTfXINd5tXGVAKr1KE4E=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uiwl0NrNzVotUdyBWqpuVoZIW6FZRvDQprtxcksO+5Y=
+			QW3UnaMb2U+TZq1bbQDaS+0H0EhOQb0pPO2ijot6xAU=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/x86_64-apple-ios-simulator.package.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5AvlYYBGNptLSOPFTuN1B+kKVW0Kz9dMNdXfEfDxtbQ=
+			Be7/8gBkOuXdmauFOgDVizBNjjW7ENgViPo3e0aldYs=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wLgH8thFtyvyQQ9xGQfhWQb90MYnr6bKnIV93G5ww1E=
+			4yHb/wEPNPGZVuoz3Q/sOs9e7vbZKWbT+KWfYCu66cA=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -145,14 +145,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wLgH8thFtyvyQQ9xGQfhWQb90MYnr6bKnIV93G5ww1E=
+			4yHb/wEPNPGZVuoz3Q/sOs9e7vbZKWbT+KWfYCu66cA=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/spRT+Le7AGqJf/FIzziwPFrI+fvTGafF7MMdIrTyA0=
+			kc1hNWR73p4BCCbGjcXMWFWtoipKE507QBi9tsMmuW0=
 			</data>
 		</dict>
 		<key>beep.wav</key>

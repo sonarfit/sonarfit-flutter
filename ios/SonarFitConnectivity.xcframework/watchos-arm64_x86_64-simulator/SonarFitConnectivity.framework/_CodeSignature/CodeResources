@@ -10,7 +10,7 @@
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-watchos-simulator.abi.json</key>
 		<data>
-		2csQS30RCvPWnauYT/FfBgmr5Kc=
+		TYwy6dgprp+/79sir2H1HnjpdAE=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-watchos-simulator.package.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-watchos-simulator.swiftmodule</key>
 		<data>
-		JXX0jUjitWDuc4VOYIF5/nP8oU4=
+		dbrzO7hs/jENf0R6eqYwlAavWgA=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-watchos-simulator.abi.json</key>
 		<data>
-		2csQS30RCvPWnauYT/FfBgmr5Kc=
+		TYwy6dgprp+/79sir2H1HnjpdAE=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-watchos-simulator.package.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-watchos-simulator.swiftmodule</key>
 		<data>
-		fS83pT99vBsKkiPUrmhUTSui2+k=
+		QljHc10Jv6O59Uxtq/wI/wL25rA=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -63,7 +63,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AO48OrcizFupGTs9BiPcML4mU5SlK10tJTb0QR36Yw0=
+			gxyAjQ07R0FJWPTrCtDVvQToYzGJRX79uOumEICN7Ek=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-watchos-simulator.package.swiftinterface</key>
@@ -98,14 +98,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3Cle8skktIu4jbXI40mU5z4AU+hpdKbbntRswWOBaN8=
+			mcNosBBqMlC03cTH+P8eEPSljPd9sFK4ZbbuyESB3tY=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-watchos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AO48OrcizFupGTs9BiPcML4mU5SlK10tJTb0QR36Yw0=
+			gxyAjQ07R0FJWPTrCtDVvQToYzGJRX79uOumEICN7Ek=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-watchos-simulator.package.swiftinterface</key>
@@ -140,7 +140,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CO2KE58EkYdJ3T9cf5X71f0OS9gbPvR+suqVIfg1eE0=
+			dBZkl+aWLel5zWKTdwVQ47pAVS0BmDm4u/m+Q8S2CSQ=
 			</data>
 		</dict>
 	</dict>

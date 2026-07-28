@@ -10,7 +10,7 @@
 		</data>
 		<key>Modules/SonarFitKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		vFoumqX1RJ9L+56fg/oOLETHi7k=
+		AQrMzk1pd7LjIjAs+jm7D1+7ync=
 		</data>
 		<key>Modules/SonarFitKit.swiftmodule/arm64-apple-ios-simulator.package.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/SonarFitKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		K/tHJqSXNbneMBm8x3dRStRbHqA=
+		zoqotyab74fcQY+RMS023Oanedo=
 		</data>
 		<key>Modules/SonarFitKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		vFoumqX1RJ9L+56fg/oOLETHi7k=
+		AQrMzk1pd7LjIjAs+jm7D1+7ync=
 		</data>
 		<key>Modules/SonarFitKit.swiftmodule/x86_64-apple-ios-simulator.package.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/SonarFitKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		SwO+P3Yv7VIcCguh2fdILUNXti0=
+		LzBSoiF1PbEE9vGmjD7cbfdr4Ns=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -63,7 +63,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			z/oICHINlGro8QhC7MqlN/KCUU7kHhd6aEoy6HES3kc=
+			xan6Wr3gEkR9qLeO8u2Rrdeiskh9fJRowuMjVIa/pvA=
 			</data>
 		</dict>
 		<key>Modules/SonarFitKit.swiftmodule/arm64-apple-ios-simulator.package.swiftinterface</key>
@@ -98,14 +98,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Je3x58bk2FRsxLqfMmM4UW8J0D4gf7Ixn4rutaUU4/g=
+			iV07I4TsByo6Z7j+MHLG0aEA/0BZSJeCRrHRHLzX30c=
 			</data>
 		</dict>
 		<key>Modules/SonarFitKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			z/oICHINlGro8QhC7MqlN/KCUU7kHhd6aEoy6HES3kc=
+			xan6Wr3gEkR9qLeO8u2Rrdeiskh9fJRowuMjVIa/pvA=
 			</data>
 		</dict>
 		<key>Modules/SonarFitKit.swiftmodule/x86_64-apple-ios-simulator.package.swiftinterface</key>
@@ -140,7 +140,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			a8T/OopXXnPj7CNVeXgQ6ItPkfriRs2ncZix14NsyXw=
+			FO47UhsjNBdEhajbSQ/DlXvxF/bRbBHo4N7bZGRYxHQ=
 			</data>
 		</dict>
 	</dict>

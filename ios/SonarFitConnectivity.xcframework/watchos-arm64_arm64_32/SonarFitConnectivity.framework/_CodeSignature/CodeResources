@@ -10,7 +10,7 @@
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-watchos.abi.json</key>
 		<data>
-		2csQS30RCvPWnauYT/FfBgmr5Kc=
+		TYwy6dgprp+/79sir2H1HnjpdAE=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-watchos.package.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-watchos.swiftmodule</key>
 		<data>
-		mMbay0C5t3Kexx7os+TzMWic5NQ=
+		159AN4Zpb8xyMt2e4ITR+PDWl6Q=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64_32-apple-watchos.abi.json</key>
 		<data>
-		2csQS30RCvPWnauYT/FfBgmr5Kc=
+		TYwy6dgprp+/79sir2H1HnjpdAE=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64_32-apple-watchos.package.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64_32-apple-watchos.swiftmodule</key>
 		<data>
-		HIuzuZe+QkLUcx2xSN7etoABJDM=
+		Q60BSBh1Fj35lpequVRzj81FwEo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -63,11 +63,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2csQS30RCvPWnauYT/FfBgmr5Kc=
+			TYwy6dgprp+/79sir2H1HnjpdAE=
 			</data>
 			<key>hash2</key>
 			<data>
-			AO48OrcizFupGTs9BiPcML4mU5SlK10tJTb0QR36Yw0=
+			gxyAjQ07R0FJWPTrCtDVvQToYzGJRX79uOumEICN7Ek=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-watchos.package.swiftinterface</key>
@@ -118,22 +118,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mMbay0C5t3Kexx7os+TzMWic5NQ=
+			159AN4Zpb8xyMt2e4ITR+PDWl6Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			Jsq33urdK5DJaGkP9OHmXH6Umvrw/f9xp6aMEwKs1eY=
+			c9eaYfuaGIbMlhRGEzwoLmyHS7PJ4mXbaCFE9T/tFww=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64_32-apple-watchos.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2csQS30RCvPWnauYT/FfBgmr5Kc=
+			TYwy6dgprp+/79sir2H1HnjpdAE=
 			</data>
 			<key>hash2</key>
 			<data>
-			AO48OrcizFupGTs9BiPcML4mU5SlK10tJTb0QR36Yw0=
+			gxyAjQ07R0FJWPTrCtDVvQToYzGJRX79uOumEICN7Ek=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64_32-apple-watchos.package.swiftinterface</key>
@@ -184,11 +184,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HIuzuZe+QkLUcx2xSN7etoABJDM=
+			Q60BSBh1Fj35lpequVRzj81FwEo=
 			</data>
 			<key>hash2</key>
 			<data>
-			TWWVdIlpExSedNJNyd7UGQmZi9ncbGzxjSZQXqE6CDI=
+			7FvtS/VjuSv3yCQ+qUPzIZJL+xCLBccw7cbSW7b4Me8=
 			</data>
 		</dict>
 	</dict>
