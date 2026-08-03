@@ -13,6 +13,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+
+## [2.5.2] - 2026-08-03
+
+**Fixed**
+- Resolved a rare startup slowdown in apps using the Apple Watch integration.
 ## [2.5.1] - 2026-07-28
 
 **Added**

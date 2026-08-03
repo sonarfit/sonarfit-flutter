@@ -10,15 +10,15 @@
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		Y/lY09I6vPlWJAxenT/5pZmdluc=
+		QPXdfWKHbVL0XzNqpceYA3dfJvk=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios.package.swiftinterface</key>
 		<data>
-		r5KWkMmeQR0H84m+2ERKQteL0Z4=
+		7BqLV4d1hYeCR107/bVAuU83nVc=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		EztG0gatAxCpqeEGxethRWBC0ls=
+		8xh4cyoBS7B8KYUO7rt/D6RWDhY=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		EztG0gatAxCpqeEGxethRWBC0ls=
+		8xh4cyoBS7B8KYUO7rt/D6RWDhY=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		FjWXghleklvtDC74I1px7ND39HE=
+		ocybQ84Gzt47k6JFZpIWiHD0P10=
 		</data>
 		<key>beep.wav</key>
 		<data>
@@ -51,21 +51,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QW3UnaMb2U+TZq1bbQDaS+0H0EhOQb0pPO2ijot6xAU=
+			Kga6etK/feKvA8EtK/K/IbqLULtIQUs3hdm+HMhjfoE=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios.package.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Yio7Gm3Jhlu1J9dcIdU2xehXB2qXJPOdW1NO0DP4ttQ=
+			x6WKdAHPcUnTYrva2j4idGmIc1oqoSF1HOtIaLzi6HI=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CgLhqaTG3owGsaxdum0XFRAOjOZ7erbbYBWzPr2gdqY=
+			Vjav5xAZewQCQPPb0EbfjgbYIIc90lVYnQztcBJQv8o=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -79,14 +79,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CgLhqaTG3owGsaxdum0XFRAOjOZ7erbbYBWzPr2gdqY=
+			Vjav5xAZewQCQPPb0EbfjgbYIIc90lVYnQztcBJQv8o=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lnT7eSlASqpGUuOnT6jq2Hlm5OV1/wGlCXm5GkRoulw=
+			DhnFhE+Zqn1PE5wfaMPKSPgD8ZuUOoUYB3GB0vd3HQ0=
 			</data>
 		</dict>
 		<key>beep.wav</key>

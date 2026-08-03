@@ -958,6 +958,16 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
+        "moduleName": "SonarFitCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "SonarFitCore"
       },
       {
@@ -17737,16 +17747,6 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "SonarFitCore",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
         "moduleName": "SonarFitCore"
       },
       {
@@ -25190,6 +25190,16 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
+        "moduleName": "SonarFitCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "SonarFitCore"
       },
       {
@@ -26631,17 +26641,24 @@
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Analytics\/SonarFitAnalytics.swift",
+      "kind": "StringLiteral",
+      "offset": 9917,
+      "length": 35,
+      "value": "\"com.sonarfit.sdk.airpodsModels.v1\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Analytics\/SonarFitClientSettings.swift",
       "kind": "BooleanLiteral",
-      "offset": 586,
+      "offset": 1707,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Analytics\/SonarFitAnalytics.swift",
-      "kind": "StringLiteral",
-      "offset": 9542,
-      "length": 35,
-      "value": "\"com.sonarfit.sdk.airpodsModels.v1\""
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Analytics\/SonarFitClientSettings.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1799,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Analytics\/UsageMeter.swift",
@@ -26681,42 +26698,42 @@
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Auth\/EntitlementManager.swift",
       "kind": "StringLiteral",
-      "offset": 3860,
+      "offset": 3492,
       "length": 10,
       "value": "\"sk_live_\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Auth\/EntitlementManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3905,
+      "offset": 3537,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Auth\/EntitlementManager.swift",
       "kind": "StringLiteral",
-      "offset": 4292,
+      "offset": 3924,
       "length": 46,
       "value": "\"rUuvVpqxzqtC5M+vc5grMriFKucdsFsV5uF1IQ7a0GE=\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Auth\/EntitlementManager.swift",
       "kind": "StringLiteral",
-      "offset": 8388,
+      "offset": 8020,
       "length": 30,
       "value": "\"com.sonarfit.sdk.entitlement\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Auth\/EntitlementManager.swift",
       "kind": "StringLiteral",
-      "offset": 8449,
+      "offset": 8081,
       "length": 16,
       "value": "\"entitlement.v1\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Auth\/EntitlementManager.swift",
       "kind": "StringLiteral",
-      "offset": 8798,
+      "offset": 8430,
       "length": 12,
       "value": "\"revoked.v1\""
     },
@@ -33236,6 +33253,20 @@
       "offset": 4287,
       "length": 2,
       "value": "58"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/SDKVersion.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4340,
+      "length": 2,
+      "value": "59"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/SDKVersion.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4394,
+      "length": 2,
+      "value": "60"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/SonarFitSDK.swift",

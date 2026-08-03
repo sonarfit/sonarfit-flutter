@@ -2104,6 +2104,56 @@
           {
             "kind": "Function",
             "name": "session",
+            "printedName": "session(_:didReceiveUserInfo:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WCSession",
+                "printedName": "WatchConnectivity.WCSession",
+                "usr": "c:objc(cs)WCSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@SonarFitConnectivity@objc(cs)PhoneConnectivityManager(im)session:didReceiveUserInfo:",
+            "mangledName": "$s20SonarFitConnectivity05PhoneC7ManagerC7session_18didReceiveUserInfoySo9WCSessionC_SDySSypGtF",
+            "moduleName": "SonarFitConnectivity",
+            "objc_name": "session:didReceiveUserInfo:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "session",
             "printedName": "session(_:didReceive:)",
             "children": [
               {

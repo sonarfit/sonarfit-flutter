@@ -10,7 +10,7 @@
 		</data>
 		<key>Modules/SonarFitKit.swiftmodule/arm64-apple-watchos.abi.json</key>
 		<data>
-		MSEDJR5M+efFUm/FgiENQa5be1c=
+		KQuByi04NZ5bT4VNo2BLi5qPINE=
 		</data>
 		<key>Modules/SonarFitKit.swiftmodule/arm64-apple-watchos.package.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/SonarFitKit.swiftmodule/arm64-apple-watchos.swiftmodule</key>
 		<data>
-		l3OAavscsK2xWzY896CnhfUcuwc=
+		YtMOotSBT1VzyFzVOAPff21WQGM=
 		</data>
 		<key>Modules/SonarFitKit.swiftmodule/arm64_32-apple-watchos.abi.json</key>
 		<data>
-		MSEDJR5M+efFUm/FgiENQa5be1c=
+		KQuByi04NZ5bT4VNo2BLi5qPINE=
 		</data>
 		<key>Modules/SonarFitKit.swiftmodule/arm64_32-apple-watchos.package.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/SonarFitKit.swiftmodule/arm64_32-apple-watchos.swiftmodule</key>
 		<data>
-		oMU4qTr45zmM8SUMVJvofG5ecN0=
+		u/YP5bB7SBTgsm5vJsyp10ge3G8=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -63,11 +63,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MSEDJR5M+efFUm/FgiENQa5be1c=
+			KQuByi04NZ5bT4VNo2BLi5qPINE=
 			</data>
 			<key>hash2</key>
 			<data>
-			oCb8TxnIhZu48bDF8ziph1sNltt9hb2mv9B8v52JlCU=
+			Sslom1ixmnoUnh13o2PTETCH+Ns9ltkcCCfpHdGOgcE=
 			</data>
 		</dict>
 		<key>Modules/SonarFitKit.swiftmodule/arm64-apple-watchos.package.swiftinterface</key>
@@ -118,22 +118,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			l3OAavscsK2xWzY896CnhfUcuwc=
+			YtMOotSBT1VzyFzVOAPff21WQGM=
 			</data>
 			<key>hash2</key>
 			<data>
-			HTaoK+vJqgsJmabYZocXOQMfK+06rKEl4pcdzwqWRS4=
+			T+MHWjLXLwzXNx4dcDgVQzN5cOQIsqvRvru46J7McaI=
 			</data>
 		</dict>
 		<key>Modules/SonarFitKit.swiftmodule/arm64_32-apple-watchos.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MSEDJR5M+efFUm/FgiENQa5be1c=
+			KQuByi04NZ5bT4VNo2BLi5qPINE=
 			</data>
 			<key>hash2</key>
 			<data>
-			oCb8TxnIhZu48bDF8ziph1sNltt9hb2mv9B8v52JlCU=
+			Sslom1ixmnoUnh13o2PTETCH+Ns9ltkcCCfpHdGOgcE=
 			</data>
 		</dict>
 		<key>Modules/SonarFitKit.swiftmodule/arm64_32-apple-watchos.package.swiftinterface</key>
@@ -184,11 +184,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oMU4qTr45zmM8SUMVJvofG5ecN0=
+			u/YP5bB7SBTgsm5vJsyp10ge3G8=
 			</data>
 			<key>hash2</key>
 			<data>
-			VJoaGnvnaNThlVzF9ccvw0aOlm2TO87MA7stoVVzAcs=
+			n95Nr30Di+BqULsW6MCx93ZMtuzAAxVMvvQQp6dn/BU=
 			</data>
 		</dict>
 	</dict>

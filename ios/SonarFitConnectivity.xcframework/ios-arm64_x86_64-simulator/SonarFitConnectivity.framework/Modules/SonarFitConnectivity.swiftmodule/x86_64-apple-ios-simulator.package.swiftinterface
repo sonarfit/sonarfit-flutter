@@ -83,6 +83,7 @@ extension SonarFitConnectivity.PhoneConnectivityManager : WatchConnectivity.WCSe
   @objc final public func session(_ session: WatchConnectivity.WCSession, didReceiveMessageData messageData: Foundation.Data)
   @objc final public func session(_ session: WatchConnectivity.WCSession, didReceiveMessage message: [Swift.String : Any], replyHandler: @escaping ([Swift.String : Any]) -> Swift.Void)
   @objc final public func session(_ session: WatchConnectivity.WCSession, didReceiveMessage message: [Swift.String : Any])
+  @objc final public func session(_ session: WatchConnectivity.WCSession, didReceiveUserInfo userInfo: [Swift.String : Any])
   @objc final public func session(_ session: WatchConnectivity.WCSession, didReceive file: WatchConnectivity.WCSessionFile)
   #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func session(_ session: WatchConnectivity.WCSession, didFinish fileTransfer: WatchConnectivity.WCSessionFileTransfer, error: (any Swift.Error)?)
