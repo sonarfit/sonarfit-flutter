@@ -263,6 +263,8 @@ private final class HeadlessStreamHandler: NSObject, FlutterStreamHandler {
                 m["type"] = "setCancelled"; m["setIndex"] = setIndex
             case .workoutEnded(let setsCounted):
                 m["type"] = "workoutEnded"; m["setsCounted"] = setsCounted
+            @unknown default:
+                return
             }
             DispatchQueue.main.async { eventSink(m) }
         }
