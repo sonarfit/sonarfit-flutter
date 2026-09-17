@@ -1814,17 +1814,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
+            "name": "WorkoutEngineDelegate",
+            "printedName": "WorkoutEngineDelegate",
+            "usr": "s:12SonarFitCore21WorkoutEngineDelegateP",
+            "mangledName": "$s12SonarFitCore21WorkoutEngineDelegateP"
           },
           {
             "kind": "Conformance",
@@ -1850,10 +1843,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "WorkoutEngineDelegate",
-            "printedName": "WorkoutEngineDelegate",
-            "usr": "s:12SonarFitCore21WorkoutEngineDelegateP",
-            "mangledName": "$s12SonarFitCore21WorkoutEngineDelegateP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },

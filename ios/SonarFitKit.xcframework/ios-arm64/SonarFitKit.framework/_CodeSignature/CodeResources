@@ -6,31 +6,31 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		J4UvbNcqs2CS/kS2rYjORfqStJ8=
+		TZAVOTwlHurS6Q5fJj/T0gWQbpc=
 		</data>
 		<key>Modules/SonarFitKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		t7O2RcxEpbOQs0h2ciJB/k9e/LM=
+		DSutdKztslwMOTKoesCtI8BkNxE=
 		</data>
 		<key>Modules/SonarFitKit.swiftmodule/arm64-apple-ios.package.swiftinterface</key>
 		<data>
-		riWBkhsetHvbK37PxaPmqr61sY4=
+		YiyrFfgzNboK4uU80QRiDsboZ9A=
 		</data>
 		<key>Modules/SonarFitKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		riWBkhsetHvbK37PxaPmqr61sY4=
+		YiyrFfgzNboK4uU80QRiDsboZ9A=
 		</data>
 		<key>Modules/SonarFitKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		sWlYE74Rfq57ee3fvpXe2oqrDFM=
+		Fhv3uYBdP76RFvEln4yU5grNCuI=
 		</data>
 		<key>Modules/SonarFitKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		riWBkhsetHvbK37PxaPmqr61sY4=
+		YiyrFfgzNboK4uU80QRiDsboZ9A=
 		</data>
 		<key>Modules/SonarFitKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		zdOi6tK320CWbyWemzlk2oiHJ5M=
+		3MkJs3T2SezE98W6J9oAcyFQgJI=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -39,42 +39,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jd4EvqM+F/VpeXOjlU9AN8wHRRPJG6yA7acImPfPe4s=
+			XzGYT+d8Gt8YIg6yrC42E3p/fN+ziC8A3QmAyV7h2zg=
 			</data>
 		</dict>
 		<key>Modules/SonarFitKit.swiftmodule/arm64-apple-ios.package.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dP3PJYiPqivdR02VdOevAovgYRQCTrWFKz3eX+zX6cw=
+			JrjMBTPA996rsDnOuPScxVnVoJ7A+cbd3MtSl+8GTuw=
 			</data>
 		</dict>
 		<key>Modules/SonarFitKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dP3PJYiPqivdR02VdOevAovgYRQCTrWFKz3eX+zX6cw=
+			JrjMBTPA996rsDnOuPScxVnVoJ7A+cbd3MtSl+8GTuw=
 			</data>
 		</dict>
 		<key>Modules/SonarFitKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			n8Z66MscAKr9P3iQiiM4X5cG/LgoHL5vu/8ltecpu2I=
+			bU6JxyIA7O1/Ck1iVpeb7ODalgcncBJh/Xjg/Pxhp4s=
 			</data>
 		</dict>
 		<key>Modules/SonarFitKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dP3PJYiPqivdR02VdOevAovgYRQCTrWFKz3eX+zX6cw=
+			JrjMBTPA996rsDnOuPScxVnVoJ7A+cbd3MtSl+8GTuw=
 			</data>
 		</dict>
 		<key>Modules/SonarFitKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XOiubOJgKxiEf30viXLubvFvayNtNGaBQYmSR535ik8=
+			ZyUEi6Rn+6apc+ZL/sFbRd4VT3+uwok5xBEmOO50Hjc=
 			</data>
 		</dict>
 	</dict>

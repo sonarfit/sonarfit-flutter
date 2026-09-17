@@ -61,6 +61,13 @@
       },
       {
         "kind": "Import",
+        "name": "HealthKit",
+        "printedName": "HealthKit",
+        "declKind": "Import",
+        "moduleName": "SonarFitKit"
+      },
+      {
+        "kind": "Import",
         "name": "SonarFitCore",
         "printedName": "SonarFitCore",
         "declKind": "Import",
@@ -94,6 +101,356 @@
         "name": "SonarFit",
         "printedName": "SonarFit",
         "children": [
+          {
+            "kind": "Function",
+            "name": "configureWatchSession",
+            "printedName": "configureWatchSession(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SonarFitWatchSessionMode",
+                "printedName": "SonarFitConnectivity.SonarFitWatchSessionMode",
+                "usr": "s:20SonarFitConnectivity0aB16WatchSessionModeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SonarFitKit0aB0C21configureWatchSessionyy0aB12Connectivity0abeF4ModeOFZ",
+            "mangledName": "$s11SonarFitKit0aB0C21configureWatchSessionyy0aB12Connectivity0abeF4ModeOFZ",
+            "moduleName": "SonarFitKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hostWorkoutSession",
+            "printedName": "hostWorkoutSession(_:didChangeTo:from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HKWorkoutSession",
+                "printedName": "HealthKit.HKWorkoutSession",
+                "usr": "c:objc(cs)HKWorkoutSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HKWorkoutSessionState",
+                "printedName": "HealthKit.HKWorkoutSessionState",
+                "usr": "c:@E@HKWorkoutSessionState"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HKWorkoutSessionState",
+                "printedName": "HealthKit.HKWorkoutSessionState",
+                "usr": "c:@E@HKWorkoutSessionState"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SonarFitKit0aB0C18hostWorkoutSession_11didChangeTo4fromySo09HKWorkoutF0C_So0kF5StateVAJtFZ",
+            "mangledName": "$s11SonarFitKit0aB0C18hostWorkoutSession_11didChangeTo4fromySo09HKWorkoutF0C_So0kF5StateVAJtFZ",
+            "moduleName": "SonarFitKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startRepDetection",
+            "printedName": "startRepDetection(exercise:targetReps:onRep:onTargetReached:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SonarFitRepDetection",
+                "printedName": "SonarFitConnectivity.SonarFitRepDetection",
+                "usr": "s:20SonarFitConnectivity0aB12RepDetectionC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WorkoutType",
+                "printedName": "SonarFitCore.WorkoutType",
+                "usr": "s:12SonarFitCore11WorkoutTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Int) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SonarFitKit0aB0C17startRepDetection8exercise10targetReps02onE00J13TargetReached0aB12Connectivity0abeF0C0aB4Core11WorkoutTypeO_SiySicyycSgtKFZ",
+            "mangledName": "$s11SonarFitKit0aB0C17startRepDetection8exercise10targetReps02onE00J13TargetReached0aB12Connectivity0abeF0C0aB4Core11WorkoutTypeO_SiySicyycSgtKFZ",
+            "moduleName": "SonarFitKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startRepDetection",
+            "printedName": "startRepDetection(exercise:goal:onRep:onTargetReached:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SonarFitRepDetection",
+                "printedName": "SonarFitConnectivity.SonarFitRepDetection",
+                "usr": "s:20SonarFitConnectivity0aB12RepDetectionC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WorkoutType",
+                "printedName": "SonarFitCore.WorkoutType",
+                "usr": "s:12SonarFitCore11WorkoutTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RepGoal",
+                "printedName": "SonarFitCore.RepGoal",
+                "usr": "s:12SonarFitCore7RepGoalO"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Int) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SonarFitKit0aB0C17startRepDetection8exercise4goal02onE00I13TargetReached0aB12Connectivity0abeF0C0aB4Core11WorkoutTypeO_AL0E4GoalOySicyycSgtKFZ",
+            "mangledName": "$s11SonarFitKit0aB0C17startRepDetection8exercise4goal02onE00I13TargetReached0aB12Connectivity0abeF0C0aB4Core11WorkoutTypeO_AL0E4GoalOySicyycSgtKFZ",
+            "moduleName": "SonarFitKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startHeadlessWorkout",
+            "printedName": "startHeadlessWorkout()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SonarFitKit0aB0C20startHeadlessWorkoutyyKFZ",
+            "mangledName": "$s11SonarFitKit0aB0C20startHeadlessWorkoutyyKFZ",
+            "moduleName": "SonarFitKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "endHeadlessWorkout",
+            "printedName": "endHeadlessWorkout(save:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SonarFitKit0aB0C18endHeadlessWorkout4saveySb_tKFZ",
+            "mangledName": "$s11SonarFitKit0aB0C18endHeadlessWorkout4saveySb_tKFZ",
+            "moduleName": "SonarFitKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "supportedWatchExercises",
+            "printedName": "supportedWatchExercises",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[SonarFitCore.WorkoutType]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WorkoutType",
+                    "printedName": "SonarFitCore.WorkoutType",
+                    "usr": "s:12SonarFitCore11WorkoutTypeO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SonarFitKit0aB0C23supportedWatchExercisesSay0aB4Core11WorkoutTypeOGvpZ",
+            "mangledName": "$s11SonarFitKit0aB0C23supportedWatchExercisesSay0aB4Core11WorkoutTypeOGvpZ",
+            "moduleName": "SonarFitKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[SonarFitCore.WorkoutType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WorkoutType",
+                        "printedName": "SonarFitCore.WorkoutType",
+                        "usr": "s:12SonarFitCore11WorkoutTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SonarFitKit0aB0C23supportedWatchExercisesSay0aB4Core11WorkoutTypeOGvgZ",
+                "mangledName": "$s11SonarFitKit0aB0C23supportedWatchExercisesSay0aB4Core11WorkoutTypeOGvgZ",
+                "moduleName": "SonarFitKit",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
           {
             "kind": "Function",
             "name": "createWorkout",
@@ -731,16 +1088,23 @@
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitKit\/PublicTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1844,
+      "offset": 1978,
       "length": 7,
       "value": "\"1.0.0\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitKit\/PublicTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1881,
+      "offset": 2015,
       "length": 3,
       "value": "\"1\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitKit\/SonarFit.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10008,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitKit\/Version.swift",

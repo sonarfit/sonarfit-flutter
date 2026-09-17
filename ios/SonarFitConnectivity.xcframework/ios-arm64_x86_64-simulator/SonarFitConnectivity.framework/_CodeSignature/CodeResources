@@ -6,55 +6,55 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		akZjrc40igju0K9pmgohmHErrY0=
+		rHgyCWhI7zllu5L87AqTqF60nyo=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		F1+GlreTkHpFBUtrKbpRhWvAiwg=
+		M6EyLILaARk6qLQ8Ta8rmA+57Vw=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-ios-simulator.package.swiftinterface</key>
 		<data>
-		G2dgIhlCGmGQP6QYnRk+VpFFFvs=
+		pN2qPqsp+vQckCqaBJcdAquyzDs=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		G2dgIhlCGmGQP6QYnRk+VpFFFvs=
+		pN2qPqsp+vQckCqaBJcdAquyzDs=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		HO2phO7buyft/k2jzLYZCGJLFOo=
+		JxGybKx0Eb3gD/nBZKPRGnwSaBM=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		G2dgIhlCGmGQP6QYnRk+VpFFFvs=
+		pN2qPqsp+vQckCqaBJcdAquyzDs=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		gEDA97pI6uEboDq3SD1uBQG//Es=
+		jvRGYGUtM/CqiuTdGU2jgNQYXqc=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		F1+GlreTkHpFBUtrKbpRhWvAiwg=
+		M6EyLILaARk6qLQ8Ta8rmA+57Vw=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-ios-simulator.package.swiftinterface</key>
 		<data>
-		JtjACp3RRT0m+rcZVz99smGvhTk=
+		+MrzODXSx4llOg03MFPUPzU7XIQ=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		JtjACp3RRT0m+rcZVz99smGvhTk=
+		+MrzODXSx4llOg03MFPUPzU7XIQ=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		7FOADZxaYqkNlEZzi0rYpWj0g3g=
+		VkFagH5BYmSSYWWlXzotqM0eZVo=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		JtjACp3RRT0m+rcZVz99smGvhTk=
+		+MrzODXSx4llOg03MFPUPzU7XIQ=
 		</data>
 		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		l8eYeLfV5ak8R/GbIu/nOJNusGE=
+		LGwAW/b6ni+PyWq8akcksqW12Ho=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -63,84 +63,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ABcF7HyNiAOwKaHqgfEjQcjICLca36aWbLTd1santpQ=
+			LsjQPvx0nhCBE8oEaDIij1UiHUo3PfL4Jfad+yEWWAo=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-ios-simulator.package.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			db50MT4MF7Z/esVWbkC4Zv7hgdUf13Mq7zIS8Si1Y3A=
+			iCo/I9mWuLL4mPuHbmIM3NGUzop9q7HAXqo0VLHF9ik=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			db50MT4MF7Z/esVWbkC4Zv7hgdUf13Mq7zIS8Si1Y3A=
+			iCo/I9mWuLL4mPuHbmIM3NGUzop9q7HAXqo0VLHF9ik=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hK9TbjqYfGO8ZmgHj6aEAsuhEq2U08tPJCExwJSk/kE=
+			OJ/aiYel765O9ch/15VVUxVPbJ4NBvcCIpavSiA0i6E=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			db50MT4MF7Z/esVWbkC4Zv7hgdUf13Mq7zIS8Si1Y3A=
+			iCo/I9mWuLL4mPuHbmIM3NGUzop9q7HAXqo0VLHF9ik=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JcdNBFmi4H+2mVUpFTZMnt2zQp4eHGYOhG2qfm30510=
+			kAOmrCXLrjAaUju0x0syI/El24p262mTh5CYaClzuLE=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ABcF7HyNiAOwKaHqgfEjQcjICLca36aWbLTd1santpQ=
+			LsjQPvx0nhCBE8oEaDIij1UiHUo3PfL4Jfad+yEWWAo=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-ios-simulator.package.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LiiHzbl9UbqN6BK4d1eKdLC48EDnCBVLiKNPYYWLf7E=
+			Bhi7XMBP3fk7a7uwPlZ9YnTVB26RfMC12POem0wp6IY=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LiiHzbl9UbqN6BK4d1eKdLC48EDnCBVLiKNPYYWLf7E=
+			Bhi7XMBP3fk7a7uwPlZ9YnTVB26RfMC12POem0wp6IY=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SJCu9CTUz9Tpm32ZTQZ9HQGRgCJEpWXBq5p3pnOKPKQ=
+			58MTNOGjUbSz8gl28GtXvN8cNqNKpbd0PEdKTY2y1zY=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LiiHzbl9UbqN6BK4d1eKdLC48EDnCBVLiKNPYYWLf7E=
+			Bhi7XMBP3fk7a7uwPlZ9YnTVB26RfMC12POem0wp6IY=
 			</data>
 		</dict>
 		<key>Modules/SonarFitConnectivity.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oIHyEfhP5ZTvf7Cv37zeznAV+BgI0i1cFPQE0ZxHjgc=
+			JY3iV4nJCrpR49ZN+63fGs+dvsJpb3gG0EJybp2f0Eo=
 			</data>
 		</dict>
 	</dict>

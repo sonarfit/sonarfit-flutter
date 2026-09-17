@@ -51,6 +51,13 @@
       },
       {
         "kind": "Import",
+        "name": "HealthKit",
+        "printedName": "HealthKit",
+        "declKind": "Import",
+        "moduleName": "SonarFitKit"
+      },
+      {
+        "kind": "Import",
         "name": "SonarFitCore",
         "printedName": "SonarFitCore",
         "declKind": "Import",
@@ -228,6 +235,57 @@
               "RawDocComment"
             ],
             "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "observeHeadlessDetection",
+            "printedName": "observeHeadlessDetection(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((SonarFitCore.SonarFitHeadlessEvent) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(SonarFitCore.SonarFitHeadlessEvent) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SonarFitHeadlessEvent",
+                        "printedName": "SonarFitCore.SonarFitHeadlessEvent",
+                        "usr": "s:12SonarFitCore0aB13HeadlessEventO"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SonarFitKit0aB0C24observeHeadlessDetectionyyy0aB4Core0abE5EventOcSgFZ",
+            "mangledName": "$s11SonarFitKit0aB0C24observeHeadlessDetectionyyy0aB4Core0abE5EventOcSgFZ",
+            "moduleName": "SonarFitKit",
+            "static": true,
+            "intro_iOS": "17.0",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
             "funcSelfKind": "NonMutating"
           },
           {
@@ -1341,28 +1399,28 @@
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitKit\/PublicTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1844,
+      "offset": 1978,
       "length": 7,
       "value": "\"1.0.0\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitKit\/PublicTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1881,
+      "offset": 2015,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitKit\/SonarFit.swift",
       "kind": "IntegerLiteral",
-      "offset": 9286,
+      "offset": 17677,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitKit\/SonarFit.swift",
       "kind": "Dictionary",
-      "offset": 25046,
+      "offset": 33520,
       "length": 3,
       "value": "[]"
     },

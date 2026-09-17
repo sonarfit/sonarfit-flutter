@@ -1,8 +1,9 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
-// swift-module-flags: -target x86_64-apple-watchos10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SonarFitKit -package-name SonarFitSDK
-// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
+// swift-compiler-version: Apple Swift version 6.3.2 effective-5.10 (swiftlang-6.3.2.1.108 clang-2100.1.1.101)
+// swift-module-flags: -target x86_64-apple-watchos10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SonarFitKit -package-name SonarFitSDK
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.2
 import Foundation
+import HealthKit
 @_exported import SonarFitConnectivity
 @_exported import SonarFitCore
 @_exported import SonarFitWatchUI
@@ -34,6 +35,7 @@ public typealias WorkoutEngine = SonarFitCore.WorkoutEngine
 public typealias WorkoutEngineDelegate = SonarFitCore.WorkoutEngineDelegate
 @available(iOS 17.0, watchOS 10.0, macOS 10.15, *)
 public typealias SonarFitWorkout = SonarFitCore.SonarFitWorkout
+public typealias SonarFitRepGoal = SonarFitCore.RepGoal
 extension SonarFitKit.SonarFit {
   public static let version: Swift.String
   public static let buildNumber: Swift.String
@@ -41,6 +43,15 @@ extension SonarFitKit.SonarFit {
 public typealias SonarFitSDK = SonarFitCore.SonarFitSDK
 @_hasMissingDesignatedInitializers @available(iOS 15.0, *)
 final public class SonarFit {
+  public static func configureWatchSession(_ mode: SonarFitConnectivity.SonarFitWatchSessionMode)
+  public static func hostWorkoutSession(_ session: HealthKit.HKWorkoutSession, didChangeTo toState: HealthKit.HKWorkoutSessionState, from fromState: HealthKit.HKWorkoutSessionState)
+  public static func startRepDetection(exercise: SonarFitKit.WorkoutType, targetReps: Swift.Int, onRep: @escaping (Swift.Int) -> Swift.Void, onTargetReached: (() -> Swift.Void)? = nil) throws -> SonarFitConnectivity.SonarFitRepDetection
+  public static func startRepDetection(exercise: SonarFitKit.WorkoutType, goal: SonarFitCore.RepGoal, onRep: @escaping (Swift.Int) -> Swift.Void, onTargetReached: (() -> Swift.Void)? = nil) throws -> SonarFitConnectivity.SonarFitRepDetection
+  public static func startHeadlessWorkout() throws
+  public static func endHeadlessWorkout(save: Swift.Bool = true) throws
+  public static var supportedWatchExercises: [SonarFitKit.WorkoutType] {
+    get
+  }
   @available(iOS 17.0, watchOS 10.0, macOS 10.15, *)
   @_Concurrency.MainActor public static func createWorkout(config: SonarFitKit.WorkoutConfig) throws -> SonarFitKit.SonarFitWorkout
   public static func createEngine(config: SonarFitKit.WorkoutConfig, delegate: any SonarFitCore.WorkoutEngineDelegate) throws -> SonarFitKit.WorkoutEngine

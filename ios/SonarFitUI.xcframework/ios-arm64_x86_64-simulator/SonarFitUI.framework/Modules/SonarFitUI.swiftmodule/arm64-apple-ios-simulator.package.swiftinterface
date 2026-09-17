@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
-// swift-module-flags: -target arm64-apple-ios17.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SonarFitUI -package-name SonarFitSDK
-// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
+// swift-compiler-version: Apple Swift version 6.3.2 effective-5.10 (swiftlang-6.3.2.1.108 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-ios17.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SonarFitUI -package-name SonarFitSDK
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.2
 import Combine
 import Foundation
 import SonarFitConnectivity
@@ -28,9 +28,7 @@ import _SwiftConcurrencyShims
   public typealias Body = @_opaqueReturnTypeOf("$s10SonarFitUI6SetBoxV4bodyQrvp", 0) __
 }
 @_Concurrency.MainActor @preconcurrency public struct TimerBox : SwiftUICore.View {
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public init(remaining: Swift.Int, total: Swift.Int, isActive: Swift.Bool = false, showControls: Swift.Bool = false, isPaused: Swift.Bool = false, onPause: (() -> Swift.Void)? = nil, onResume: (() -> Swift.Void)? = nil, onSkip: (() -> Swift.Void)? = nil)
-  #endif
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
@@ -39,9 +37,7 @@ import _SwiftConcurrencyShims
 
 
 final public class WorkoutViewModel : Foundation.ObservableObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(config: SonarFitCore.WorkoutConfig, onCompletion: @escaping (SonarFitCore.WorkoutResult?) -> Swift.Void, onPermissionError: ((any Swift.Error) -> Swift.Void)? = nil, onDismissRequest: (() -> Swift.Void)? = nil)
-  #endif
   final public func startWorkout()
   final public func pauseWorkout()
   final public func resumeWorkout()
@@ -73,24 +69,18 @@ extension SonarFitUI.WorkoutViewModel : SonarFitCore.WorkoutEngineDelegate {
   final public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didUpdateRestTime remaining: Swift.Int)
   final public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didEndRest isAutomatic: Swift.Bool)
   final public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didCompleteWorkout result: SonarFitCore.WorkoutResult)
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didCancelWorkout result: SonarFitCore.WorkoutResult?)
-  #endif
   final public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didEncounterMotionPermissionError error: any Swift.Error)
   final public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, didUpdateDeviceStatus status: Swift.String)
   final public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, shouldLaunchWatchWithConfig config: SonarFitCore.WorkoutConfig)
   final public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, shouldSendWorkoutToWatch config: SonarFitCore.WorkoutConfig)
   final public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, shouldUpdateWatchWorkoutState session: SonarFitCore.WorkoutSession)
   final public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, shouldUpdateWatchRestTimer remaining: Swift.Int, total: Swift.Int)
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, shouldEndWatchWorkout result: SonarFitCore.WorkoutResult?)
-  #endif
   final public func workoutEngine(_ engine: SonarFitCore.WorkoutEngine, shouldSendWatchMessage message: Any)
 }
 @_Concurrency.MainActor @preconcurrency public struct WorkoutView : SwiftUICore.View {
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public init(config: SonarFitCore.WorkoutConfig, onCompletion: @escaping (SonarFitCore.WorkoutResult?) -> Swift.Void, onPermissionError: ((any Swift.Error) -> Swift.Void)? = nil, onDismissRequest: (() -> Swift.Void)? = nil)
-  #endif
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }

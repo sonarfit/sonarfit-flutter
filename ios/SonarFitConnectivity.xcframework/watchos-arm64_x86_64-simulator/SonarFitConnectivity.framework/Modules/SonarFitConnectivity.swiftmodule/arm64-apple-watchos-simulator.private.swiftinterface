@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
-// swift-module-flags: -target arm64-apple-watchos10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SonarFitConnectivity -package-name SonarFitSDK
-// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
+// swift-compiler-version: Apple Swift version 6.3.2 effective-5.10 (swiftlang-6.3.2.1.108 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-watchos10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SonarFitConnectivity -package-name SonarFitSDK
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.2
 import Combine
 import Compression
 import CoreMotion
@@ -17,29 +17,53 @@ import WatchKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-
+@_hasMissingDesignatedInitializers final public class SonarFitRepDetection {
+  final public let id: Foundation.UUID
+  final public let exercise: SonarFitCore.WorkoutType
+  final public let goal: SonarFitCore.RepGoal
+  final public let targetReps: Swift.Int
+  final public let startedAt: Foundation.Date
+  final public var count: Swift.Int {
+    get
+  }
+  final public var isActive: Swift.Bool {
+    get
+  }
+  @discardableResult
+  final public func stop() -> SonarFitCore.SonarFitSetResult
+  final public func cancel()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class HeadlessRepDetectionController {
+  public static let shared: SonarFitConnectivity.HeadlessRepDetectionController
+  final public var isActive: Swift.Bool {
+    get
+  }
+  final public func startOwnedWorkout() throws
+  final public func endOwnedWorkout(save: Swift.Bool) throws
+  final public func start(exercise: SonarFitCore.WorkoutType, targetReps: Swift.Int, onRep: @escaping (Swift.Int) -> Swift.Void, onTargetReached: (() -> Swift.Void)?) throws -> SonarFitConnectivity.SonarFitRepDetection
+  final public func start(exercise: SonarFitCore.WorkoutType, goal: SonarFitCore.RepGoal, onRep: @escaping (Swift.Int) -> Swift.Void, onTargetReached: (() -> Swift.Void)?) throws -> SonarFitConnectivity.SonarFitRepDetection
+  @objc deinit
+}
 public enum ConnectivityInfo {
   public static let version: Swift.String
 }
+
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class WatchConnectivityManager : ObjectiveC.NSObject, Foundation.ObservableObject {
   public static let shared: SonarFitConnectivity.WatchConnectivityManager
-  #if compiler(>=5.3) && $NonescapableTypes
-  @Combine.Published @_projectedValueProperty($currentWorkoutState) final public var currentWorkoutState: SonarFitConnectivity.WatchWorkoutState? {
+  @Combine.Published<SonarFitConnectivity.WatchWorkoutState?> @_projectedValueProperty($currentWorkoutState) final public var currentWorkoutState: SonarFitConnectivity.WatchWorkoutState? {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     _modify
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public var $currentWorkoutState: Combine.Published<SonarFitConnectivity.WatchWorkoutState?>.Publisher {
     get
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  #endif
-  @Combine.Published @_projectedValueProperty($restTimeRemaining) final public var restTimeRemaining: Swift.Int {
+  @Combine.Published<Swift.Int> @_projectedValueProperty($restTimeRemaining) final public var restTimeRemaining: Swift.Int {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -51,7 +75,7 @@ public enum ConnectivityInfo {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  @Combine.Published @_projectedValueProperty($restTimeTotal) final public var restTimeTotal: Swift.Int {
+  @Combine.Published<Swift.Int> @_projectedValueProperty($restTimeTotal) final public var restTimeTotal: Swift.Int {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -63,7 +87,7 @@ public enum ConnectivityInfo {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  @Combine.Published @_projectedValueProperty($isConnected) final public var isConnected: Swift.Bool {
+  @Combine.Published<Swift.Bool> @_projectedValueProperty($isConnected) final public var isConnected: Swift.Bool {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -75,7 +99,7 @@ public enum ConnectivityInfo {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  @Combine.Published @_projectedValueProperty($hasPendingWorkout) final public var hasPendingWorkout: Swift.Bool {
+  @Combine.Published<Swift.Bool> @_projectedValueProperty($hasPendingWorkout) final public var hasPendingWorkout: Swift.Bool {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -92,15 +116,14 @@ public enum ConnectivityInfo {
   final public func stopMotionCapture()
   final public func endSetAndTransferCSV(setEndedEarly: Swift.Bool = false)
   final public func swapDetectorWorkoutType(_ newType: Swift.String)
+  final public func sendEnvelope(_ message: [Swift.String : Any]) async
   final public func sendMessage(_ message: SonarFitConnectivity.WatchMessage)
   final public func sendSimpleEvent(eventType: Swift.String, inputPayload: [Swift.String : Any] = [:])
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
   @objc deinit
 }
 extension SonarFitConnectivity.WatchConnectivityManager : WatchConnectivity.WCSessionDelegate {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func session(_ session: WatchConnectivity.WCSession, activationDidCompleteWith activationState: WatchConnectivity.WCSessionActivationState, error: (any Swift.Error)?)
-  #endif
   @objc final public func session(_ session: WatchConnectivity.WCSession, didReceiveMessageData messageData: Foundation.Data)
   @objc final public func session(_ session: WatchConnectivity.WCSession, didReceiveMessage message: [Swift.String : Any])
   @objc final public func session(_ session: WatchConnectivity.WCSession, didReceiveApplicationContext applicationContext: [Swift.String : Any])
@@ -136,9 +159,23 @@ public struct WatchWorkoutState : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public enum SonarFitWatchSessionMode {
+  case sdkOwned
+  case hostProvided(current: () -> HealthKit.HKWorkoutSession?)
+}
+public enum SonarFitWatchSessionError : Swift.Error, Swift.CustomStringConvertible, Swift.Equatable {
+  case hostSessionNotRunning(state: HealthKit.HKWorkoutSessionState?)
+  public var code: Swift.String {
+    get
+  }
+  public var description: Swift.String {
+    get
+  }
+  public static func == (a: SonarFitConnectivity.SonarFitWatchSessionError, b: SonarFitConnectivity.SonarFitWatchSessionError) -> Swift.Bool
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class WatchWorkoutSessionManager : ObjectiveC.NSObject, Foundation.ObservableObject {
   public static let shared: SonarFitConnectivity.WatchWorkoutSessionManager
-  @Combine.Published @_projectedValueProperty($workoutState) final public var workoutState: SonarFitCore.WorkoutState {
+  @Combine.Published<SonarFitCore.WorkoutState> @_projectedValueProperty($workoutState) final public var workoutState: SonarFitCore.WorkoutState {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -150,23 +187,19 @@ public struct WatchWorkoutState : Swift.Codable {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
-  @Combine.Published @_projectedValueProperty($config) final public var config: SonarFitCore.WorkoutConfig? {
+  @Combine.Published<SonarFitCore.WorkoutConfig?> @_projectedValueProperty($config) final public var config: SonarFitCore.WorkoutConfig? {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     _modify
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public var $config: Combine.Published<SonarFitCore.WorkoutConfig?>.Publisher {
     get
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  #endif
-  @Combine.Published @_projectedValueProperty($hasReceivedConfig) final public var hasReceivedConfig: Swift.Bool {
+  @Combine.Published<Swift.Bool> @_projectedValueProperty($hasReceivedConfig) final public var hasReceivedConfig: Swift.Bool {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -182,7 +215,7 @@ public struct WatchWorkoutState : Swift.Codable {
     get
   }
   final public func markDetectorPending()
-  @Combine.Published @_projectedValueProperty($currentSetRepsCompleted) final public var currentSetRepsCompleted: Swift.Int {
+  @Combine.Published<Swift.Int> @_projectedValueProperty($currentSetRepsCompleted) final public var currentSetRepsCompleted: Swift.Int {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -194,7 +227,7 @@ public struct WatchWorkoutState : Swift.Codable {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  @Combine.Published @_projectedValueProperty($currentSetNumber) final public var currentSetNumber: Swift.Int {
+  @Combine.Published<Swift.Int> @_projectedValueProperty($currentSetNumber) final public var currentSetNumber: Swift.Int {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -206,7 +239,7 @@ public struct WatchWorkoutState : Swift.Codable {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  @Combine.Published @_projectedValueProperty($completedReps) final public var completedReps: [Swift.Int] {
+  @Combine.Published<[Swift.Int]> @_projectedValueProperty($completedReps) final public var completedReps: [Swift.Int] {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -218,7 +251,7 @@ public struct WatchWorkoutState : Swift.Codable {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  @Combine.Published @_projectedValueProperty($completedSets) final public var completedSets: Swift.Int {
+  @Combine.Published<Swift.Int> @_projectedValueProperty($completedSets) final public var completedSets: Swift.Int {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -230,7 +263,7 @@ public struct WatchWorkoutState : Swift.Codable {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  @Combine.Published @_projectedValueProperty($isRestPaused) final public var isRestPaused: Swift.Bool {
+  @Combine.Published<Swift.Bool> @_projectedValueProperty($isRestPaused) final public var isRestPaused: Swift.Bool {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -242,7 +275,7 @@ public struct WatchWorkoutState : Swift.Codable {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  @Combine.Published @_projectedValueProperty($showPaywall) final public var showPaywall: Swift.Bool {
+  @Combine.Published<Swift.Bool> @_projectedValueProperty($showPaywall) final public var showPaywall: Swift.Bool {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -254,43 +287,49 @@ public struct WatchWorkoutState : Swift.Codable {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
-  @Combine.Published @_projectedValueProperty($restTimerState) final public var restTimerState: SonarFitCore.RestTimerState? {
+  @Combine.Published<SonarFitCore.RestTimerState?> @_projectedValueProperty($restTimerState) final public var restTimerState: SonarFitCore.RestTimerState? {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     _modify
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public var $restTimerState: Combine.Published<SonarFitCore.RestTimerState?>.Publisher {
     get
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @Combine.Published @_projectedValueProperty($pendingSetReview) final public var pendingSetReview: SonarFitCore.PendingSetReview? {
+  @Combine.Published<SonarFitCore.PendingSetReview?> @_projectedValueProperty($pendingSetReview) final public var pendingSetReview: SonarFitCore.PendingSetReview? {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     _modify
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public var $pendingSetReview: Combine.Published<SonarFitCore.PendingSetReview?>.Publisher {
     get
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
+  final public var sessionMode: SonarFitConnectivity.SonarFitWatchSessionMode {
+    get
+  }
+  @Combine.Published<SonarFitConnectivity.SonarFitWatchSessionError?> @_projectedValueProperty($lastStartError) final public var lastStartError: SonarFitConnectivity.SonarFitWatchSessionError? {
+    get
+  }
+  final public var $lastStartError: Combine.Published<SonarFitConnectivity.SonarFitWatchSessionError?>.Publisher {
+    get
+  }
   final public var currentWorkoutSession: HealthKit.HKWorkoutSession? {
     get
   }
-  #endif
+  final public func configureSessionMode(_ mode: SonarFitConnectivity.SonarFitWatchSessionMode)
+  final public func hostWorkoutSession(_ session: HealthKit.HKWorkoutSession, didChangeTo toState: HealthKit.HKWorkoutSessionState, from fromState: HealthKit.HKWorkoutSessionState)
+  final public var headlessOwnedSession: Swift.Bool {
+    get
+  }
+  final public func startHeadlessOwnedSession() throws
+  final public func endHeadlessOwnedSession(save: Swift.Bool)
   final public func loadInitialState()
   final public func startWorkout()
   final public func pauseWorkout()
