@@ -194,3 +194,49 @@ class SonarFitException implements Exception {
   @override
   String toString() => 'SonarFitException($code): $message';
 }
+
+
+/// One event from the watch's headless rep detection (a native Watch app counting reps
+/// inside its own UI). The phone receives these once the SDK is initialised; subscribe with
+/// [SonarFit.headlessEvents]. Types: workoutStarted, setStarted, rep, setEnded, setCancelled,
+/// workoutEnded.
+class HeadlessEvent {
+  final String type;
+  final int? setIndex;
+  /// setStarted / setEnded: the exercise ('squat', 'deadlift', 'benchpress', 'shoulder_press', 'bicep_curl').
+  final String? exercise;
+  /// setStarted / setEnded: the set's target.
+  final int? targetReps;
+  /// rep: the running count, cumulative.
+  final int? count;
+  /// setEnded: the set's rep count and duration in seconds.
+  final int? reps;
+  final double? duration;
+  /// workoutEnded: how many sets were counted in the workout.
+  final int? setsCounted;
+
+  const HeadlessEvent({
+    required this.type,
+    this.setIndex,
+    this.exercise,
+    this.targetReps,
+    this.count,
+    this.reps,
+    this.duration,
+    this.setsCounted,
+  });
+
+  factory HeadlessEvent.fromMap(Map<dynamic, dynamic> m) => HeadlessEvent(
+        type: m['type'] as String,
+        setIndex: m['setIndex'] as int?,
+        exercise: m['exercise'] as String?,
+        targetReps: m['targetReps'] as int?,
+        count: m['count'] as int?,
+        reps: m['reps'] as int?,
+        duration: (m['duration'] as num?)?.toDouble(),
+        setsCounted: m['setsCounted'] as int?,
+      );
+
+  @override
+  String toString() => 'HeadlessEvent($type, set: $setIndex, exercise: $exercise, count: $count, reps: $reps)';
+}

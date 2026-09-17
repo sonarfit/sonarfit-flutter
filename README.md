@@ -564,3 +564,30 @@ MIT License - see LICENSE file for details
 SonarFit provides automatic rep counting for fitness apps. Our SDK handles real-time rep counting and workout progression so you can focus on building great user experiences.
 
 Learn more at [https://sonarfit.com](https://sonarfit.com)
+
+
+## Native Watch app + Flutter phone app (headless watch detection)
+
+If your Watch app is native Swift and counts reps with SonarFit inside its own UI (headless
+detection, see the SonarFit iOS integration guide), the Flutter phone app needs only:
+
+```dart
+await SonarFit.initialize('sk_live_...');   // licensing and usage metering of the watch's workouts
+```
+
+Optionally mirror the sets live in Flutter:
+
+```dart
+SonarFit.headlessEvents.listen((e) {
+  switch (e.type) {
+    case 'setStarted': /* e.exercise, e.targetReps, e.setIndex */ break;
+    case 'rep':        /* e.count, cumulative */ break;
+    case 'setEnded':   /* e.reps, e.duration, e.exercise */ break;
+    case 'workoutEnded': /* e.setsCounted */ break;
+  }
+});
+```
+
+The Watch target links the SonarFit Swift package directly (SonarFitKit, watchOS 10+) and uses
+`SonarFit.startHeadlessWorkout()` / `startRepDetection` / `endHeadlessWorkout(save:)`, or its
+own `HKWorkoutSession` with `configureWatchSession(.hostProvided(...))`. Requires SonarFit 2.6.0.

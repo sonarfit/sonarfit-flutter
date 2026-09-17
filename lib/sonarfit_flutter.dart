@@ -12,6 +12,26 @@ export 'src/models.dart';
 /// using Apple Watch or AirPods Pro motion sensors.
 class SonarFit {
   static const MethodChannel _channel = MethodChannel('sonarfit_flutter');
+  static const EventChannel _headlessChannel = EventChannel('sonarfit_flutter/headless');
+  static Stream<HeadlessEvent>? _headlessStream;
+
+  /// Events from a native Watch app that counts reps with SonarFit inside its own UI
+  /// (headless watch detection). The phone only has to call [initialize]; licensing and
+  /// usage metering of those workouts happen underneath. Subscribe here if the phone UI
+  /// should mirror the sets live: set started, running count, set result, workout ended.
+  ///
+  /// ```dart
+  /// SonarFit.headlessEvents.listen((e) {
+  ///   if (e.type == 'rep') setState(() => reps = e.count!);
+  ///   if (e.type == 'setEnded') log(e.exercise!, e.reps!);
+  /// });
+  /// ```
+  static Stream<HeadlessEvent> get headlessEvents {
+    _headlessStream ??= _headlessChannel
+        .receiveBroadcastStream()
+        .map((e) => HeadlessEvent.fromMap(e as Map<dynamic, dynamic>));
+    return _headlessStream!;
+  }
 
   /// Initialize SonarFit SDK with your API key
   ///

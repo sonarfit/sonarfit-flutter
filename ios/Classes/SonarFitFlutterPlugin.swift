@@ -11,6 +11,11 @@ public class SonarFitFlutterPlugin: NSObject, FlutterPlugin {
         )
         let instance = SonarFitFlutterPlugin()
         registrar.addMethodCallDelegate(instance, channel: channel)
+
+        // Headless watch detection stream (native Watch app counting reps inside its own UI;
+        // this phone app initialises the SDK and, optionally, mirrors the sets live).
+        let events = FlutterEventChannel(name: "sonarfit_flutter/headless", binaryMessenger: registrar.messenger())
+        events.setStreamHandler(HeadlessStreamHandler())
     }
 
     public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
@@ -231,5 +236,41 @@ public class SonarFitFlutterPlugin: NSObject, FlutterPlugin {
         }
 
         return rootVC
+    }
+}
+
+
+// MARK: - Headless watch detection events → Dart
+
+/// Bridges `SonarFit.observeHeadlessDetection` to a Dart `Stream<Map>`.
+/// One listener at a time (the SDK keeps one handler); cancelling stops observing.
+private final class HeadlessStreamHandler: NSObject, FlutterStreamHandler {
+    func onListen(withArguments arguments: Any?, eventSink: @escaping FlutterEventSink) -> FlutterError? {
+        SonarFit.observeHeadlessDetection { event in
+            var m: [String: Any] = [:]
+            switch event {
+            case .workoutStarted:
+                m["type"] = "workoutStarted"
+            case .setStarted(let exercise, let targetReps, let setIndex):
+                m["type"] = "setStarted"; m["exercise"] = exercise.rawValue; m["targetReps"] = targetReps; m["setIndex"] = setIndex
+            case .rep(let count, let setIndex):
+                m["type"] = "rep"; m["count"] = count; m["setIndex"] = setIndex
+            case .setEnded(let result, let setIndex):
+                m["type"] = "setEnded"; m["setIndex"] = setIndex
+                m["exercise"] = result.exercise.rawValue; m["reps"] = result.reps; m["targetReps"] = result.targetReps
+                m["duration"] = result.duration; m["startedAt"] = result.startedAt.timeIntervalSince1970
+            case .setCancelled(let setIndex):
+                m["type"] = "setCancelled"; m["setIndex"] = setIndex
+            case .workoutEnded(let setsCounted):
+                m["type"] = "workoutEnded"; m["setsCounted"] = setsCounted
+            }
+            DispatchQueue.main.async { eventSink(m) }
+        }
+        return nil
+    }
+
+    func onCancel(withArguments arguments: Any?) -> FlutterError? {
+        SonarFit.observeHeadlessDetection(nil)
+        return nil
     }
 }
