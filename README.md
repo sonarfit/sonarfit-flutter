@@ -11,7 +11,7 @@ Official Flutter plugin for the SonarFit SDK - automatic rep counting from Apple
 - **Multiple Exercise Support**: Squats & deadlifts on AirPods; squats, deadlifts, bench press, shoulder press & bicep curls on Apple Watch
 - **Device Flexibility**: Works with Apple Watch or AirPods Pro
 - **Built-in UI**: Beautiful, ready-to-use workout interface
-- **Progress Tracking**: Automatic set/rep tracking with rest timers
+- **Progress Tracking**: Built-in UI tracks sets and reps and runs the rest timer between sets
 - **Permission Handling**: Automatic motion permission requests
 
 ## Platform Support
