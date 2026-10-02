@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+
+## [2.7.0] - 2026-10-02
+
+### Added
+- **A confidence for every rep.** `onRepEvent` on `startRepDetection` — each rep arrives with how sure SonarFit is, and a rep can be withdrawn as the set builds. The running count never goes down.
+- **The set ends by itself.** `onSetEnded` — when the lifter has finished, SonarFit reports the confirmed count, every rep's confidence and the time of the last rep.
+- **Setup isn't counted.** Start detection when your set screen appears; walking to the weights and lifting them into position are no longer reps.
+- **`WorkoutType(name:)`** accepts any reasonable spelling.
 ## [2.6.0] - 2026-09-17
 
 ### Added

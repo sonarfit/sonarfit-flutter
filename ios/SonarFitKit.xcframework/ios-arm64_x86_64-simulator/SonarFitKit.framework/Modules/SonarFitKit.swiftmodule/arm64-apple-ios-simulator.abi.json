@@ -1413,14 +1413,14 @@
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitKit\/SonarFit.swift",
       "kind": "IntegerLiteral",
-      "offset": 17677,
+      "offset": 19102,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitKit\/SonarFit.swift",
       "kind": "Dictionary",
-      "offset": 33520,
+      "offset": 34945,
       "length": 3,
       "value": "[]"
     },
@@ -1429,7 +1429,7 @@
       "kind": "StringLiteral",
       "offset": 86,
       "length": 7,
-      "value": "\"2.5.2\""
+      "value": "\"2.6.0\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitKit\/Version.swift",
@@ -1443,14 +1443,14 @@
       "kind": "IntegerLiteral",
       "offset": 156,
       "length": 1,
-      "value": "5"
+      "value": "6"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitKit\/Version.swift",
       "kind": "IntegerLiteral",
       "offset": 188,
       "length": 1,
-      "value": "2"
+      "value": "0"
     }
   ]
 }

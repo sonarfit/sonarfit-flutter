@@ -6,31 +6,31 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		guxXwDpK6QwrPBDDS3zNxPpTM8g=
+		BCQKLl7zYDCy+u66GC+Od6+uOvM=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		Kzgqx2mgKcIQJ9ls1x6OJBQ8kKg=
+		C9Pd2QgkrbVwxmNjgkmL+X2hXNs=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios.package.swiftinterface</key>
 		<data>
-		h9nuLc2gnZL8PVJ40mx56Vt1jRI=
+		7axZh8Gam3dS1V/6gOHAFU9qvWE=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		Z5o9lyt70GfyB9/fCooYZuanA+s=
+		EV5HEgvj2s6AabbWT26mdWTujFk=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		MDrvBAynlkdeqKjt6QcvTcilsqE=
+		G9rzj+MVMLkVSElR/uDAJqN6lsw=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		Z5o9lyt70GfyB9/fCooYZuanA+s=
+		EV5HEgvj2s6AabbWT26mdWTujFk=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		+Ex6SutgxM8AtdMSDufIBHWbscg=
+		gr1sZyAJ6g9GetXhoudNlIuTpCM=
 		</data>
 		<key>beep.wav</key>
 		<data>
@@ -51,42 +51,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OKW/Tl2KWCChesvqevaQx0FsBE90HFxW8hJcju7Gdd8=
+			0wUPn/S9ltJRCmeMT0qzIdS8KYfSuCWcQ3YaoG1TzEs=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios.package.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8XAvQCw94cdmur/N348fM5KT1YgI5oWnTkkY/UzZRwU=
+			oSOB7JW58mEVwMMK7gfrSKV1Q8m7EKGFUhMsLKN3kbA=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1XeK0wYAzhVYrm21WWAOZb58WwGWXZjW+yGt02aXRag=
+			XmnznpnD2wMdEsML2F25VyWNcKB6ptp4WZjnruYQfc8=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bl2itrvgTDHMSAq0PLx6LeJbwUGLbLyIMbtfFMjSibk=
+			UKuHlv+bAn59vk3SgcYyQoIscax8bgmm+j1Ikiuipm0=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1XeK0wYAzhVYrm21WWAOZb58WwGWXZjW+yGt02aXRag=
+			XmnznpnD2wMdEsML2F25VyWNcKB6ptp4WZjnruYQfc8=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			noQ0fFgqJ/K5UxkXF20Bus3TK/xACbmIYXRkEcc0wq0=
+			nAzF85SgOcE08HPeEITozpUp07Pz/ALCh27cLJ6i72A=
 			</data>
 		</dict>
 		<key>beep.wav</key>

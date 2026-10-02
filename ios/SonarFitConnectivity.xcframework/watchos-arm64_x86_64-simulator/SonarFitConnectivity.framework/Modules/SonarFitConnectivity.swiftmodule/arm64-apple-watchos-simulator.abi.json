@@ -27,13 +27,6 @@
       },
       {
         "kind": "Import",
-        "name": "WatchConnectivity",
-        "printedName": "WatchConnectivity",
-        "declKind": "Import",
-        "moduleName": "SonarFitConnectivity"
-      },
-      {
-        "kind": "Import",
         "name": "SonarFitCore",
         "printedName": "SonarFitCore",
         "declKind": "Import",
@@ -691,7 +684,7 @@
           {
             "kind": "Function",
             "name": "start",
-            "printedName": "start(exercise:goal:onRep:onTargetReached:)",
+            "printedName": "start(exercise:goal:onRep:onTargetReached:onRepEvent:onSetEnded:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -753,11 +746,65 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((SonarFitCore.SonarFitRepEvent) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(SonarFitCore.SonarFitRepEvent) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SonarFitRepEvent",
+                        "printedName": "SonarFitCore.SonarFitRepEvent",
+                        "usr": "s:12SonarFitCore0aB8RepEventV"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((SonarFitCore.SonarFitSetResult) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(SonarFitCore.SonarFitSetResult) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SonarFitSetResult",
+                        "printedName": "SonarFitCore.SonarFitSetResult",
+                        "usr": "s:12SonarFitCore0aB9SetResultV"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:20SonarFitConnectivity30HeadlessRepDetectionControllerC5start8exercise4goal02onE00K13TargetReachedAA0abeF0C0aB4Core11WorkoutTypeO_AK0E4GoalOySicyycSgtKF",
-            "mangledName": "$s20SonarFitConnectivity30HeadlessRepDetectionControllerC5start8exercise4goal02onE00K13TargetReachedAA0abeF0C0aB4Core11WorkoutTypeO_AK0E4GoalOySicyycSgtKF",
+            "usr": "s:20SonarFitConnectivity30HeadlessRepDetectionControllerC5start8exercise4goal02onE00K13TargetReached0kE5Event0K8SetEndedAA0abeF0C0aB4Core11WorkoutTypeO_AM0E4GoalOySicyycSgyAM0abeN0VcSgyAM0abO6ResultVcSgtKF",
+            "mangledName": "$s20SonarFitConnectivity30HeadlessRepDetectionControllerC5start8exercise4goal02onE00K13TargetReached0kE5Event0K8SetEndedAA0abeF0C0aB4Core11WorkoutTypeO_AM0E4GoalOySicyycSgyAM0abeN0VcSgyAM0abO6ResultVcSgtKF",
             "moduleName": "SonarFitConnectivity",
             "declAttributes": [
               "Final",
@@ -883,33 +930,52 @@
       },
       {
         "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "SonarFitConnectivity",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "SonarFitConnectivity"
+      },
+      {
+        "kind": "Import",
+        "name": "WatchConnectivity",
+        "printedName": "WatchConnectivity",
+        "declKind": "Import",
+        "moduleName": "SonarFitConnectivity"
+      },
+      {
+        "kind": "Import",
+        "name": "SonarFitCore",
+        "printedName": "SonarFitCore",
+        "declKind": "Import",
+        "moduleName": "SonarFitConnectivity"
       },
       {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "SonarFitConnectivity",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "SonarFitConnectivity"
       },
       {
         "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
+        "name": "WatchConnectivity",
+        "printedName": "WatchConnectivity",
         "declKind": "Import",
-        "moduleName": "SonarFitConnectivity",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "SonarFitConnectivity"
+      },
+      {
+        "kind": "Import",
+        "name": "SonarFitCore",
+        "printedName": "SonarFitCore",
+        "declKind": "Import",
+        "moduleName": "SonarFitConnectivity"
+      },
+      {
+        "kind": "Import",
+        "name": "WatchKit",
+        "printedName": "WatchKit",
+        "declKind": "Import",
+        "moduleName": "SonarFitConnectivity"
       },
       {
         "kind": "Import",
@@ -2419,6 +2485,57 @@
               "Final",
               "ObjC",
               "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "session",
+            "printedName": "session(_:didFinish:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WCSession",
+                "printedName": "WatchConnectivity.WCSession",
+                "usr": "c:objc(cs)WCSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WCSessionFileTransfer",
+                "printedName": "WatchConnectivity.WCSessionFileTransfer",
+                "usr": "c:objc(cs)WCSessionFileTransfer"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Swift.Error)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@SonarFitConnectivity@objc(cs)WatchConnectivityManager(im)session:didFinishFileTransfer:error:",
+            "mangledName": "$s20SonarFitConnectivity05WatchC7ManagerC7session_9didFinish5errorySo9WCSessionC_So0J12FileTransferCs5Error_pSgtF",
+            "moduleName": "SonarFitConnectivity",
+            "objc_name": "session:didFinishFileTransfer:error:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -4426,6 +4543,36 @@
             "usr": "s:s16SendableMetatypeP",
             "mangledName": "$ss16SendableMetatypeP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "SonarFitConnectivity",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SonarFitConnectivity",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "SonarFitConnectivity",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -8377,6 +8524,93 @@
         "printedName": "DeveloperToolsSupport",
         "declKind": "Import",
         "moduleName": "SonarFitConnectivity"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WCSession",
+        "printedName": "WCSession",
+        "declKind": "Class",
+        "usr": "c:objc(cs)WCSession",
+        "moduleName": "WatchConnectivity",
+        "isOpen": true,
+        "intro_watchOS": "2.0",
+        "objc_name": "WCSession",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
       }
     ],
     "json_format_version": 8
@@ -8385,44 +8619,289 @@
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/HeadlessRepDetectionController.swift",
       "kind": "IntegerLiteral",
-      "offset": 838,
+      "offset": 813,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/HeadlessRepDetectionController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1168,
+      "offset": 1260,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/HeadlessRepDetectionController.swift",
       "kind": "StringLiteral",
-      "offset": 3171,
+      "offset": 3803,
       "length": 34,
       "value": "\"com.sonarfit.HeadlessMotionQueue\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/HeadlessRepDetectionController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3246,
+      "offset": 3878,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/HeadlessRepDetectionController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3735,
+      "offset": 4367,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/HeadlessRepDetectionController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3767,
+      "offset": 4399,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/HeadlessRepDetectionController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 15689,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/HeadlessRepDetectionController.swift",
+      "kind": "Array",
+      "offset": 17026,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/HeadlessRepDetectionController.swift",
+      "kind": "StringLiteral",
+      "offset": 17655,
+      "length": 142,
+      "value": "\"HEADLESS: set \""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/HeadlessRepDetectionController.swift",
+      "kind": "StringLiteral",
+      "offset": 17688,
+      "length": 1,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/HeadlessRepDetectionController.swift",
+      "kind": "StringLiteral",
+      "offset": 17703,
+      "length": 28,
+      "value": "\"ended (\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/HeadlessRepDetectionController.swift",
+      "kind": "StringLiteral",
+      "offset": 17729,
+      "length": 1,
+      "value": "\")\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/HeadlessRepDetectionController.swift",
+      "kind": "StringLiteral",
+      "offset": 17734,
+      "length": 9,
+      "value": "\"stopped\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/HeadlessRepDetectionController.swift",
+      "kind": "StringLiteral",
+      "offset": 17744,
+      "length": 4,
+      "value": "\" — live=\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/HeadlessRepDetectionController.swift",
+      "kind": "StringLiteral",
+      "offset": 17761,
+      "length": 5,
+      "value": "\" final=\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/HeadlessRepDetectionController.swift",
+      "kind": "StringLiteral",
+      "offset": 17776,
+      "length": 1,
+      "value": "\" (\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/HeadlessRepDetectionController.swift",
+      "kind": "StringLiteral",
+      "offset": 17794,
+      "length": 1,
+      "value": "\"s)\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/HeadlessRepDetectionController.swift",
+      "kind": "StringLiteral",
+      "offset": 18824,
+      "length": 95,
+      "value": "\"HEADLESS: raw data collection is off for this licence — set \""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/HeadlessRepDetectionController.swift",
+      "kind": "StringLiteral",
+      "offset": 18905,
+      "length": 3,
+      "value": "\" not recorded\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/HeadlessRepDetectionController.swift",
+      "kind": "StringLiteral",
+      "offset": 19145,
+      "length": 61,
+      "value": "\"HEADLESS: recorder snapshot empty for set \""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/HeadlessRepDetectionController.swift",
+      "kind": "StringLiteral",
+      "offset": 19194,
+      "length": 2,
+      "value": "\" — no CSV\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/HeadlessRepDetectionController.swift",
+      "kind": "StringLiteral",
+      "offset": 19346,
+      "length": 62,
+      "value": "\"watch_headless_set_\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/HeadlessRepDetectionController.swift",
+      "kind": "StringLiteral",
+      "offset": 19372,
+      "length": 1,
+      "value": "\"_\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/HeadlessRepDetectionController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 19400,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/HeadlessRepDetectionController.swift",
+      "kind": "StringLiteral",
+      "offset": 19403,
+      "length": 1,
+      "value": "\".csv\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/HeadlessRepDetectionController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 19462,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/HeadlessRepDetectionController.swift",
+      "kind": "StringLiteral",
+      "offset": 19523,
+      "length": 56,
+      "value": "\"HEADLESS: failed to write CSV for set \""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/HeadlessRepDetectionController.swift",
+      "kind": "StringLiteral",
+      "offset": 19568,
+      "length": 1,
+      "value": "\": \""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/HeadlessRepDetectionController.swift",
+      "kind": "StringLiteral",
+      "offset": 19578,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/HeadlessRepDetectionController.swift",
+      "kind": "StringLiteral",
+      "offset": 19717,
+      "length": 10,
+      "value": "\"setIndex\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/HeadlessRepDetectionController.swift",
+      "kind": "StringLiteral",
+      "offset": 19750,
+      "length": 6,
+      "value": "\"reps\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/HeadlessRepDetectionController.swift",
+      "kind": "StringLiteral",
+      "offset": 19781,
+      "length": 14,
+      "value": "\"liveRepCount\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/HeadlessRepDetectionController.swift",
+      "kind": "StringLiteral",
+      "offset": 19819,
+      "length": 9,
+      "value": "\"samples\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/HeadlessRepDetectionController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 19834,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/HeadlessRepDetectionController.swift",
+      "kind": "StringLiteral",
+      "offset": 19858,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/HeadlessRepDetectionController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 19872,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/HeadlessRepDetectionController.swift",
+      "kind": "StringLiteral",
+      "offset": 19892,
+      "length": 13,
+      "value": "\"restVerdict\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/HeadlessRepDetectionController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 20018,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/HeadlessRepDetectionController.swift",
+      "kind": "StringLiteral",
+      "offset": 20466,
+      "length": 56,
+      "value": "\"HEADLESS: queued transferFile set \""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/HeadlessRepDetectionController.swift",
+      "kind": "StringLiteral",
+      "offset": 20507,
+      "length": 4,
+      "value": "\" reps=\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/HeadlessRepDetectionController.swift",
+      "kind": "StringLiteral",
+      "offset": 20521,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/SonarFitConnectivity.swift",
@@ -8430,6 +8909,146 @@
       "offset": 335,
       "length": 7,
       "value": "\"1.0.0\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/SonarFitRecordingOutbox.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3552,
+      "length": 2,
+      "value": "40"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/SonarFitRecordingOutbox.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3590,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/SonarFitRecordingOutbox.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3595,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/SonarFitRecordingOutbox.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3600,
+      "length": 4,
+      "value": "3600"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/SonarFitRecordingOutbox.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3806,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/SonarFitRecordingOutbox.swift",
+      "kind": "StringLiteral",
+      "offset": 4314,
+      "length": 30,
+      "value": "\"com.sonarfit.RecordingOutbox\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/SonarFitRecordingOutbox.swift",
+      "kind": "Array",
+      "offset": 4416,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/SonarFitRecordingOutbox.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4451,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/SonarFitRecordingOutbox.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7196,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/SonarFitWCSessionJoin.swift",
+      "kind": "StringLiteral",
+      "offset": 2479,
+      "length": 10,
+      "value": "\"sonarfit\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/SonarFitWCSessionJoin.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2643,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/SonarFitWCSessionJoin.swift",
+      "kind": "StringLiteral",
+      "offset": 2830,
+      "length": 15,
+      "value": "\"sonarfitProbe\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/SonarFitWCSessionJoin.swift",
+      "kind": "StringLiteral",
+      "offset": 2886,
+      "length": 19,
+      "value": "\"recordingListener\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/SonarFitWCSessionJoin.swift",
+      "kind": "StringLiteral",
+      "offset": 2949,
+      "length": 19,
+      "value": "\"recordingListener\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/SonarFitWCSessionJoin.swift",
+      "kind": "StringLiteral",
+      "offset": 3154,
+      "length": 21,
+      "value": "\"sonarfitRecordingId\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/SonarFitWCSessionJoin.swift",
+      "kind": "Array",
+      "offset": 9440,
+      "length": 562,
+      "value": "[\"session:activationDidCompleteWithState:error:\", \"sessionReachabilityDidChange:\", \"session:didReceiveMessage:\", \"session:didReceiveMessage:replyHandler:\", \"session:didReceiveMessageData:\", \"session:didReceiveMessageData:replyHandler:\", \"session:didReceiveApplicationContext:\", \"session:didFinishUserInfoTransfer:error:\", \"session:didReceiveUserInfo:\", \"session:didFinishFileTransfer:error:\", \"session:didReceiveFile:\"]"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/SonarFitWCSessionJoin.swift",
+      "kind": "Array",
+      "offset": 10171,
+      "length": 42,
+      "value": "[\"sessionCompanionAppInstalledDidChange:\"]"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/SonarFitWCSessionJoin.swift",
+      "kind": "Array",
+      "offset": 10444,
+      "length": 49,
+      "value": "[\"session:activationDidCompleteWithState:error:\"]"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/SonarFitWCSessionJoin.swift",
+      "kind": "StringLiteral",
+      "offset": 10732,
+      "length": 41,
+      "value": "\"session:didReceiveMessage:replyHandler:\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/SonarFitWCSessionJoin.swift",
+      "kind": "StringLiteral",
+      "offset": 10842,
+      "length": 45,
+      "value": "\"session:didReceiveMessageData:replyHandler:\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchConnectivityManager.swift",
@@ -8490,28 +9109,28 @@
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchConnectivityManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 9237,
+      "offset": 15233,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchConnectivityManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 11953,
+      "offset": 17949,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchConnectivityManager.swift",
       "kind": "Dictionary",
-      "offset": 27870,
+      "offset": 34697,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchConnectivityManager.swift",
       "kind": "StringLiteral",
-      "offset": 34427,
+      "offset": 42153,
       "length": 31,
       "value": "\"com.sonarfit.workoutRequested\""
     },
@@ -8622,22 +9241,29 @@
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchWorkoutSessionManager.swift",
+      "kind": "FloatLiteral",
+      "offset": 24742,
+      "length": 3,
+      "value": "3.0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchWorkoutSessionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 42013,
+      "offset": 43433,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchWorkoutSessionManager.swift",
       "kind": "Dictionary",
-      "offset": 49371,
+      "offset": 50791,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/WatchWorkoutSessionManager.swift",
       "kind": "Dictionary",
-      "offset": 81735,
+      "offset": 83175,
       "length": 3,
       "value": "[]"
     }
