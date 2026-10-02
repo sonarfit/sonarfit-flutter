@@ -581,13 +581,21 @@ Optionally mirror the sets live in Flutter:
 SonarFit.headlessEvents.listen((e) {
   switch (e.type) {
     case 'setStarted': /* e.exercise, e.targetReps, e.setIndex */ break;
-    case 'rep':        /* e.count, cumulative */ break;
-    case 'setEnded':   /* e.reps, e.duration, e.exercise */ break;
+    case 'rep':        /* e.count, cumulative — never goes down */ break;
+    case 'repEvent':   /* e.kind ('rep' | 'updated' | 'withdrawn' | 'restored'), e.confidence, e.at, e.standing */ break;
+    case 'setEnded':   /* e.reps (confirmed count), e.endReason, e.lastRepAt, e.repRecords, e.duration, e.exercise */ break;
     case 'workoutEnded': /* e.setsCounted */ break;
   }
 });
 ```
 
+`repEvent` gives you a confidence for every rep as the set builds (the first rep is provisional;
+it rises when the next reps match it, and a rep the set no longer believes is withdrawn).
+`setEnded` arrives when your Watch app stops the set or, with `onSetEnded` on the watch, when
+SonarFit sees the lifter finish — `lastRepAt` is where a rest timer starts.
+
 The Watch target links the SonarFit Swift package directly (SonarFitKit, watchOS 10+) and uses
-`SonarFit.startHeadlessWorkout()` / `startRepDetection` / `endHeadlessWorkout(save:)`, or its
-own `HKWorkoutSession` with `configureWatchSession(.hostProvided(...))`. Requires SonarFit 2.6.0.
+`SonarFit.startHeadlessWorkout()` / `startRepDetection(exercise:goal:onRep:onTargetReached:onRepEvent:onSetEnded:)`
+/ `endHeadlessWorkout(save:)`, or its own `HKWorkoutSession` with
+`configureWatchSession(.hostProvided(...))`. If your app already uses WatchConnectivity on
+either device, SonarFit joins your `WCSession` rather than taking it over. Requires SonarFit 2.7.0.

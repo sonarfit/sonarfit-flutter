@@ -196,10 +196,22 @@ class SonarFitException implements Exception {
 }
 
 
+/// One rep of a finished set: when it happened (seconds after the set started) and how sure
+/// SonarFit is that it was a rep of this set (0–1).
+class RepRecord {
+  final double at;
+  final double confidence;
+  const RepRecord({required this.at, required this.confidence});
+  factory RepRecord.fromMap(Map<dynamic, dynamic> m) =>
+      RepRecord(at: (m['at'] as num).toDouble(), confidence: (m['confidence'] as num).toDouble());
+  @override
+  String toString() => 'RepRecord(${at.toStringAsFixed(1)}s, ${confidence.toStringAsFixed(2)})';
+}
+
 /// One event from the watch's headless rep detection (a native Watch app counting reps
 /// inside its own UI). The phone receives these once the SDK is initialised; subscribe with
-/// [SonarFit.headlessEvents]. Types: workoutStarted, setStarted, rep, setEnded, setCancelled,
-/// workoutEnded.
+/// [SonarFit.headlessEvents]. Types: workoutStarted, setStarted, rep, repEvent, setEnded,
+/// setCancelled, workoutEnded.
 class HeadlessEvent {
   final String type;
   final int? setIndex;
@@ -207,13 +219,32 @@ class HeadlessEvent {
   final String? exercise;
   /// setStarted / setEnded: the set's target.
   final int? targetReps;
-  /// rep: the running count, cumulative.
+  /// rep: the running count, cumulative. It never goes down.
   final int? count;
-  /// setEnded: the set's rep count and duration in seconds.
+  /// setEnded: the confirmed count — a final pass over the whole set, which can differ from the
+  /// running count — and the set's duration in seconds.
   final int? reps;
   final double? duration;
   /// workoutEnded: how many sets were counted in the workout.
   final int? setsCounted;
+
+  // SDK 2.7 — repEvent: a confidence for every rep, as the set builds.
+  /// repEvent: 'rep' (counted), 'updated', 'withdrawn' or 'restored'.
+  final String? kind;
+  /// repEvent: the rep's time, seconds after the set started (the movement, not the tick).
+  final double? at;
+  /// repEvent: how sure SonarFit is this was a rep of this set, 0–1, at this moment.
+  final double? confidence;
+  /// repEvent: reps currently standing — counted and not withdrawn.
+  final int? standing;
+
+  // SDK 2.7 — setEnded.
+  /// setEnded: 'stopped' (the app ended it), 'rhythm', 'posture' or 'weights' (the SDK did).
+  final String? endReason;
+  /// setEnded: when the last rep happened, seconds after the set started — where a rest timer starts.
+  final double? lastRepAt;
+  /// setEnded: every rep of the confirmed count with its final confidence, in time order.
+  final List<RepRecord>? repRecords;
 
   const HeadlessEvent({
     required this.type,
@@ -224,6 +255,13 @@ class HeadlessEvent {
     this.reps,
     this.duration,
     this.setsCounted,
+    this.kind,
+    this.at,
+    this.confidence,
+    this.standing,
+    this.endReason,
+    this.lastRepAt,
+    this.repRecords,
   });
 
   factory HeadlessEvent.fromMap(Map<dynamic, dynamic> m) => HeadlessEvent(
@@ -235,6 +273,15 @@ class HeadlessEvent {
         reps: m['reps'] as int?,
         duration: (m['duration'] as num?)?.toDouble(),
         setsCounted: m['setsCounted'] as int?,
+        kind: m['kind'] as String?,
+        at: (m['at'] as num?)?.toDouble(),
+        confidence: (m['confidence'] as num?)?.toDouble(),
+        standing: m['standing'] as int?,
+        endReason: m['endReason'] as String?,
+        lastRepAt: (m['lastRepAt'] as num?)?.toDouble(),
+        repRecords: (m['repRecords'] as List<dynamic>?)
+            ?.map((e) => RepRecord.fromMap(e as Map<dynamic, dynamic>))
+            .toList(),
       );
 
   @override

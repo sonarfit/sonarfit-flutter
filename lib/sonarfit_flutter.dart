@@ -18,12 +18,15 @@ class SonarFit {
   /// Events from a native Watch app that counts reps with SonarFit inside its own UI
   /// (headless watch detection). The phone only has to call [initialize]; licensing and
   /// usage metering of those workouts happen underneath. Subscribe here if the phone UI
-  /// should mirror the sets live: set started, running count, set result, workout ended.
+  /// should mirror the sets live: set started, running count, a confidence for every rep,
+  /// set result (with the confirmed count, why the set ended and when the last rep was),
+  /// workout ended.
   ///
   /// ```dart
   /// SonarFit.headlessEvents.listen((e) {
   ///   if (e.type == 'rep') setState(() => reps = e.count!);
-  ///   if (e.type == 'setEnded') log(e.exercise!, e.reps!);
+  ///   if (e.type == 'repEvent') log('${e.kind} ${e.confidence} standing ${e.standing}');
+  ///   if (e.type == 'setEnded') log(e.exercise!, e.reps!, e.endReason!, e.lastRepAt);
   /// });
   /// ```
   static Stream<HeadlessEvent> get headlessEvents {

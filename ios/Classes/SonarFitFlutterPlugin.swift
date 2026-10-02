@@ -255,10 +255,18 @@ private final class HeadlessStreamHandler: NSObject, FlutterStreamHandler {
                 m["type"] = "setStarted"; m["exercise"] = exercise.rawValue; m["targetReps"] = targetReps; m["setIndex"] = setIndex
             case .rep(let count, let setIndex):
                 m["type"] = "rep"; m["count"] = count; m["setIndex"] = setIndex
+            case .repEvent(let e):
+                // SDK 2.7: a confidence for every rep, as the set builds.
+                m["type"] = "repEvent"; m["setIndex"] = e.setIndex
+                m["kind"] = e.kind.rawValue; m["at"] = e.at; m["confidence"] = e.confidence; m["standing"] = e.standing
             case .setEnded(let result, let setIndex):
                 m["type"] = "setEnded"; m["setIndex"] = setIndex
                 m["exercise"] = result.exercise.rawValue; m["reps"] = result.reps; m["targetReps"] = result.targetReps
                 m["duration"] = result.duration; m["startedAt"] = result.startedAt.timeIntervalSince1970
+                // SDK 2.7: why the set ended, when the last rep was, every rep with its confidence.
+                m["endReason"] = result.endReason.rawValue
+                if let t = result.lastRepAt { m["lastRepAt"] = t }
+                m["repRecords"] = result.repRecords.map { ["at": $0.at, "confidence": $0.confidence] }
             case .setCancelled(let setIndex):
                 m["type"] = "setCancelled"; m["setIndex"] = setIndex
             case .workoutEnded(let setsCounted):
