@@ -48,6 +48,7 @@ import _SwiftConcurrencyShims
 public enum ConnectivityInfo {
   public static let version: Swift::String
 }
+
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class WatchConnectivityManager : ObjectiveC::NSObject, Foundation::ObservableObject {
   public static let shared: SonarFitConnectivity::WatchConnectivityManager
   @Combine::Published<SonarFitConnectivity::WatchWorkoutState?> @_projectedValueProperty($currentWorkoutState) final public var currentWorkoutState: SonarFitConnectivity::WatchWorkoutState? {
@@ -123,6 +124,8 @@ public enum ConnectivityInfo {
 }
 extension SonarFitConnectivity::WatchConnectivityManager : WatchConnectivity::WCSessionDelegate {
   @objc final public func session(_ session: WatchConnectivity::WCSession, activationDidCompleteWith activationState: WatchConnectivity::WCSessionActivationState, error: (any Swift::Error)?)
+  final public func sendBracketEvent(eventType: Swift::String, inputPayload: [Swift::String : Any] = [:])
+  @objc final public func session(_ session: WatchConnectivity::WCSession, didFinish userInfoTransfer: WatchConnectivity::WCSessionUserInfoTransfer, error: (any Swift::Error)?)
   @objc final public func session(_ session: WatchConnectivity::WCSession, didFinish fileTransfer: WatchConnectivity::WCSessionFileTransfer, error: (any Swift::Error)?)
   @objc final public func session(_ session: WatchConnectivity::WCSession, didReceiveMessageData messageData: Foundation::Data)
   @objc final public func session(_ session: WatchConnectivity::WCSession, didReceiveMessage message: [Swift::String : Any])
@@ -173,7 +176,6 @@ public enum SonarFitWatchSessionError : Swift::Error, Swift::CustomStringConvert
   }
   public static func == (a: SonarFitConnectivity::SonarFitWatchSessionError, b: SonarFitConnectivity::SonarFitWatchSessionError) -> Swift::Bool
 }
-
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class WatchWorkoutSessionManager : ObjectiveC::NSObject, Foundation::ObservableObject {
   public static let shared: SonarFitConnectivity::WatchWorkoutSessionManager
   @Combine::Published<SonarFitCore::WorkoutState> @_projectedValueProperty($workoutState) final public var workoutState: SonarFitCore::WorkoutState {

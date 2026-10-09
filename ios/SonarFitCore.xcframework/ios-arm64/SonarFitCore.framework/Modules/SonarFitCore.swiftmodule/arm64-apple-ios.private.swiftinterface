@@ -15,7 +15,6 @@ import Security
 import Swift
 import UIKit
 import UIKit
-import UIKit
 import WatchConnectivity
 import _Concurrency
 import _StringProcessing
@@ -794,6 +793,7 @@ public enum SonarFitHeadlessWire {
   public static let setEnded: Swift::String
   public static let setCancelled: Swift::String
   public static let workoutEnded: Swift::String
+  public static let bracketEvents: Swift::Set<Swift::String>
   public static let keyHeadless: Swift::String
   public static let keyExercise: Swift::String
   public static let keyTargetReps: Swift::String
@@ -812,13 +812,16 @@ public enum SonarFitHeadlessWire {
   public static let keyEndReason: Swift::String
   public static let keyLastRepAt: Swift::String
   public static let keyRepRecords: Swift::String
+  public static let keyMeteredByWatch: Swift::String
+  public static let keyWorkoutUUID: Swift::String
+  public static let keySDKVersion: Swift::String
 }
 extension SonarFitCore::SonarFitSDK {
-  public static func _headlessWorkoutStarted()
-  public static func _headlessSetStarted(exercise: Swift::String, targetReps: Swift::Int, setIndex: Swift::Int)
-  public static func _headlessSetEnded(exercise: Swift::String, reps: Swift::Int, targetReps: Swift::Int, startedAt: Foundation::Date, duration: Foundation::TimeInterval, setIndex: Swift::Int)
+  public static func _headlessWorkoutStarted(workoutUUID: Swift::String? = nil)
+  public static func _headlessSetStarted(exercise: Swift::String, targetReps: Swift::Int, setIndex: Swift::Int, workoutUUID: Swift::String? = nil)
+  public static func _headlessSetEnded(exercise: Swift::String, reps: Swift::Int, targetReps: Swift::Int, startedAt: Foundation::Date, duration: Foundation::TimeInterval, setIndex: Swift::Int, meteredByWatch: Swift::Bool = false)
   public static func _headlessSetCancelled(setIndex: Swift::Int)
-  public static func _headlessWorkoutEnded()
+  public static func _headlessWorkoutEnded(meteredByWatch: Swift::Bool = false, workoutUUID: Swift::String? = nil)
 }
 @available(iOS 17.0, watchOS 10.0, macOS 10.15, *)
 public class SonarFitWorkout : Foundation::ObservableObject, SonarFitCore::WorkoutEngineDelegate {
@@ -1046,6 +1049,12 @@ extension SonarFitCore::SonarFitSDK {
     get
   }
   public static func _deliverWatchSetCSV(setIndex: Swift::Int, csvData: Foundation::Data, restVerdictToken: Swift::String = "quiet", restExtraReps: Swift::Int = 0, exercise: Swift::String? = nil, reps: Swift::Int = -1)
+  public static func _uploadWatchSetRecording(csvFileURL: Foundation::URL, workoutUUID: Swift::String, exercise: Swift::String, setIndex: Swift::Int, reps: Swift::Int) -> Swift::Bool
+  public static func _meterHeadlessWorkout(sets: [(exercise: Swift::String, reps: Swift::Int, targetReps: Swift::Int)], startedAt: Foundation::Date, endedAt: Foundation::Date, workoutId: Swift::String)
+  public static func _drainPendingUploads()
+  public static var _sdkVersionOrdinal: Swift::Int {
+    get
+  }
 }
 public enum SetReviewVerdict {
   case accurate

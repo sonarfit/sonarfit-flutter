@@ -1156,7 +1156,7 @@
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitKit\/SonarFit.swift",
       "kind": "BooleanLiteral",
-      "offset": 11433,
+      "offset": 11686,
       "length": 4,
       "value": "true"
     },
@@ -1165,7 +1165,7 @@
       "kind": "StringLiteral",
       "offset": 86,
       "length": 7,
-      "value": "\"2.6.0\""
+      "value": "\"2.7.2\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitKit\/Version.swift",
@@ -1179,14 +1179,14 @@
       "kind": "IntegerLiteral",
       "offset": 156,
       "length": 1,
-      "value": "6"
+      "value": "7"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitKit\/Version.swift",
       "kind": "IntegerLiteral",
       "offset": 188,
       "length": 1,
-      "value": "0"
+      "value": "2"
     }
   ]
 }

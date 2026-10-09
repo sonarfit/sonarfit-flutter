@@ -9,16 +9,6 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "SonarFitConnectivity",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
         "moduleName": "SonarFitConnectivity"
       },
       {
@@ -2798,6 +2788,27 @@
       },
       {
         "kind": "Import",
+        "name": "HealthKit",
+        "printedName": "HealthKit",
+        "declKind": "Import",
+        "moduleName": "SonarFitConnectivity"
+      },
+      {
+        "kind": "Import",
+        "name": "SonarFitCore",
+        "printedName": "SonarFitCore",
+        "declKind": "Import",
+        "moduleName": "SonarFitConnectivity"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SonarFitConnectivity"
+      },
+      {
+        "kind": "Import",
         "name": "WatchConnectivity",
         "printedName": "WatchConnectivity",
         "declKind": "Import",
@@ -3683,6 +3694,16 @@
             "usr": "s:SH",
             "mangledName": "$sSH"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SonarFitConnectivity",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -5130,15 +5151,29 @@
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/PhoneConnectivityManager.swift",
+      "kind": "Array",
+      "offset": 38290,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/PhoneConnectivityManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 48765,
+      "offset": 38513,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/PhoneConnectivityManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 51577,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/PhoneConnectivityManager.swift",
       "kind": "StringLiteral",
-      "offset": 88975,
+      "offset": 91904,
       "length": 41,
       "value": "\"com.sonarfit.watchSessionStateDidChange\""
     },
@@ -5150,65 +5185,93 @@
       "value": "\"1.0.0\""
     },
     {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/SonarFitHostSessionObserver.swift",
+      "kind": "Array",
+      "offset": 2204,
+      "length": 416,
+      "value": "[\"workoutSession:didChangeToState:fromState:date:\", \"workoutSession:didFailWithError:\", \"workoutSession:didGenerateEvent:\", \"workoutSession:didBeginActivityWithConfiguration:date:\", \"workoutSession:didEndActivityWithConfiguration:date:\", \"workoutSession:didReceiveDataFromRemoteWorkoutSession:\", \"workoutSession:didDisconnectFromRemoteDeviceWithError:\"]"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/SonarFitHostSessionObserver.swift",
+      "kind": "Array",
+      "offset": 2785,
+      "length": 110,
+      "value": "[\"workoutSession:didChangeToState:fromState:date:\", \"workoutSession:didFailWithError:\"]"
+    },
+    {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/SonarFitRecordingOutbox.swift",
       "kind": "IntegerLiteral",
-      "offset": 3552,
+      "offset": 5693,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/SonarFitRecordingOutbox.swift",
       "kind": "IntegerLiteral",
-      "offset": 3590,
+      "offset": 5817,
       "length": 2,
-      "value": "14"
+      "value": "16"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/SonarFitRecordingOutbox.swift",
       "kind": "IntegerLiteral",
-      "offset": 3595,
+      "offset": 5822,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/SonarFitRecordingOutbox.swift",
       "kind": "IntegerLiteral",
-      "offset": 3600,
+      "offset": 5827,
       "length": 4,
       "value": "3600"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/SonarFitRecordingOutbox.swift",
       "kind": "IntegerLiteral",
-      "offset": 3806,
+      "offset": 6033,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/SonarFitRecordingOutbox.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6210,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/SonarFitRecordingOutbox.swift",
       "kind": "StringLiteral",
-      "offset": 4314,
+      "offset": 6852,
       "length": 30,
       "value": "\"com.sonarfit.RecordingOutbox\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/SonarFitRecordingOutbox.swift",
       "kind": "Array",
-      "offset": 4416,
+      "offset": 6954,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/SonarFitRecordingOutbox.swift",
       "kind": "BooleanLiteral",
-      "offset": 4451,
+      "offset": 6989,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/SonarFitRecordingOutbox.swift",
+      "kind": "Dictionary",
+      "offset": 7409,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/SonarFitRecordingOutbox.swift",
       "kind": "BooleanLiteral",
-      "offset": 7196,
+      "offset": 15270,
       "length": 5,
       "value": "false"
     },
