@@ -1051,16 +1051,6 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "SonarFitCore",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
         "moduleName": "SonarFitCore"
       },
       {
@@ -7057,6 +7047,30 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
+        "moduleName": "SonarFitCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WatchKit",
+        "printedName": "WatchKit",
+        "declKind": "Import",
+        "moduleName": "SonarFitCore"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SonarFitCore"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "SonarFitCore"
       },
       {
@@ -10597,6 +10611,46 @@
             "usr": "s:12SonarFitCore11WorkoutTypeO9bicepCurlyA2CmF",
             "mangledName": "$s12SonarFitCore11WorkoutTypeO9bicepCurlyA2CmF",
             "moduleName": "SonarFitCore"
+          },
+          {
+            "kind": "Var",
+            "name": "row",
+            "printedName": "row",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SonarFitCore.WorkoutType.Type) -> SonarFitCore.WorkoutType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WorkoutType",
+                    "printedName": "SonarFitCore.WorkoutType",
+                    "usr": "s:12SonarFitCore11WorkoutTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SonarFitCore.WorkoutType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WorkoutType",
+                        "printedName": "SonarFitCore.WorkoutType",
+                        "usr": "s:12SonarFitCore11WorkoutTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12SonarFitCore11WorkoutTypeO3rowyA2CmF",
+            "mangledName": "$s12SonarFitCore11WorkoutTypeO3rowyA2CmF",
+            "moduleName": "SonarFitCore",
+            "declAttributes": [
+              "RawDocComment"
+            ]
           },
           {
             "kind": "Constructor",
@@ -36687,378 +36741,378 @@
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "FloatLiteral",
-      "offset": 4374,
+      "offset": 4560,
       "length": 4,
       "value": "50.0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "IntegerLiteral",
-      "offset": 4400,
+      "offset": 4586,
       "length": 2,
       "value": "25"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "IntegerLiteral",
-      "offset": 4487,
+      "offset": 4673,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "IntegerLiteral",
-      "offset": 4623,
+      "offset": 4809,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "FloatLiteral",
-      "offset": 4655,
+      "offset": 4841,
       "length": 4,
       "value": "0.10"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "FloatLiteral",
-      "offset": 4691,
+      "offset": 4877,
       "length": 4,
       "value": "0.30"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "IntegerLiteral",
-      "offset": 4720,
+      "offset": 4906,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "FloatLiteral",
-      "offset": 4850,
+      "offset": 5036,
       "length": 4,
       "value": "0.50"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "Dictionary",
-      "offset": 4918,
-      "length": 149,
-      "value": "[(\"squat\", 3.0), (\"deadlift\", 3.0), (\"benchpress\", 3.0), (\"shoulder_press\", 3.0), (\"bicep_curl\", 2.0)]"
+      "offset": 5104,
+      "length": 161,
+      "value": "[(\"squat\", 3.0), (\"deadlift\", 3.0), (\"benchpress\", 3.0), (\"shoulder_press\", 3.0), (\"bicep_curl\", 2.0), (\"row\", 3.0)]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "FloatLiteral",
-      "offset": 5097,
+      "offset": 5295,
       "length": 3,
       "value": "5.0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "FloatLiteral",
-      "offset": 5130,
+      "offset": 5328,
       "length": 3,
       "value": "8.0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "FloatLiteral",
-      "offset": 5220,
+      "offset": 5418,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "FloatLiteral",
-      "offset": 5309,
+      "offset": 5507,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "IntegerLiteral",
-      "offset": 5423,
+      "offset": 5621,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "FloatLiteral",
-      "offset": 5561,
+      "offset": 5759,
       "length": 3,
       "value": "5.0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "IntegerLiteral",
-      "offset": 5676,
+      "offset": 5874,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "Array",
-      "offset": 5783,
+      "offset": 5981,
       "length": 41,
       "value": "[\"squat\", \"benchpress\", \"shoulder_press\"]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "FloatLiteral",
-      "offset": 5853,
+      "offset": 6086,
       "length": 3,
       "value": "3.0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "StringLiteral",
-      "offset": 5946,
+      "offset": 6179,
       "length": 11,
       "value": "\"set_ended\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "BooleanLiteral",
-      "offset": 7002,
+      "offset": 7235,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "BooleanLiteral",
-      "offset": 7032,
+      "offset": 7265,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "IntegerLiteral",
-      "offset": 7061,
+      "offset": 7294,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "IntegerLiteral",
-      "offset": 7088,
+      "offset": 7321,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "Array",
-      "offset": 7408,
+      "offset": 7641,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "Array",
-      "offset": 7462,
+      "offset": 7695,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "Array",
-      "offset": 7515,
+      "offset": 7748,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "IntegerLiteral",
-      "offset": 7538,
+      "offset": 7771,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "IntegerLiteral",
-      "offset": 7570,
+      "offset": 7803,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "Array",
-      "offset": 7607,
+      "offset": 7840,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "Array",
-      "offset": 7657,
+      "offset": 7890,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "IntegerLiteral",
-      "offset": 7730,
+      "offset": 7963,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "BooleanLiteral",
-      "offset": 8456,
+      "offset": 8689,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "IntegerLiteral",
-      "offset": 9368,
+      "offset": 9601,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "IntegerLiteral",
-      "offset": 9386,
+      "offset": 9619,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "IntegerLiteral",
-      "offset": 9403,
+      "offset": 9636,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "IntegerLiteral",
-      "offset": 20441,
+      "offset": 20674,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "IntegerLiteral",
-      "offset": 20784,
+      "offset": 21017,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "Array",
-      "offset": 20865,
+      "offset": 21098,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "IntegerLiteral",
-      "offset": 20889,
+      "offset": 21122,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "IntegerLiteral",
-      "offset": 20950,
+      "offset": 21183,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "IntegerLiteral",
-      "offset": 21059,
+      "offset": 21292,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "FloatLiteral",
-      "offset": 21165,
+      "offset": 21398,
       "length": 3,
       "value": "3.0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "StringLiteral",
-      "offset": 21829,
+      "offset": 22062,
       "length": 8,
       "value": "\"rhythm\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "Array",
-      "offset": 23520,
+      "offset": 23753,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "FloatLiteral",
-      "offset": 23553,
+      "offset": 23786,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "IntegerLiteral",
-      "offset": 23586,
+      "offset": 23819,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "IntegerLiteral",
-      "offset": 23774,
+      "offset": 24007,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "StringLiteral",
-      "offset": 23978,
+      "offset": 24211,
       "length": 9,
       "value": "\"posture\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "StringLiteral",
-      "offset": 24139,
+      "offset": 24372,
       "length": 10,
       "value": "\"deadlift\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "BooleanLiteral",
-      "offset": 24210,
+      "offset": 24443,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "IntegerLiteral",
-      "offset": 24230,
+      "offset": 24463,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "IntegerLiteral",
-      "offset": 24234,
+      "offset": 24467,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "StringLiteral",
-      "offset": 24341,
+      "offset": 24574,
       "length": 9,
       "value": "\"weights\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/LiveSet.swift",
       "kind": "StringLiteral",
-      "offset": 25420,
+      "offset": 25653,
       "length": 9,
       "value": "\"stopped\""
     },
@@ -37425,6 +37479,391 @@
       "offset": 5609,
       "length": 3,
       "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 3080,
+      "length": 4,
+      "value": "50.0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 3197,
+      "length": 4,
+      "value": "9.81"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 3236,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 3336,
+      "length": 4,
+      "value": "0.10"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 3436,
+      "length": 4,
+      "value": "0.25"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 3581,
+      "length": 4,
+      "value": "0.05"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 3735,
+      "length": 4,
+      "value": "0.40"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 3876,
+      "length": 4,
+      "value": "0.70"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 4305,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 4427,
+      "length": 3,
+      "value": "0.8"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 4612,
+      "length": 3,
+      "value": "0.6"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 5212,
+      "length": 4,
+      "value": "0.42"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 5254,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 5364,
+      "length": 4,
+      "value": "0.08"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 6108,
+      "length": 4,
+      "value": "25.0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 6539,
+      "length": 4,
+      "value": "0.75"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 6581,
+      "length": 3,
+      "value": "3.5"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6700,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "Array",
+      "offset": 6890,
+      "length": 65,
+      "value": "[0.013359200027856505, 0.02671840005571301, 0.013359200027856505]"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "Array",
+      "offset": 6995,
+      "length": 46,
+      "value": "[1.0, -1.6474599810769768, 0.7008967811884027]"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "Array",
+      "offset": 7082,
+      "length": 41,
+      "value": "[0.9866407999721453, -0.6875375811605474]"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "Array",
+      "offset": 7323,
+      "length": 61,
+      "value": "[0.9911535951016632, -1.9823071902033265, 0.9911535951016632]"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "Array",
+      "offset": 7424,
+      "length": 46,
+      "value": "[1.0, -1.9822289297925284, 0.9823854506141251]"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "Array",
+      "offset": 7511,
+      "length": 41,
+      "value": "[-0.9911535951016632, 0.9911535951016632]"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7626,
+      "length": 1,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8619,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "Array",
+      "offset": 9208,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "Array",
+      "offset": 9267,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "Array",
+      "offset": 9310,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "Array",
+      "offset": 9346,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "Array",
+      "offset": 9406,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "Array",
+      "offset": 9568,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9615,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "Array",
+      "offset": 9776,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9805,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10875,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11199,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11217,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11234,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11885,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11936,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11966,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 12119,
+      "length": 4,
+      "value": "1e-9"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12766,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 12797,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12818,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13377,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13394,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13902,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 13932,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13953,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14304,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 14324,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14345,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/RowDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14390,
+      "length": 1,
+      "value": "1"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/SetJudge.swift",
@@ -39312,79 +39751,72 @@
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
       "kind": "Array",
-      "offset": 7231,
+      "offset": 7279,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 7261,
+      "offset": 7309,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 7291,
+      "offset": 7339,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 7319,
+      "offset": 7367,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
       "kind": "Array",
-      "offset": 7826,
+      "offset": 7874,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
       "kind": "Array",
-      "offset": 7909,
+      "offset": 7957,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 7956,
+      "offset": 8004,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 7997,
+      "offset": 8045,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 8220,
+      "offset": 8268,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 8304,
+      "offset": 8352,
       "length": 2,
       "value": "50"
-    },
-    {
-      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8350,
-      "length": 2,
-      "value": "25"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
@@ -39396,238 +39828,350 @@
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 8503,
+      "offset": 8446,
+      "length": 2,
+      "value": "25"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8551,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 8614,
+      "offset": 8662,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 8683,
+      "offset": 8731,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 9122,
+      "offset": 9170,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 9140,
+      "offset": 9188,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 9157,
+      "offset": 9205,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
       "kind": "Array",
-      "offset": 16303,
+      "offset": 16351,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 16333,
+      "offset": 16381,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 16363,
+      "offset": 16411,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 16391,
+      "offset": 16439,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 16441,
+      "offset": 16489,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 16482,
+      "offset": 16530,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 16625,
+      "offset": 16673,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 16706,
+      "offset": 16754,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
       "kind": "Array",
-      "offset": 20743,
+      "offset": 20791,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 20773,
+      "offset": 20821,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 20803,
+      "offset": 20851,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 20831,
+      "offset": 20879,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 20881,
+      "offset": 20929,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 20922,
+      "offset": 20970,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 21065,
+      "offset": 21113,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 21147,
+      "offset": 21195,
       "length": 3,
       "value": "100"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
+      "kind": "Array",
+      "offset": 24943,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 24973,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 25003,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
+      "kind": "BooleanLiteral",
+      "offset": 25031,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 25081,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 25122,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 25265,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 25346,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 26378,
+      "length": 3,
+      "value": "0.3"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 26419,
+      "length": 3,
+      "value": "0.6"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 26459,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 26869,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 26909,
+      "length": 4,
+      "value": "0.15"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 26949,
+      "length": 4,
+      "value": "0.25"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WatchRepDetector.swift",
+      "kind": "BooleanLiteral",
+      "offset": 27018,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WristTravel.swift",
       "kind": "FloatLiteral",
-      "offset": 2499,
+      "offset": 2691,
       "length": 4,
       "value": "50.0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WristTravel.swift",
       "kind": "FloatLiteral",
-      "offset": 2531,
+      "offset": 2723,
       "length": 4,
       "value": "9.81"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WristTravel.swift",
       "kind": "Array",
-      "offset": 2650,
+      "offset": 2842,
       "length": 24,
       "value": "[50, 100, 150, 200, 300]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WristTravel.swift",
       "kind": "IntegerLiteral",
-      "offset": 2714,
+      "offset": 2906,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WristTravel.swift",
       "kind": "FloatLiteral",
-      "offset": 2756,
+      "offset": 2948,
       "length": 4,
       "value": "1e-4"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WristTravel.swift",
       "kind": "Dictionary",
-      "offset": 3060,
-      "length": 144,
-      "value": "[(\"squat\", 1.95), (\"deadlift\", 1.25), (\"benchpress\", 1.65), (\"shoulder_press\", 0.72), (\"bicep_curl\", 0.82)]"
+      "offset": 3252,
+      "length": 165,
+      "value": "[(\"squat\", 1.95), (\"deadlift\", 1.25), (\"benchpress\", 1.65), (\"shoulder_press\", 0.72), (\"bicep_curl\", 0.82), (\"row\", 1.45)]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WristTravel.swift",
       "kind": "IntegerLiteral",
-      "offset": 5051,
+      "offset": 5264,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WristTravel.swift",
       "kind": "FloatLiteral",
-      "offset": 5080,
+      "offset": 5293,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WristTravel.swift",
       "kind": "IntegerLiteral",
-      "offset": 5101,
+      "offset": 5314,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WristTravel.swift",
       "kind": "IntegerLiteral",
-      "offset": 5212,
+      "offset": 5425,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WristTravel.swift",
       "kind": "FloatLiteral",
-      "offset": 5237,
+      "offset": 5450,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/ML\/WristTravel.swift",
       "kind": "IntegerLiteral",
-      "offset": 5258,
+      "offset": 5471,
       "length": 1,
       "value": "0"
     },
@@ -39655,56 +40199,63 @@
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Models\/WorkoutTypes.swift",
       "kind": "StringLiteral",
-      "offset": 595,
+      "offset": 614,
       "length": 16,
       "value": "\"shoulder_press\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Models\/WorkoutTypes.swift",
       "kind": "StringLiteral",
-      "offset": 633,
+      "offset": 652,
       "length": 12,
       "value": "\"bicep_curl\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Models\/WorkoutTypes.swift",
       "kind": "StringLiteral",
-      "offset": 4884,
+      "offset": 951,
+      "length": 15,
+      "value": "\"bent_over_row\""
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Models\/WorkoutTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 5514,
       "length": 6,
       "value": "\"None\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Models\/WorkoutTypes.swift",
       "kind": "StringLiteral",
-      "offset": 4908,
+      "offset": 5538,
       "length": 13,
       "value": "\"Apple Watch\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Models\/WorkoutTypes.swift",
       "kind": "StringLiteral",
-      "offset": 4941,
+      "offset": 5571,
       "length": 9,
       "value": "\"AirPods\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Models\/WorkoutTypes.swift",
       "kind": "IntegerLiteral",
-      "offset": 6040,
+      "offset": 6670,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Models\/WorkoutTypes.swift",
       "kind": "IntegerLiteral",
-      "offset": 6077,
+      "offset": 6707,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Models\/WorkoutTypes.swift",
       "kind": "BooleanLiteral",
-      "offset": 6107,
+      "offset": 6737,
       "length": 4,
       "value": "true"
     },
@@ -39914,196 +40465,196 @@
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Workout\/HeadlessDetectionTypes.swift",
       "kind": "StringLiteral",
-      "offset": 8450,
+      "offset": 8456,
       "length": 24,
       "value": "\"headlessWorkoutStarted\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Workout\/HeadlessDetectionTypes.swift",
       "kind": "StringLiteral",
-      "offset": 8510,
+      "offset": 8516,
       "length": 20,
       "value": "\"headlessSetStarted\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Workout\/HeadlessDetectionTypes.swift",
       "kind": "StringLiteral",
-      "offset": 8559,
+      "offset": 8565,
       "length": 13,
       "value": "\"headlessRep\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Workout\/HeadlessDetectionTypes.swift",
       "kind": "StringLiteral",
-      "offset": 8606,
+      "offset": 8612,
       "length": 18,
       "value": "\"headlessRepEvent\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Workout\/HeadlessDetectionTypes.swift",
       "kind": "StringLiteral",
-      "offset": 8658,
+      "offset": 8664,
       "length": 18,
       "value": "\"headlessSetEnded\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Workout\/HeadlessDetectionTypes.swift",
       "kind": "StringLiteral",
-      "offset": 8714,
+      "offset": 8720,
       "length": 22,
       "value": "\"headlessSetCancelled\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Workout\/HeadlessDetectionTypes.swift",
       "kind": "StringLiteral",
-      "offset": 8774,
+      "offset": 8780,
       "length": 22,
       "value": "\"headlessWorkoutEnded\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Workout\/HeadlessDetectionTypes.swift",
       "kind": "StringLiteral",
-      "offset": 9046,
+      "offset": 9052,
       "length": 10,
       "value": "\"headless\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Workout\/HeadlessDetectionTypes.swift",
       "kind": "StringLiteral",
-      "offset": 9093,
+      "offset": 9099,
       "length": 10,
       "value": "\"exercise\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Workout\/HeadlessDetectionTypes.swift",
       "kind": "StringLiteral",
-      "offset": 9142,
+      "offset": 9148,
       "length": 12,
       "value": "\"targetReps\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Workout\/HeadlessDetectionTypes.swift",
       "kind": "StringLiteral",
-      "offset": 9191,
+      "offset": 9197,
       "length": 10,
       "value": "\"goalMode\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Workout\/HeadlessDetectionTypes.swift",
       "kind": "StringLiteral",
-      "offset": 9270,
+      "offset": 9276,
       "length": 8,
       "value": "\"goalLo\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Workout\/HeadlessDetectionTypes.swift",
       "kind": "StringLiteral",
-      "offset": 9313,
+      "offset": 9319,
       "length": 8,
       "value": "\"goalHi\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Workout\/HeadlessDetectionTypes.swift",
       "kind": "StringLiteral",
-      "offset": 9358,
+      "offset": 9364,
       "length": 10,
       "value": "\"setIndex\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Workout\/HeadlessDetectionTypes.swift",
       "kind": "StringLiteral",
-      "offset": 9401,
+      "offset": 9407,
       "length": 6,
       "value": "\"reps\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Workout\/HeadlessDetectionTypes.swift",
       "kind": "StringLiteral",
-      "offset": 9441,
+      "offset": 9447,
       "length": 7,
       "value": "\"count\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Workout\/HeadlessDetectionTypes.swift",
       "kind": "StringLiteral",
-      "offset": 9485,
+      "offset": 9491,
       "length": 10,
       "value": "\"duration\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Workout\/HeadlessDetectionTypes.swift",
       "kind": "StringLiteral",
-      "offset": 9533,
+      "offset": 9539,
       "length": 11,
       "value": "\"startedAt\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Workout\/HeadlessDetectionTypes.swift",
       "kind": "StringLiteral",
-      "offset": 9752,
+      "offset": 9758,
       "length": 6,
       "value": "\"kind\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Workout\/HeadlessDetectionTypes.swift",
       "kind": "StringLiteral",
-      "offset": 9835,
+      "offset": 9841,
       "length": 4,
       "value": "\"at\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Workout\/HeadlessDetectionTypes.swift",
       "kind": "StringLiteral",
-      "offset": 9927,
+      "offset": 9933,
       "length": 12,
       "value": "\"confidence\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Workout\/HeadlessDetectionTypes.swift",
       "kind": "StringLiteral",
-      "offset": 9976,
+      "offset": 9982,
       "length": 10,
       "value": "\"standing\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Workout\/HeadlessDetectionTypes.swift",
       "kind": "StringLiteral",
-      "offset": 10024,
+      "offset": 10030,
       "length": 11,
       "value": "\"endReason\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Workout\/HeadlessDetectionTypes.swift",
       "kind": "StringLiteral",
-      "offset": 10108,
+      "offset": 10114,
       "length": 11,
       "value": "\"lastRepAt\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Workout\/HeadlessDetectionTypes.swift",
       "kind": "StringLiteral",
-      "offset": 10158,
+      "offset": 10164,
       "length": 12,
       "value": "\"repRecords\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Workout\/HeadlessDetectionTypes.swift",
       "kind": "StringLiteral",
-      "offset": 10616,
+      "offset": 10622,
       "length": 16,
       "value": "\"meteredByWatch\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Workout\/HeadlessDetectionTypes.swift",
       "kind": "StringLiteral",
-      "offset": 10672,
+      "offset": 10678,
       "length": 13,
       "value": "\"workoutUUID\""
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/Workout\/HeadlessDetectionTypes.swift",
       "kind": "StringLiteral",
-      "offset": 10724,
+      "offset": 10730,
       "length": 12,
       "value": "\"sdkVersion\""
     },
@@ -40834,6 +41385,13 @@
       "offset": 6198,
       "length": 2,
       "value": "92"
+    },
+    {
+      "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/SDKVersion.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6253,
+      "length": 2,
+      "value": "93"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitCore\/SonarFitSDK.swift",

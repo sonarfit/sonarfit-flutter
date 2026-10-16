@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+
+## [2.8.0] - 2026-10-16
+
+# SonarFit SDK 2.8.0
+
+### Added
+- **Bent-Over Row** rep detection on Apple Watch — `WorkoutType.row` (`"bent_over_row"`), available everywhere the other watch exercises are: `startWorkout`, `startRepDetection`, React Native (`'bent_over_row'`) and Flutter (`WorkoutType.bentOverRow`).
 ## [2.7.2] - 2026-10-09
 
 - Stability improvements (iOS SDK 2.7.2).

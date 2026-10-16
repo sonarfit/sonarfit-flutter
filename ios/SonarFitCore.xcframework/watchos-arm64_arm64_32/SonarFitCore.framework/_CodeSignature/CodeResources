@@ -10,51 +10,51 @@
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-watchos.abi.json</key>
 		<data>
-		ViaVEJTQjM31DKMeA6s42eYQ8vA=
+		gnNWziMqHaIVUMgn75hnPLNmtEk=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-watchos.package.swiftinterface</key>
 		<data>
-		WtMgmTZHnMxOh37PJqw9SM/HLVQ=
+		+ANotYv269t6RcDjPUoP5yjAcnw=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-watchos.private.swiftinterface</key>
 		<data>
-		LPSoCNuM0hqJQsjg8S9j8sAzLRE=
+		F0pMGLLK4kQPFZiXOLt46uKin6U=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-watchos.swiftdoc</key>
 		<data>
-		/iCLKdEEW5htTwuatdRVmzPi0mc=
+		kpSgOOW/F1bm3hm8LKgWi050IYM=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-watchos.swiftinterface</key>
 		<data>
-		LPSoCNuM0hqJQsjg8S9j8sAzLRE=
+		F0pMGLLK4kQPFZiXOLt46uKin6U=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-watchos.swiftmodule</key>
 		<data>
-		JjFHwhcvOETLLqcKfNqAzvGm1p8=
+		h7jgS8jQ4H7SK4L6Z9mFdLE/vx0=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64_32-apple-watchos.abi.json</key>
 		<data>
-		ViaVEJTQjM31DKMeA6s42eYQ8vA=
+		gnNWziMqHaIVUMgn75hnPLNmtEk=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64_32-apple-watchos.package.swiftinterface</key>
 		<data>
-		Fs4MhpPCkIxn2WvkjKn80buTXN4=
+		0weUOY3cu369f6OMbBzP4VinShc=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64_32-apple-watchos.private.swiftinterface</key>
 		<data>
-		f+Q2WQCH1YFEqrzC9hd7lVpW+q0=
+		CapZysm/rw2mJBClzdyC67CGeuw=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64_32-apple-watchos.swiftdoc</key>
 		<data>
-		srq97+GDq6a2wFAk31kcbyxBdag=
+		WlYXyF8L/tuOO3i/l3W1Ibs1D68=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64_32-apple-watchos.swiftinterface</key>
 		<data>
-		f+Q2WQCH1YFEqrzC9hd7lVpW+q0=
+		CapZysm/rw2mJBClzdyC67CGeuw=
 		</data>
 		<key>Modules/SonarFitCore.swiftmodule/arm64_32-apple-watchos.swiftmodule</key>
 		<data>
-		bIUUDw06bcUwWWSKi8BtRQCno8g=
+		SRHeyUAAhkjDTrBuY0sF3Fh5c30=
 		</data>
 		<key>beep.wav</key>
 		<data>
@@ -75,132 +75,132 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ViaVEJTQjM31DKMeA6s42eYQ8vA=
+			gnNWziMqHaIVUMgn75hnPLNmtEk=
 			</data>
 			<key>hash2</key>
 			<data>
-			Qy+teTO7Vot0ptY4ulR5lnV5pNvhwMdx+/ekg7oMsWM=
+			fu4Iq+c6BhcUOuVl/hG23D2m4FoTxzJmCmAOjDSimpI=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-watchos.package.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WtMgmTZHnMxOh37PJqw9SM/HLVQ=
+			+ANotYv269t6RcDjPUoP5yjAcnw=
 			</data>
 			<key>hash2</key>
 			<data>
-			p7BRvv/MfKQgPTWVkTCzijEBBUdQqbxvNp3DEApt/rA=
+			C0S8VwwQiWkOl57eUSqzkjVCK+EnHurUT2adBtFUiD8=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-watchos.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LPSoCNuM0hqJQsjg8S9j8sAzLRE=
+			F0pMGLLK4kQPFZiXOLt46uKin6U=
 			</data>
 			<key>hash2</key>
 			<data>
-			53FsajcJ6DtK9hqdklJscU4ID3YCnwK90++F/5WL8NU=
+			RTyP85DM4RqKfL68mth+6daDpQedntL7sXNQ7RjR85U=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-watchos.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/iCLKdEEW5htTwuatdRVmzPi0mc=
+			kpSgOOW/F1bm3hm8LKgWi050IYM=
 			</data>
 			<key>hash2</key>
 			<data>
-			4Vkw1q+F6SloDoZL+Y0WK8iO+aCMiUvJjoZW9KpKVD0=
+			AgjE41xsLsVM55tuBgUeo4I0/apYN44hJI3LCc1LglM=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-watchos.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LPSoCNuM0hqJQsjg8S9j8sAzLRE=
+			F0pMGLLK4kQPFZiXOLt46uKin6U=
 			</data>
 			<key>hash2</key>
 			<data>
-			53FsajcJ6DtK9hqdklJscU4ID3YCnwK90++F/5WL8NU=
+			RTyP85DM4RqKfL68mth+6daDpQedntL7sXNQ7RjR85U=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/arm64-apple-watchos.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JjFHwhcvOETLLqcKfNqAzvGm1p8=
+			h7jgS8jQ4H7SK4L6Z9mFdLE/vx0=
 			</data>
 			<key>hash2</key>
 			<data>
-			k3YUiueLvvf2cNeiNflgD/yV2ksTeOQcoNkuEba+Kz8=
+			fikoyCsm1hU/MfdAWogsDQDwGHO7dZbCb5cj/HSlh7c=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/arm64_32-apple-watchos.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ViaVEJTQjM31DKMeA6s42eYQ8vA=
+			gnNWziMqHaIVUMgn75hnPLNmtEk=
 			</data>
 			<key>hash2</key>
 			<data>
-			Qy+teTO7Vot0ptY4ulR5lnV5pNvhwMdx+/ekg7oMsWM=
+			fu4Iq+c6BhcUOuVl/hG23D2m4FoTxzJmCmAOjDSimpI=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/arm64_32-apple-watchos.package.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Fs4MhpPCkIxn2WvkjKn80buTXN4=
+			0weUOY3cu369f6OMbBzP4VinShc=
 			</data>
 			<key>hash2</key>
 			<data>
-			cz88rcPBsiTAMPKmR2f7NYIPLQMYY0VPmeWxRxbtQG4=
+			XcQNsYJzGtLpBtjpjXrPKrR2V3ttYHFQtwJs6gmDOog=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/arm64_32-apple-watchos.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			f+Q2WQCH1YFEqrzC9hd7lVpW+q0=
+			CapZysm/rw2mJBClzdyC67CGeuw=
 			</data>
 			<key>hash2</key>
 			<data>
-			YLBgWu1E/WySGImTILSITWnclqFA7iVScQrJKtQaDbk=
+			I46siFj9RjyZg79/qli0pAlZY1jPrtOUspDnObJN95k=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/arm64_32-apple-watchos.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			srq97+GDq6a2wFAk31kcbyxBdag=
+			WlYXyF8L/tuOO3i/l3W1Ibs1D68=
 			</data>
 			<key>hash2</key>
 			<data>
-			OxHw3jznM5x7N9MUoPKTWxir6/RTHh2iorkUuKcf2k8=
+			V2KNdhoNobHL/BSbW8IO6k8B7RO+0FZHzMPTotHMLr0=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/arm64_32-apple-watchos.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			f+Q2WQCH1YFEqrzC9hd7lVpW+q0=
+			CapZysm/rw2mJBClzdyC67CGeuw=
 			</data>
 			<key>hash2</key>
 			<data>
-			YLBgWu1E/WySGImTILSITWnclqFA7iVScQrJKtQaDbk=
+			I46siFj9RjyZg79/qli0pAlZY1jPrtOUspDnObJN95k=
 			</data>
 		</dict>
 		<key>Modules/SonarFitCore.swiftmodule/arm64_32-apple-watchos.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bIUUDw06bcUwWWSKi8BtRQCno8g=
+			SRHeyUAAhkjDTrBuY0sF3Fh5c30=
 			</data>
 			<key>hash2</key>
 			<data>
-			/N6wZDxGl3EMZqbNGvYs/Mo1KXGEzW2qYFe9afxpghs=
+			laZ6kE1E701Lc56XNrHRJim7TglXbEkn//CV4uRews0=
 			</data>
 		</dict>
 		<key>beep.wav</key>

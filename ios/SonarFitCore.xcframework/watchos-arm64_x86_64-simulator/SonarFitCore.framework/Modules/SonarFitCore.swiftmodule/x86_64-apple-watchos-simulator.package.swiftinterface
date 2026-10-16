@@ -322,6 +322,7 @@ public enum WorkoutType : Swift::String, Swift::CaseIterable, Swift::Codable {
   case benchpress
   case shoulderPress
   case bicepCurl
+  case row
   public init?(name: Swift::String)
   public var displayName: Swift::String {
     get

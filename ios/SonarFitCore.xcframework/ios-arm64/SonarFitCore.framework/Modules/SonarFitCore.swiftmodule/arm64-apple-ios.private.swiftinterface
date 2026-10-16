@@ -15,6 +15,7 @@ import Security
 import Swift
 import UIKit
 import UIKit
+import UIKit
 import WatchConnectivity
 import _Concurrency
 import _StringProcessing
@@ -258,6 +259,7 @@ public enum WorkoutType : Swift::String, Swift::CaseIterable, Swift::Codable {
   case benchpress
   case shoulderPress
   case bicepCurl
+  case row
   public init?(name: Swift::String)
   public var displayName: Swift::String {
     get
