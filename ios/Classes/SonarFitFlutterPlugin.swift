@@ -144,6 +144,8 @@ public class SonarFitFlutterPlugin: NSObject, FlutterPlugin {
             workoutType = .shoulderPress
         case "bicep_curl":
             workoutType = .bicepCurl
+        case "bent_over_row", "row":
+            workoutType = .row
         default:
             return nil
         }

@@ -213,6 +213,7 @@ enum WorkoutType {
   benchpress,     // Apple Watch only
   shoulderPress,  // Apple Watch only
   bicepCurl,      // Apple Watch only
+  bentOverRow,    // Apple Watch only
 }
 ```
 
@@ -439,6 +440,7 @@ class WorkoutTypeSelector extends StatelessWidget {
     WorkoutType.benchpress,
     WorkoutType.shoulderPress,
     WorkoutType.bicepCurl,
+    WorkoutType.bentOverRow,
   ];
 
   Future<void> _startWorkout(BuildContext context, WorkoutType type) async {

@@ -4,7 +4,8 @@ enum WorkoutType {
   deadlift('deadlift'),
   benchpress('benchpress'),
   shoulderPress('shoulder_press'),
-  bicepCurl('bicep_curl');
+  bicepCurl('bicep_curl'),
+  bentOverRow('bent_over_row');
 
   const WorkoutType(this.value);
   final String value;
@@ -215,7 +216,7 @@ class RepRecord {
 class HeadlessEvent {
   final String type;
   final int? setIndex;
-  /// setStarted / setEnded: the exercise ('squat', 'deadlift', 'benchpress', 'shoulder_press', 'bicep_curl').
+  /// setStarted / setEnded: the exercise ('squat', 'deadlift', 'benchpress', 'shoulder_press', 'bicep_curl', 'bent_over_row').
   final String? exercise;
   /// setStarted / setEnded: the set's target.
   final int? targetReps;
