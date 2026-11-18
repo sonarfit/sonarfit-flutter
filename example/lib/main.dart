@@ -74,7 +74,7 @@ class _WorkoutHomePageState extends State<WorkoutHomePage> {
         _isLoading = false;
       });
 
-      if (result.completed) {
+      if (result.status == WorkoutStatus.completed) {
         _showCompletionDialog(result);
       }
     } on SonarFitException catch (e) {
