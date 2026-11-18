@@ -5152,28 +5152,28 @@
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/PhoneConnectivityManager.swift",
       "kind": "Array",
-      "offset": 38296,
+      "offset": 38335,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/PhoneConnectivityManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 38519,
+      "offset": 38558,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/PhoneConnectivityManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 51583,
+      "offset": 51622,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adamfrancis\/Dev\/SonarFit\/sdk\/SonarFitSDKProject\/Sources\/SonarFitConnectivity\/PhoneConnectivityManager.swift",
       "kind": "StringLiteral",
-      "offset": 91910,
+      "offset": 91949,
       "length": 41,
       "value": "\"com.sonarfit.watchSessionStateDidChange\""
     },
