@@ -14,7 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - **Lateral Raise** rep detection on Apple Watch — `WorkoutType.lateralRaise` (`"lateral_raise"`).
 - **Front Raise** rep detection on Apple Watch — `WorkoutType.frontRaise` (`"front_raise"`).
-- **Chest Fly** rep detection on Apple Watch — `WorkoutType.chestFly` (`"chest_fly"`), standing or lying on a bench.
+- **Chest Fly** rep detection on Apple Watch — `WorkoutType.chestFly` (`"chest_fly"`).
 
 All three are available everywhere the other watch exercises are: `startWorkout`, `startRepDetection`, React Native (`'lateral_raise'`, `'front_raise'`, `'chest_fly'`) and Flutter (`WorkoutType.lateralRaise`, `.frontRaise`, `.chestFly`).
 ## [2.8.0] - 2026-10-16
